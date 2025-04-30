@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace Kiosk
 {
-    public partial class Form1 : Form
+    public partial class Form_cuppon_payment : Form
     {
-        public Form1()
+        public Form_cuppon_payment()
         {
             InitializeComponent();
         }
-
     }
 }
