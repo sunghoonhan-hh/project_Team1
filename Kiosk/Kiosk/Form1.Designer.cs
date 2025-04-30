@@ -28,13 +28,73 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.customButton1 = new MyButton.CustomButton();
+            this.customButton2 = new MyButton.CustomButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // customButton1
+            // 
+            this.customButton1.BackColor = System.Drawing.Color.White;
+            this.customButton1.FlatAppearance.BorderSize = 0;
+            this.customButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton1.Font = new System.Drawing.Font("메이플스토리", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.customButton1.IsMaximum = false;
+            this.customButton1.Location = new System.Drawing.Point(48, 218);
+            this.customButton1.Name = "customButton1";
+            this.customButton1.Radius = 20;
+            this.customButton1.Size = new System.Drawing.Size(182, 334);
+            this.customButton1.TabIndex = 0;
+            this.customButton1.Text = "매장";
+            this.customButton1.UseVisualStyleBackColor = false;
+            this.customButton1.Click += new System.EventHandler(this.customButton1_Click);
+            // 
+            // customButton2
+            // 
+            this.customButton2.BackColor = System.Drawing.Color.White;
+            this.customButton2.FlatAppearance.BorderSize = 0;
+            this.customButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.customButton2.Font = new System.Drawing.Font("메이플스토리", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.customButton2.IsMaximum = false;
+            this.customButton2.Location = new System.Drawing.Point(285, 218);
+            this.customButton2.Name = "customButton2";
+            this.customButton2.Radius = 20;
+            this.customButton2.Size = new System.Drawing.Size(182, 334);
+            this.customButton2.TabIndex = 1;
+            this.customButton2.Text = "포장";
+            this.customButton2.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("메이플스토리", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(86, 56);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(344, 67);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "KW Coffee";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Gold;
+            this.ClientSize = new System.Drawing.Size(517, 682);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.customButton2);
+            this.Controls.Add(this.customButton1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private MyButton.CustomButton customButton1;
+        private MyButton.CustomButton customButton2;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -1,0 +1,10 @@
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.exe.config
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.exe
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.pdb
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.AssemblyReference.cache
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form1.resources
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Properties.Resources.resources
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.GenerateResource.cache
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.CoreCompileInputs.cache
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.exe
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.pdb

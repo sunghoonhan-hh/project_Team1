@@ -16,5 +16,10 @@ namespace Kiosk
         {
             InitializeComponent();
         }
+
+        private void customButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
