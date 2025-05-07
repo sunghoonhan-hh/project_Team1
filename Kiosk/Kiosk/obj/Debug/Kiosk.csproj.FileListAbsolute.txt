@@ -2,9 +2,11 @@ C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.exe.config
 C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.exe
 C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.pdb
 C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.AssemblyReference.cache
-C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form1.resources
 C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Properties.Resources.resources
 C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.GenerateResource.cache
 C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.CoreCompileInputs.cache
 C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.exe
 C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.pdb
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.매장포장.resources
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.좌석배치도.resources
+C:\Users\sim98\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.메뉴선택.resources
