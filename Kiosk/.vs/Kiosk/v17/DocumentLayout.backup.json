@@ -1,21 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\",
+  "WorkspaceRootPath": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\rex\\source\\repos\\project_team1\\kiosk\\kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\j7409\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_team1\\kiosk\\kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d3750d8a-574b-4fb3-b7e2-aa8af40e8231}"
@@ -25,16 +29,21 @@
               "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\Form1.cs",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form1.cs",
               "RelativeDocumentMoniker": "Kiosk\\Form1.cs",
-              "ToolTip": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\Form1.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Kiosk\\Form1.cs [\uB514\uC790\uC778]",
+              "ToolTip": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form1.cs",
+              "RelativeToolTip": "Kiosk\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T08:47:11.106Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-05-10T05:35:13.268Z",
+              "EditorCaption": ""
             }
           ]
         }

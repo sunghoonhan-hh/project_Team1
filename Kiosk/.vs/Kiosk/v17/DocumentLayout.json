@@ -3,23 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\j7409\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_team1\\kiosk\\kiosk\\menuinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\menuinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\j7409\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_team1\\kiosk\\kiosk\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\j7409\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_team1\\kiosk\\kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\j7409\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_team1\\kiosk\\kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\j7409\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_team1\\kiosk\\kiosk\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\j7409\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_team1\\kiosk\\kiosk\\menuinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\menuinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\j7409\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_team1\\kiosk\\kiosk\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\j7409\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_team1\\kiosk\\kiosk\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\j7409\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_team1\\kiosk\\kiosk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Form2.Designer.cs",
+              "ToolTip": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form2.Designer.cs",
+              "RelativeToolTip": "Kiosk\\Form2.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T05:53:54.655Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
@@ -33,16 +70,57 @@
               "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "Form2.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form2.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Form2.cs",
+              "ToolTip": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form2.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Kiosk\\Form2.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T05:53:49.716Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MenuInformation.cs",
               "DocumentMoniker": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\MenuInformation.cs",
               "RelativeDocumentMoniker": "Kiosk\\MenuInformation.cs",
               "ToolTip": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\MenuInformation.cs",
               "RelativeToolTip": "Kiosk\\MenuInformation.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAAwD8AAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-09T17:16:28.2Z",
+              "WhenOpened": "2025-05-10T05:38:48.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Program.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Program.cs",
+              "ToolTip": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Program.cs",
+              "RelativeToolTip": "Kiosk\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T05:38:43.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form1.resx",
+              "RelativeDocumentMoniker": "Kiosk\\Form1.resx",
+              "ToolTip": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form1.resx",
+              "RelativeToolTip": "Kiosk\\Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-10T05:38:39.103Z",
               "EditorCaption": ""
             },
             {
@@ -54,8 +132,34 @@
               "ToolTip": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form1.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "Kiosk\\Form1.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T08:47:11.106Z",
+              "WhenOpened": "2025-05-10T05:37:55.439Z",
               "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form1.Designer.cs",
+              "RelativeToolTip": "Kiosk\\Form1.Designer.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAhwCYAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T05:37:51.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form1.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Form1.cs",
+              "ToolTip": "C:\\Users\\j7409\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\3\uD559\uB144 1\uD559\uAE30\\\uC751\uC18C\uC2E4\\\uD300\uD50C \uB85C\uCEEC \uC800\uC7A5\uC18C\\project_Team1\\Kiosk\\Kiosk\\Form1.cs",
+              "RelativeToolTip": "Kiosk\\Form1.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAADwv38AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-10T05:35:13.268Z",
+              "EditorCaption": ""
             }
           ]
         }

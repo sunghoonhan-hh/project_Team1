@@ -20,7 +20,7 @@ namespace Kiosk
         public bool Option_Sweet { get; set; }        // 달게
 
         // 3. 꿀 추가
-        public bool Option_Honey { get; set; }
+        public bool Option_SteviaSugar { get; set; }
 
         // 4. 컵 사이즈 업그레이드
         public bool Option_CupSizeUp { get; set; }
@@ -29,7 +29,9 @@ namespace Kiosk
         public bool Option_Pearl { get; set; }
 
         // 6. 샷 추가
-        public int Option_Shot { get; set; }           // 샷 추가 수량
+        public bool Option_Shot { get; set; }
+        public bool Option_2Shot { get; set; }
+
 
         // 7. 시럽 추가 (종류별)
         public bool Option_Syrup_Vanilla { get; set; }
@@ -62,10 +64,11 @@ namespace Kiosk
             Option_IceLess = false;
             Option_LessSweet = false;
             Option_Sweet = false;
-            Option_Honey = false;
+            Option_SteviaSugar = false;
             Option_CupSizeUp = false;
             Option_Pearl = false;
-            Option_Shot = 0;
+            Option_Shot = false;
+            Option_2Shot = false;
             Option_Syrup_Vanilla = false;
             Option_Syrup_Hazelnut = false;
             Option_Syrup_Caramel = false;
