@@ -1,0 +1,10 @@
+C:\Users\j7409\OneDrive\바탕 화면\3학년 1학기\응소실\팀플 로컬 저장소\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.exe.config
+C:\Users\j7409\OneDrive\바탕 화면\3학년 1학기\응소실\팀플 로컬 저장소\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.exe
+C:\Users\j7409\OneDrive\바탕 화면\3학년 1학기\응소실\팀플 로컬 저장소\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.pdb
+C:\Users\j7409\OneDrive\바탕 화면\3학년 1학기\응소실\팀플 로컬 저장소\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.AssemblyReference.cache
+C:\Users\j7409\OneDrive\바탕 화면\3학년 1학기\응소실\팀플 로컬 저장소\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form1.resources
+C:\Users\j7409\OneDrive\바탕 화면\3학년 1학기\응소실\팀플 로컬 저장소\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Properties.Resources.resources
+C:\Users\j7409\OneDrive\바탕 화면\3학년 1학기\응소실\팀플 로컬 저장소\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.GenerateResource.cache
+C:\Users\j7409\OneDrive\바탕 화면\3학년 1학기\응소실\팀플 로컬 저장소\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.CoreCompileInputs.cache
+C:\Users\j7409\OneDrive\바탕 화면\3학년 1학기\응소실\팀플 로컬 저장소\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.exe
+C:\Users\j7409\OneDrive\바탕 화면\3학년 1학기\응소실\팀플 로컬 저장소\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.pdb
