@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
 
 namespace Kiosk
 {
@@ -113,149 +112,361 @@ namespace Kiosk
 };
         #endregion
 
-        private MenuInformation currentMenuInfo; //현재 메뉴
+        // 현재 선택된 메뉴의 정보(참조로 넘어옴, 옵션 선택 결과도 이 객체에 저장)
+        private MenuInformation currentMenuInfo;
+
         public Form1()
         {
             InitializeComponent();
+            UpdateOrderButtonState(); // 폼 로드시 메뉴담기 버튼 상태 초기화
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // 예를 들어 기본 메뉴 선택
-            // SelectMenu("골드키위주스(ICE)");
-        }
 
-        // 메뉴 선택 시 호출 (예: 메뉴 버튼 클릭 이벤트에서 사용) //유완 코드에서 필요
-        private void SelectMenu(string menuName)
+        /// <summary>
+        /// 외부에서 MenuInformation 객체(참조)를 넘겨줄 때 호출
+        /// - currentMenuInfo에 참조 저장
+        /// - 옵션 컨트롤 상태를 해당 객체 값으로 동기화
+        /// - 분류에 따라 옵션 가시성 제어
+        /// - 옵션 패널(tableLayoutPanel1) 표시
+        /// </summary>
+        /// 유완이와 합칠 코드
+        public void SetCurrentMenu(MenuInformation menuInfo)
         {
-            // MenuInformation 객체 생성 (분류 자동 세팅)
-            currentMenuInfo = new MenuInformation(menuName);
-
-            // 분류 기반으로 옵션 표시/숨김 등 처리
+            currentMenuInfo = menuInfo;
             SetDrinkCategory(currentMenuInfo);
 
-            // 기타 옵션 초기화, 이미지 로딩 등 추가 가능
+            // 옵션 컨트롤 상태를 MenuInformation 객체 값으로 동기화
+            rdoIceMore.Checked = currentMenuInfo.Option_IceMore;
+            rdoIceLess.Checked = currentMenuInfo.Option_IceLess;
+            rdoLessSweet.Checked = currentMenuInfo.Option_LessSweet;
+            rdoSweet.Checked = currentMenuInfo.Option_Sweet;
+            rdoNoFreeOption.Checked = !(currentMenuInfo.Option_IceMore || currentMenuInfo.Option_IceLess ||
+                                       currentMenuInfo.Option_LessSweet || currentMenuInfo.Option_Sweet);
+
+            rdoNoSyrup.Checked = !(currentMenuInfo.Option_SteviaSugar || currentMenuInfo.Option_Syrup_Vanilla ||
+                                   currentMenuInfo.Option_Syrup_Hazelnut || currentMenuInfo.Option_Syrup_Caramel);
+            rdoSteviaSyrup.Checked = currentMenuInfo.Option_SteviaSugar;
+            rdoSyrupVanilla.Checked = currentMenuInfo.Option_Syrup_Vanilla;
+            rdoSyrupHazelnut.Checked = currentMenuInfo.Option_Syrup_Hazelnut;
+            rdoSyrupCaramel.Checked = currentMenuInfo.Option_Syrup_Caramel;
+
+            rdoNoMilk.Checked = !(currentMenuInfo.Option_Milk_Oat || currentMenuInfo.Option_Milk_Almond || currentMenuInfo.Option_Milk_Soy);
+            rdoMilkOat.Checked = currentMenuInfo.Option_Milk_Oat;
+            rdoMilkAlmond.Checked = currentMenuInfo.Option_Milk_Almond;
+            rdoMilkSoy.Checked = currentMenuInfo.Option_Milk_Soy;
+
+            rdoNoShot.Checked = !(currentMenuInfo.Option_Shot || currentMenuInfo.Option_2Shot || currentMenuInfo.Option_Decaf2Shot > 0);
+            rdoShot.Checked = currentMenuInfo.Option_Shot;
+            rdo2Shot.Checked = currentMenuInfo.Option_2Shot;
+            rdoDecaf2Shot.Checked = currentMenuInfo.Option_Decaf2Shot > 0;
+
+            rdoNoSize.Checked = !currentMenuInfo.Option_CupSizeUp;
+            rdoSizeUp.Checked = currentMenuInfo.Option_CupSizeUp;
+
+            chkNoAddOns.Checked = !(currentMenuInfo.Option_Pearl || currentMenuInfo.Option_WhippedCream ||
+                                   currentMenuInfo.Option_Drizzle_Chocolate || currentMenuInfo.Option_Drizzle_Caramel);
+            chkPearl.Checked = currentMenuInfo.Option_Pearl;
+            chkWhippedCream.Checked = currentMenuInfo.Option_WhippedCream;
+            rdoDrizzleChocolate.Checked = currentMenuInfo.Option_Drizzle_Chocolate;
+            rdoDrizzleCaramel.Checked = currentMenuInfo.Option_Drizzle_Caramel;
+
+            // 분류에 따라 덜달게 옵션 가시성 제어
+            rdoLessSweet.Visible = ShouldShowLessSweet(currentMenuInfo);
+
+            // 옵션 패널(tableLayoutPanel1) 표시
+            tableLayoutPanel1.Visible = true;
         }
 
-        // 무료옵션 "선택안함" 체크 시 다른 옵션 비활성화
-        private void rdoNoFreeOption_CheckedChanged(object sender, EventArgs e)
-        {
-            if (currentMenuInfo == null) return;
+        /// <summary>
+        /// 무료옵션 그룹에서 "선택안함" 체크 시 다른 옵션 비활성화
+        /// (로직은 Option_CheckedChanged에서 통합 처리)
+        /// </summary>
 
-            bool enabled = !rdoNoFreeOption.Checked;
-            rdoIceMore.Enabled = enabled;
-            rdoIceLess.Enabled = enabled;
-            rdoLessSweet.Enabled = enabled && ShouldShowLessSweet(currentMenuInfo);
-            rdoSweet.Enabled = enabled;
-        }
-
-
-        // 덜달게 옵션 표시 조건 (분류 기반)
+        /// <summary>
+        /// 덜달게 옵션 표시 조건 (분류 기반)
+        /// 특정 분류(커피, 디카페인, 에스프레소)에서는 덜달게 옵션 숨김
+        /// </summary>
         private bool ShouldShowLessSweet(MenuInformation menuInfo)
         {
             string[] exclude = { "커피(아이스)", "커피(핫)", "디카페인", "에스프레소" };
             return !exclude.Contains(menuInfo.MenuHead);
         }
 
-        // 메뉴 선택 또는 분류 변경 시 호출
+        /// <summary>
+        /// 메뉴 선택 또는 분류 변경 시 호출
+        /// 들어온 메뉴에 따라 덜달게 옵션은 특정 분류 항목들에게만 적용한다.
+        /// </summary>
         public void SetDrinkCategory(MenuInformation menuInfo)
         {
             currentMenuInfo = menuInfo;
             rdoLessSweet.Visible = ShouldShowLessSweet(menuInfo);
         }
 
-        /*아래는 선택안함 버튼 작동방식*/
-        private void rdoIceMore_CheckedChanged(object sender, EventArgs e)
+        /// <summary>
+        /// 모든 옵션 컨트롤의 CheckedChanged 이벤트가 이 메서드에 연결됨
+        /// - 옵션 변경 시 currentMenuInfo 객체에 값 저장
+        /// - 선택안함 체크 시 그룹 내 다른 옵션 비활성화/초기화
+        /// - 메뉴담기 버튼 활성화 상태 갱신
+        /// </summary>
+        private void Option_CheckedChanged(object sender, EventArgs e)
         {
-            if (rdoIceMore.Checked) rdoIceLess.Checked = false;
-        }
+            UpdateOrderButtonState(); // 메뉴담기 버튼 활성화 상태 갱신
 
-        private void rdoIceLess_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rdoIceLess.Checked) rdoIceMore.Checked = false;
-        }
-
-        private void rdoLessSweet_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rdoLessSweet.Checked) rdoSweet.Checked = false;
-        }
-
-        private void rdoSweet_CheckedChanged(object sender, EventArgs e)
-        {
-            if (rdoSweet.Checked) rdoLessSweet.Checked = false;
-        }
-
-        private void rdoNoSyrup_CheckedChanged(object sender, EventArgs e)
-        {
-            bool enabled = !rdoNoSyrup.Checked;
-            rdoSteviaSyrup.Enabled = enabled;
-            rdoSyrupVanilla.Enabled = enabled;
-            rdoSyrupHazelnut.Enabled = enabled;
-            rdoSyrupCaramel.Enabled = enabled;
-        }
-
-        private void rdoNoMilk_CheckedChanged(object sender, EventArgs e)
-        {
-            bool enabled = !rdoNoMilk.Checked;
-            rdoMilkOat.Enabled = enabled;
-            rdoMilkAlmond.Enabled = enabled;
-            rdoMilkSoy.Enabled = enabled;
-        }
-
-        private void rdoNoShot_CheckedChanged(object sender, EventArgs e)
-        {
-            bool enabled = !rdoNoShot.Checked;
-            rdoShot.Enabled = enabled;
-            rdo2Shot.Enabled = enabled;
-            rdoDecaf2Shot.Enabled = enabled;
-        }
-
-        private void rdoNoSize_CheckedChanged(object sender, EventArgs e)
-        {
-            bool enabled = !rdoNoSize.Checked;
-            rdoSizeUp.Enabled = enabled;
-        }
-
-        private void chkNoAddOns_CheckedChanged(object sender, EventArgs e)
-        {
-            bool enabled = !chkNoAddOns.Checked;
-            chkPearl.Enabled = enabled;
-            chkWhippedCream.Enabled = enabled;
-            gbDrizzleOptions.Enabled = enabled; // 드리즐 그룹 전체 활성/비활성
-
-            if (!enabled)
+            if (sender is RadioButton rb)
             {
-                chkPearl.Checked = false;
-                chkWhippedCream.Checked = false;
-                // 드리즐 그룹 내 라디오버튼 모두 해제
-                foreach (Control ctrl in gbDrizzleOptions.Controls)
+                switch (rb.Name)
                 {
-                    if (ctrl is RadioButton rb) rb.Checked = false;
+                    // 무료옵션 - 선택안함
+                    case "rdoNoFreeOption":
+                        bool enabled = !rdoNoFreeOption.Checked;
+                        rdoIceMore.Enabled = enabled;
+                        rdoIceLess.Enabled = enabled;
+                        rdoLessSweet.Enabled = enabled && ShouldShowLessSweet(currentMenuInfo);
+                        rdoSweet.Enabled = enabled;
+
+                        if (rdoNoFreeOption.Checked)
+                        {
+                            // 다른 옵션 해제 및 객체 값 초기화
+                            rdoIceMore.Checked = false;
+                            rdoIceLess.Checked = false;
+                            rdoLessSweet.Checked = false;
+                            rdoSweet.Checked = false;
+                            currentMenuInfo.Option_IceMore = false;
+                            currentMenuInfo.Option_IceLess = false;
+                            currentMenuInfo.Option_LessSweet = false;
+                            currentMenuInfo.Option_Sweet = false;
+                        }
+                        break;
+
+                    // 무료옵션 - 얼음/당도
+                    case "rdoIceMore":
+                        currentMenuInfo.Option_IceMore = rb.Checked;
+                        break;
+                    case "rdoIceLess":
+                        currentMenuInfo.Option_IceLess = rb.Checked;
+                        break;
+                    case "rdoLessSweet":
+                        currentMenuInfo.Option_LessSweet = rb.Checked;
+                        break;
+                    case "rdoSweet":
+                        currentMenuInfo.Option_Sweet = rb.Checked;
+                        break;
+
+                    // 시럽추가 - 선택안함
+                    case "rdoNoSyrup":
+                        bool syrupEnabled = !rdoNoSyrup.Checked;
+                        rdoSteviaSyrup.Enabled = syrupEnabled;
+                        rdoSyrupVanilla.Enabled = syrupEnabled;
+                        rdoSyrupHazelnut.Enabled = syrupEnabled;
+                        rdoSyrupCaramel.Enabled = syrupEnabled;
+
+                        if (rdoNoSyrup.Checked)
+                        {
+                            currentMenuInfo.Option_SteviaSugar = false;
+                            currentMenuInfo.Option_Syrup_Vanilla = false;
+                            currentMenuInfo.Option_Syrup_Hazelnut = false;
+                            currentMenuInfo.Option_Syrup_Caramel = false;
+                        }
+                        break;
+                    case "rdoSteviaSyrup":
+                        currentMenuInfo.Option_SteviaSugar = rb.Checked;
+                        break;
+                    case "rdoSyrupVanilla":
+                        currentMenuInfo.Option_Syrup_Vanilla = rb.Checked;
+                        break;
+                    case "rdoSyrupHazelnut":
+                        currentMenuInfo.Option_Syrup_Hazelnut = rb.Checked;
+                        break;
+                    case "rdoSyrupCaramel":
+                        currentMenuInfo.Option_Syrup_Caramel = rb.Checked;
+                        break;
+
+                    // 우유변경 - 선택안함
+                    case "rdoNoMilk":
+                        bool milkEnabled = !rdoNoMilk.Checked;
+                        rdoMilkOat.Enabled = milkEnabled;
+                        rdoMilkAlmond.Enabled = milkEnabled;
+                        rdoMilkSoy.Enabled = milkEnabled;
+
+                        if (rdoNoMilk.Checked)
+                        {
+                            currentMenuInfo.Option_Milk_Oat = false;
+                            currentMenuInfo.Option_Milk_Almond = false;
+                            currentMenuInfo.Option_Milk_Soy = false;
+                        }
+                        break;
+                    case "rdoMilkOat":
+                        currentMenuInfo.Option_Milk_Oat = rb.Checked;
+                        break;
+                    case "rdoMilkAlmond":
+                        currentMenuInfo.Option_Milk_Almond = rb.Checked;
+                        break;
+                    case "rdoMilkSoy":
+                        currentMenuInfo.Option_Milk_Soy = rb.Checked;
+                        break;
+
+                    // 샷추가 - 선택안함
+                    case "rdoNoShot":
+                        bool shotEnabled = !rdoNoShot.Checked;
+                        rdoShot.Enabled = shotEnabled;
+                        rdo2Shot.Enabled = shotEnabled;
+                        rdoDecaf2Shot.Enabled = shotEnabled;
+
+                        if (rdoNoShot.Checked)
+                        {
+                            currentMenuInfo.Option_Shot = false;
+                            currentMenuInfo.Option_2Shot = false;
+                            currentMenuInfo.Option_Decaf2Shot = 0;
+                        }
+                        break;
+                    case "rdoShot":
+                        currentMenuInfo.Option_Shot = rb.Checked;
+                        break;
+                    case "rdo2Shot":
+                        currentMenuInfo.Option_2Shot = rb.Checked;
+                        break;
+                    case "rdoDecaf2Shot":
+                        currentMenuInfo.Option_Decaf2Shot = rb.Checked ? 1 : 0;
+                        break;
+
+                    // 사이즈 - 선택안함
+                    case "rdoNoSize":
+                        bool sizeEnabled = !rdoNoSize.Checked;
+                        rdoSizeUp.Enabled = sizeEnabled;
+                        if (rdoNoSize.Checked)
+                            currentMenuInfo.Option_CupSizeUp = false;
+                        break;
+                    case "rdoSizeUp":
+                        currentMenuInfo.Option_CupSizeUp = rb.Checked;
+                        break;
+
+                    // 부가요소 - 드리즐(라디오)
+                    case "rdoDrizzleChocolate":
+                        if (rdoDrizzleChocolate.Checked) chkNoAddOns.Checked = false;
+                        currentMenuInfo.Option_Drizzle_Chocolate = rb.Checked;
+                        break;
+                    case "rdoDrizzleCaramel":
+                        if (rdoDrizzleCaramel.Checked) chkNoAddOns.Checked = false;
+                        currentMenuInfo.Option_Drizzle_Caramel = rb.Checked;
+                        break;
+                }
+            }
+            else if (sender is CheckBox cb)
+            {
+                switch (cb.Name)
+                {
+                    // 부가요소 - 선택안함
+                    case "chkNoAddOns":
+                        bool addOnEnabled = !chkNoAddOns.Checked;
+                        chkPearl.Enabled = addOnEnabled;
+                        chkWhippedCream.Enabled = addOnEnabled;
+                        gbDrizzleOptions.Enabled = addOnEnabled;
+
+                        if (!addOnEnabled)
+                        {
+                            chkPearl.Checked = false;
+                            chkWhippedCream.Checked = false;
+                            foreach (Control ctrl in gbDrizzleOptions.Controls)
+                            {
+                                if (ctrl is RadioButton drizzleRb)
+                                    drizzleRb.Checked = false;
+                            }
+                            currentMenuInfo.Option_Pearl = false;
+                            currentMenuInfo.Option_WhippedCream = false;
+                            currentMenuInfo.Option_Drizzle_Chocolate = false;
+                            currentMenuInfo.Option_Drizzle_Caramel = false;
+                        }
+                        break;
+
+                    // 부가요소 - 펄
+                    case "chkPearl":
+                        if (chkPearl.Checked) chkNoAddOns.Checked = false;
+                        currentMenuInfo.Option_Pearl = chkPearl.Checked;
+                        break;
+
+                    // 부가요소 - 휘핑크림
+                    case "chkWhippedCream":
+                        if (chkWhippedCream.Checked) chkNoAddOns.Checked = false;
+                        currentMenuInfo.Option_WhippedCream = chkWhippedCream.Checked;
+                        break;
                 }
             }
         }
 
-        private void chkPearl_CheckedChanged(object sender, EventArgs e)
+        ///////////////////////////메뉴 담기 코드/////////////////////////////////////////
+
+        /// <summary>
+        /// 모든 필수 옵션이 선택되었는지 확인
+        /// 각 그룹별로 반드시 하나 이상 선택되어야 메뉴담기 버튼 활성화
+        /// </summary>
+        private bool CheckAllOptionsSelected()
         {
-            if (chkPearl.Checked) chkNoAddOns.Checked = false;
+            // 무료옵션 체크
+            bool isFreeOptionValid = rdoNoFreeOption.Checked ||
+                                   (rdoIceMore.Checked || rdoIceLess.Checked ||
+                                    rdoLessSweet.Checked || rdoSweet.Checked);
+
+            // 시럽추가 체크
+            bool isSyrupValid = rdoNoSyrup.Checked ||
+                               (rdoSteviaSyrup.Checked || rdoSyrupVanilla.Checked ||
+                                rdoSyrupHazelnut.Checked || rdoSyrupCaramel.Checked);
+
+            // 우유변경 체크
+            bool isMilkValid = rdoNoMilk.Checked ||
+                              (rdoMilkOat.Checked || rdoMilkAlmond.Checked || rdoMilkSoy.Checked);
+
+            // 샷추가 체크
+            bool isShotValid = rdoNoShot.Checked ||
+                              (rdoShot.Checked || rdo2Shot.Checked || rdoDecaf2Shot.Checked);
+
+            // 사이즈 체크
+            bool isSizeValid = rdoNoSize.Checked || rdoSizeUp.Checked;
+
+            // 부가요소 체크 (선택안함 체크 시 다른 옵션 모두 해제됨)
+            bool isAddOnValid = chkNoAddOns.Checked ||
+                               (chkPearl.Checked || chkWhippedCream.Checked ||
+                                rdoDrizzleChocolate.Checked || rdoDrizzleCaramel.Checked);
+
+            // 모든 그룹이 유효해야 메뉴담기 버튼 활성화
+            return isFreeOptionValid && isSyrupValid && isMilkValid &&
+                   isShotValid && isSizeValid && isAddOnValid;
         }
 
-        private void chkWhippedCream_CheckedChanged(object sender, EventArgs e)
+        /// <summary>
+        /// 옵션 변경 시마다 호출
+        /// 메뉴담기 버튼 활성화/비활성화 상태 갱신
+        /// </summary>
+        private void UpdateOrderButtonState()
         {
-            if (chkWhippedCream.Checked) chkNoAddOns.Checked = false;
+            getMenu.Enabled = CheckAllOptionsSelected();
         }
 
-        private void rdoDrizzleChocolate_CheckedChanged(object sender, EventArgs e)
+        /// <summary>
+        /// 메뉴담기 버튼 클릭 시 호출
+        /// - 옵션 패널(tableLayoutPanel1) 숨김
+        /// - 실제 주문 처리 로직은 외부에서 currentMenuInfo 객체 사용
+        /// </summary>
+        private void getMenu_Click(object sender, EventArgs e)
         {
-            if (rdoDrizzleChocolate.Checked) chkNoAddOns.Checked = false;
+            tableLayoutPanel1.Visible = false; // 옵션 패널 숨김
+            // 여기에 실제 주문 처리 로직 추가 가능
         }
 
-        private void rdoDrizzleCaramel_CheckedChanged(object sender, EventArgs e)
+        /// <summary>
+        /// 돌아가기 버튼 클릭 시 호출
+        /// - 변경사항 무시하고 currentMenuInfo 객체를 새로 생성(초기화)
+        /// - 옵션 컨트롤 상태도 초기화
+        /// - 옵션 패널(tableLayoutPanel1) 숨김
+        /// </summary>
+        private void cancel_Click(object sender, EventArgs e)
         {
-            if (rdoDrizzleCaramel.Checked) chkNoAddOns.Checked = false;
+            if (currentMenuInfo != null)
+            {
+                // 현재 메뉴명으로 새 객체 생성(옵션 초기화)
+                currentMenuInfo = new MenuInformation(currentMenuInfo.MenuName);
+                SetDrinkCategory(currentMenuInfo); // UI 동기화
+            }
+            tableLayoutPanel1.Visible = false; // 옵션 패널 숨김
         }
-
-
-
     }
 }

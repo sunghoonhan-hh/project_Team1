@@ -147,7 +147,7 @@ namespace Kiosk
         public bool Option_Drizzle_Caramel { get; set; }
 
         // 11. 디카페인 샷 추가
-        public int Option_DecafShot { get; set; }
+        public int Option_Decaf2Shot { get; set; }
 
         // 생성자
         public MenuInformation(string name)
@@ -179,7 +179,7 @@ namespace Kiosk
             Option_WhippedCream = false;
             Option_Drizzle_Chocolate = false;
             Option_Drizzle_Caramel = false;
-            Option_DecafShot = 0;
+            Option_Decaf2Shot = 0;
         }
     }
 }
