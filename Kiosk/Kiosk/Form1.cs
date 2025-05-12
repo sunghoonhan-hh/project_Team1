@@ -256,15 +256,23 @@ namespace Kiosk
                     // 무료옵션 - 얼음/당도
                     case "rdoIceMore":
                         currentMenuInfo.Option_IceMore = rb.Checked;
+                        rdoIceLess.Enabled = !rb.Checked;
                         break;
+
                     case "rdoIceLess":
                         currentMenuInfo.Option_IceLess = rb.Checked;
+                        rdoIceMore.Enabled = !rb.Checked;
                         break;
+
+                    // 당도 옵션 상호배타적 비활성화
                     case "rdoLessSweet":
                         currentMenuInfo.Option_LessSweet = rb.Checked;
+                        rdoSweet.Enabled = !rb.Checked;
                         break;
+
                     case "rdoSweet":
                         currentMenuInfo.Option_Sweet = rb.Checked;
+                        rdoLessSweet.Enabled = !rb.Checked;
                         break;
 
                     // 시럽추가 - 선택안함
@@ -405,6 +413,18 @@ namespace Kiosk
                         currentMenuInfo.Option_WhippedCream = chkWhippedCream.Checked;
                         break;
                 }
+            }
+
+            if (!rdoIceMore.Checked && !rdoIceLess.Checked)
+            {
+                rdoIceMore.Enabled = true;
+                rdoIceLess.Enabled = true;
+            }
+            // 당도 옵션 둘 다 해제 시 다시 활성화
+            if (!rdoLessSweet.Checked && !rdoSweet.Checked)
+            {
+                rdoLessSweet.Enabled = true;
+                rdoSweet.Enabled = true;
             }
         }
 

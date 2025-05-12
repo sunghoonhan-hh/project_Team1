@@ -118,7 +118,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.66662F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.66662F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.000001F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(653, 803);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(653, 806);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // gbAddOns
@@ -129,9 +129,9 @@
             this.gbAddOns.Controls.Add(this.chkPearl);
             this.gbAddOns.Controls.Add(this.chkNoAddOns);
             this.gbAddOns.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbAddOns.Location = new System.Drawing.Point(3, 652);
+            this.gbAddOns.Location = new System.Drawing.Point(3, 658);
             this.gbAddOns.Name = "gbAddOns";
-            this.gbAddOns.Size = new System.Drawing.Size(647, 87);
+            this.gbAddOns.Size = new System.Drawing.Size(647, 88);
             this.gbAddOns.TabIndex = 5;
             this.gbAddOns.TabStop = false;
             this.gbAddOns.Text = "부가 요소(필수, 복수선택)";
@@ -209,7 +209,7 @@
             this.ChosenMenuImg.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ChosenMenuImg.Location = new System.Drawing.Point(3, 27);
             this.ChosenMenuImg.Name = "ChosenMenuImg";
-            this.ChosenMenuImg.Size = new System.Drawing.Size(185, 154);
+            this.ChosenMenuImg.Size = new System.Drawing.Size(185, 155);
             this.ChosenMenuImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ChosenMenuImg.TabIndex = 6;
             this.ChosenMenuImg.TabStop = false;
@@ -220,9 +220,9 @@
             this.gbSize.Controls.Add(this.rdoSizeUp);
             this.gbSize.Controls.Add(this.rdoNoSize);
             this.gbSize.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbSize.Location = new System.Drawing.Point(3, 559);
+            this.gbSize.Location = new System.Drawing.Point(3, 564);
             this.gbSize.Name = "gbSize";
-            this.gbSize.Size = new System.Drawing.Size(647, 87);
+            this.gbSize.Size = new System.Drawing.Size(647, 88);
             this.gbSize.TabIndex = 4;
             this.gbSize.TabStop = false;
             this.gbSize.Text = "사이즈(필수, 단일선택)";
@@ -257,9 +257,9 @@
             this.gbMilk.Controls.Add(this.gbMilkOptions);
             this.gbMilk.Controls.Add(this.rdoNoMilk);
             this.gbMilk.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbMilk.Location = new System.Drawing.Point(3, 373);
+            this.gbMilk.Location = new System.Drawing.Point(3, 376);
             this.gbMilk.Name = "gbMilk";
-            this.gbMilk.Size = new System.Drawing.Size(647, 87);
+            this.gbMilk.Size = new System.Drawing.Size(647, 88);
             this.gbMilk.TabIndex = 2;
             this.gbMilk.TabStop = false;
             this.gbMilk.Text = "우유 변경(필수, 단일선택)";
@@ -331,9 +331,9 @@
             this.gbFreeOptions.Controls.Add(this.gbIceOptions);
             this.gbFreeOptions.Controls.Add(this.rdoNoFreeOption);
             this.gbFreeOptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbFreeOptions.Location = new System.Drawing.Point(3, 187);
+            this.gbFreeOptions.Location = new System.Drawing.Point(3, 188);
             this.gbFreeOptions.Name = "gbFreeOptions";
-            this.gbFreeOptions.Size = new System.Drawing.Size(647, 87);
+            this.gbFreeOptions.Size = new System.Drawing.Size(647, 88);
             this.gbFreeOptions.TabIndex = 0;
             this.gbFreeOptions.TabStop = false;
             this.gbFreeOptions.Text = "-무료 옵션(필수, 단일선택)";
@@ -426,9 +426,9 @@
             this.gbShot.Controls.Add(this.gbShotOptions);
             this.gbShot.Controls.Add(this.rdoNoShot);
             this.gbShot.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbShot.Location = new System.Drawing.Point(3, 466);
+            this.gbShot.Location = new System.Drawing.Point(3, 470);
             this.gbShot.Name = "gbShot";
-            this.gbShot.Size = new System.Drawing.Size(647, 87);
+            this.gbShot.Size = new System.Drawing.Size(647, 88);
             this.gbShot.TabIndex = 3;
             this.gbShot.TabStop = false;
             this.gbShot.Text = "샷 추가(필수, 단일선택)";
@@ -500,9 +500,9 @@
             this.gbSyrup.Controls.Add(this.rdoSteviaSyrup);
             this.gbSyrup.Controls.Add(this.rdoNoSyrup);
             this.gbSyrup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbSyrup.Location = new System.Drawing.Point(3, 280);
+            this.gbSyrup.Location = new System.Drawing.Point(3, 282);
             this.gbSyrup.Name = "gbSyrup";
-            this.gbSyrup.Size = new System.Drawing.Size(647, 87);
+            this.gbSyrup.Size = new System.Drawing.Size(647, 88);
             this.gbSyrup.TabIndex = 1;
             this.gbSyrup.TabStop = false;
             this.gbSyrup.Text = "시럽 추가(필수, 단일선택)";
@@ -585,9 +585,9 @@
             this.CancelAndOrder.Controls.Add(this.cancel);
             this.CancelAndOrder.Controls.Add(this.getMenu);
             this.CancelAndOrder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CancelAndOrder.Location = new System.Drawing.Point(3, 745);
+            this.CancelAndOrder.Location = new System.Drawing.Point(3, 752);
             this.CancelAndOrder.Name = "CancelAndOrder";
-            this.CancelAndOrder.Size = new System.Drawing.Size(647, 55);
+            this.CancelAndOrder.Size = new System.Drawing.Size(647, 51);
             this.CancelAndOrder.TabIndex = 7;
             this.CancelAndOrder.TabStop = false;
             // 
@@ -641,7 +641,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(653, 803);
+            this.ClientSize = new System.Drawing.Size(653, 806);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Form1";
