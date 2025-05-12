@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\rex\\source\\repos\\project_team1\\kiosk\\kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\rex\\source\\repos\\project_team1\\kiosk\\kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\rex\\source\\repos\\project_team1\\kiosk\\kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\kiosk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\kiosk\\menuinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\menuinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\rex\\source\\repos\\project_team1\\kiosk\\kiosk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\kiosk\\selectcoffee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\selectcoffee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,20 +46,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "SelectCoffee.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\SelectCoffee.Designer.cs",
+              "RelativeDocumentMoniker": "Kiosk\\SelectCoffee.Designer.cs",
+              "ToolTip": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\SelectCoffee.Designer.cs",
+              "RelativeToolTip": "Kiosk\\SelectCoffee.Designer.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAYwK4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T14:06:46.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MenuInformation.cs",
+              "DocumentMoniker": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\MenuInformation.cs",
+              "RelativeDocumentMoniker": "Kiosk\\MenuInformation.cs",
+              "ToolTip": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\MenuInformation.cs",
+              "RelativeToolTip": "Kiosk\\MenuInformation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T14:02:28.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "SelectCoffee.cs",
               "DocumentMoniker": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\SelectCoffee.cs",
               "RelativeDocumentMoniker": "Kiosk\\SelectCoffee.cs",
               "ToolTip": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\SelectCoffee.cs",
               "RelativeToolTip": "Kiosk\\SelectCoffee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAgwPkAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T12:35:36.773Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\Program.cs",
               "RelativeDocumentMoniker": "Kiosk\\Program.cs",
@@ -64,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "SelectCoffee.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\SelectCoffee.cs",
               "RelativeDocumentMoniker": "Kiosk\\SelectCoffee.cs",
@@ -76,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\Form1.cs",
               "RelativeDocumentMoniker": "Kiosk\\Form1.cs",
