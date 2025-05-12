@@ -15,12 +15,15 @@ namespace Kiosk
 {
     public partial class SelectCoffee : Form
     {
-        private int remainingSeconds = 120;
+        // 남은 시간
+        private int leftTime = 120;
 
+        // 마지막으로 누른 버튼 및 표시된 이미지와 라벨 정보들
         private Button lastClickedButton = null;
         private List<PictureBox> shownPictures = new List<PictureBox>();
         private List<Label> shownPriceLabels = new List<Label>();
 
+        // 각 category의 실제 폴더명
         private Dictionary<string, string> categoryImageFolder = new Dictionary<string, string>()
         {
             { "에이드", "AdeJuice" },
@@ -33,6 +36,7 @@ namespace Kiosk
             { "티", "Tea" }
         };
 
+        // 각 음료의 가격
         private Dictionary<string, int> menuPrices = new Dictionary<string, int>()
         {
             // 에이드 주스
@@ -128,20 +132,27 @@ namespace Kiosk
             { "제로복숭아아이스티", 4000 }
         };
 
-        private string baseImagePath = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\..\Image"));
-
         public SelectCoffee()
         {
             InitializeComponent();
+
+            // 폼 크기 고정
+            this.Size = new Size(525, 721);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+
             CreateRoundedButtons();
         }
 
+        // 카테고리 버튼 생성
         private void CreateRoundedButtons()
         {
+            // 버튼 위치 및 이름
             int[] x = { 10, 110, 210, 310, 10, 110, 210, 310 };
             int[] y = { 20, 20, 20, 20, 65, 65, 65, 65 };
             string[] categories = { "에이드", "커피(ICE)", "커피(HOT)", "디카페인", "음료", "에스프레소", "스무디프라페", "티" };
 
+            // 화면에 버튼 동적 생성
             for (int i = 0; i < categories.Length; i++)
             {
                 Button btn = new Button();
@@ -169,6 +180,7 @@ namespace Kiosk
             }
         }
 
+        // 버튼의 클릭 이벤트 생성
         private void CategoryButton_Click(object sender, EventArgs e)
         {
             Button clickedButton = sender as Button;
@@ -188,6 +200,7 @@ namespace Kiosk
             ShowCategoryImages(category);
         }
 
+        // 버튼 클릭했을 때의 음료수 목록이 나오게 하는 함수
         private void ShowCategoryImages(string category)
         {
             // 이전에 표시된 이미지를 지우기
@@ -195,12 +208,15 @@ namespace Kiosk
                 Controls.Remove(pic);
             shownPictures.Clear();
 
+            // 이전에 표시된 가격표 지우기
             foreach (Label label in shownPriceLabels)
                 Controls.Remove(label);
             shownPriceLabels.Clear();
 
             if (!categoryImageFolder.ContainsKey(category)) return;
 
+            // 이미지를 폴더 주소
+            string baseImagePath = Path.GetFullPath(Path.Combine(Application.StartupPath, @"..\..\..\Image"));
             string folderName = categoryImageFolder[category];
             string categoryPath = Path.Combine(baseImagePath, folderName);
 
@@ -210,6 +226,7 @@ namespace Kiosk
                 return;
             }
 
+            // 이미지 가져오기
             string[] imageExtensions = new[] { "*.jpg" };
             List<string> imageFiles = new List<string>();
 
@@ -236,8 +253,8 @@ namespace Kiosk
                 picBox.SizeMode = PictureBoxSizeMode.StretchImage;
                 picBox.Image = menuInfo.MenuImage;
 
-                int row = i / 4;  // 가로 4개
-                int col = i % 4;  // 세로 3개
+                int row = i / 4;  // 가로 4
+                int col = i % 4;  // 세로 3
 
                 picBox.Location = new Point(40 + col * 110, 160 + row * 110); // 이미지 간 간격 조정
 
@@ -250,19 +267,17 @@ namespace Kiosk
                 priceLabel.Font = new Font("Maplestory Bold", 7, FontStyle.Regular);
                 priceLabel.TextAlign = ContentAlignment.MiddleCenter;
                 priceLabel.ForeColor = Color.Black;
-                priceLabel.Size = new Size(100, 25); // 고정된 크기
-                priceLabel.BackColor = Color.White; // 배경 투명하게
+                priceLabel.Size = new Size(100, 25);
+                priceLabel.BackColor = Color.White;
 
-                // 가운데 기준 위치 보정
+                // 글자를 가운데 정렬
                 int centerX = 90 + col * 110;
                 int topY = 130 + (row + 1) * 110;
                 priceLabel.Location = new Point(centerX - priceLabel.Width / 2, topY);
+                priceLabel.AutoSize = false;
+                priceLabel.MaximumSize = priceLabel.Size;
 
-                // 추가: 줄바꿈이 잘 되도록
-                priceLabel.AutoSize = false; // 고정 크기일 땐 false여야 함
-                priceLabel.MaximumSize = priceLabel.Size; // 최대 크기 제한
-
-
+                // 생성한 이미지와 가격표를 화면에 띄우기
                 shownPictures.Add(picBox);
                 Controls.Add(picBox);
                 shownPriceLabels.Add(priceLabel);
@@ -270,6 +285,7 @@ namespace Kiosk
             }
         }
 
+        // 둥근 경로를 그리는 함수
         private GraphicsPath CreateRoundPath(int width, int height, int radius)
         {
             GraphicsPath path = new GraphicsPath();
@@ -282,11 +298,12 @@ namespace Kiosk
             return path;
         }
 
+        // 남은 시간 줄이는 함수
         private void timer1_Tick(object sender, EventArgs e)
         {
-            remainingSeconds--;
+            leftTime--;
 
-            if (remainingSeconds <= 0)
+            if (leftTime <= 0)
             {
                 timer1.Stop();
                 Form1 home = new Form1();
@@ -296,13 +313,13 @@ namespace Kiosk
             }
             else
             {
-                label_Timer.Text = $"{remainingSeconds}초";
+                label_Timer.Text = $"{leftTime}초";
             }
         }
 
         private void SelectCoffee_Load(object sender, EventArgs e)
         {
-            label_Timer.Text = $"{remainingSeconds}초";
+            label_Timer.Text = $"{leftTime}초";
             timer1.Interval = 1000;
             timer1.Start();
         }
