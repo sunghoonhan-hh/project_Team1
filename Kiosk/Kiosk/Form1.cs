@@ -193,13 +193,28 @@ namespace Kiosk
         }
 
         /// <summary>
+        /// 얼음 옵션 & 사이즈 업그레이드 숨김 조건 판단
+        /// </summary>
+        private bool ShouldHideIceAndSize(MenuInformation menuInfo)
+        {
+            string[] excludeCategories = { "에스프레소", "커피(핫)" };
+            bool isHotInName = menuInfo.MenuName.Contains("(HOT)");
+            return excludeCategories.Contains(menuInfo.MenuHead) || isHotInName;
+        }
+
+
+        /// <summary>
         /// 메뉴 선택 또는 분류 변경 시 호출
-        /// 들어온 메뉴에 따라 덜달게 옵션은 특정 분류 항목들에게만 적용한다.
+        /// 들어온 메뉴에 따라 덜달게,얼음, 사이즈 옵션은 특정 분류 항목들에게만 적용한다.
         /// </summary>
         public void SetDrinkCategory(MenuInformation menuInfo)
         {
             currentMenuInfo = menuInfo;
             rdoLessSweet.Visible = ShouldShowLessSweet(menuInfo);
+
+            bool hideIceAndSize = ShouldHideIceAndSize(menuInfo);
+            gbIceOptions.Visible = !hideIceAndSize;  // 얼음 옵션 그룹
+            gbSize.Visible = !hideIceAndSize;        // 사이즈 업그레이드 그룹
         }
 
         /// <summary>
