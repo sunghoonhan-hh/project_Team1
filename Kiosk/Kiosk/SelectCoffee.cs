@@ -306,7 +306,7 @@ namespace Kiosk
             if (leftTime <= 0)
             {
                 timer1.Stop();
-                Form1 home = new Form1();
+                매장포장 home = new 매장포장();
                 home.Show();
                 this.Hide();
                 // 나중에는 this.Close()로 바꾸기
@@ -326,7 +326,7 @@ namespace Kiosk
 
         private void picture_Home_Click(object sender, EventArgs e)
         {
-            Form1 home = new Form1();
+            매장포장 home = new 매장포장();
             home.Show();
             this.Hide();
             // 나중에는 this.Close()로 바꾸기

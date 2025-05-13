@@ -21,7 +21,7 @@ namespace Kiosk
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new SelectCoffee());
+            Application.Run(new 매장포장());
         }
     }
 }
