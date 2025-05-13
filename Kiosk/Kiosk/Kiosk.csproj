@@ -58,6 +58,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Check_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +110,17 @@
     <EmbeddedResource Include="Payment_Form.resx">
       <DependentUpon>Payment_Form.cs</DependentUpon>
     </EmbeddedResource>
+=======
+    <Compile Include="MenuInformation.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SelectCoffee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectCoffee.Designer.cs">
+      <DependentUpon>SelectCoffee.cs</DependentUpon>
+    </Compile>
+>>>>>>> origin/최유완
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -119,6 +131,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SelectCoffee.resx">
+      <DependentUpon>SelectCoffee.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -133,6 +148,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <None Include="Resources\card.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +159,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\24076789_coupon_isometric.jpg" />
+=======
+    <None Include="Resources\cards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+>>>>>>> origin/최유완
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

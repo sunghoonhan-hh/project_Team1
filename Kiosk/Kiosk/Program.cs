@@ -20,7 +20,8 @@ namespace Kiosk
             list.Add(m);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Product_check_Form(list));
+
+            Application.Run(new SelectCoffee());
         }
     }
 }

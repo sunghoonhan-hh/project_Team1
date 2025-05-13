@@ -189,7 +189,6 @@ namespace Kiosk
                 MessageBox.Show($"오류 발생: {ex.Message}");
                 // 또는 로그 저장 등
             }
-
         }
     }
 }
