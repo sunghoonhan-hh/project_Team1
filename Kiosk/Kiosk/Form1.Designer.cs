@@ -107,9 +107,10 @@
             this.tableLayoutPanel1.Controls.Add(this.ChooseAllOption, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 9;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.000001F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.00027F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.66662F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.66663F));
@@ -117,8 +118,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.66662F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.66662F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.66662F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.000001F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(653, 806);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(933, 1209);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // gbAddOns
@@ -129,9 +130,11 @@
             this.gbAddOns.Controls.Add(this.chkPearl);
             this.gbAddOns.Controls.Add(this.chkNoAddOns);
             this.gbAddOns.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbAddOns.Location = new System.Drawing.Point(3, 658);
+            this.gbAddOns.Location = new System.Drawing.Point(4, 1010);
+            this.gbAddOns.Margin = new System.Windows.Forms.Padding(4);
             this.gbAddOns.Name = "gbAddOns";
-            this.gbAddOns.Size = new System.Drawing.Size(647, 88);
+            this.gbAddOns.Padding = new System.Windows.Forms.Padding(4);
+            this.gbAddOns.Size = new System.Drawing.Size(925, 133);
             this.gbAddOns.TabIndex = 5;
             this.gbAddOns.TabStop = false;
             this.gbAddOns.Text = "부가 요소(필수, 복수선택)";
@@ -140,9 +143,11 @@
             // 
             this.gbDrizzleOptions.Controls.Add(this.rdoDrizzleCaramel);
             this.gbDrizzleOptions.Controls.Add(this.rdoDrizzleChocolate);
-            this.gbDrizzleOptions.Location = new System.Drawing.Point(367, 21);
+            this.gbDrizzleOptions.Location = new System.Drawing.Point(524, 32);
+            this.gbDrizzleOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbDrizzleOptions.Name = "gbDrizzleOptions";
-            this.gbDrizzleOptions.Size = new System.Drawing.Size(225, 44);
+            this.gbDrizzleOptions.Padding = new System.Windows.Forms.Padding(4);
+            this.gbDrizzleOptions.Size = new System.Drawing.Size(321, 66);
             this.gbDrizzleOptions.TabIndex = 3;
             this.gbDrizzleOptions.TabStop = false;
             this.gbDrizzleOptions.Text = "드리즐 종류(+500, 택 1)";
@@ -150,9 +155,10 @@
             // rdoDrizzleCaramel
             // 
             this.rdoDrizzleCaramel.AutoSize = true;
-            this.rdoDrizzleCaramel.Location = new System.Drawing.Point(127, 17);
+            this.rdoDrizzleCaramel.Location = new System.Drawing.Point(181, 26);
+            this.rdoDrizzleCaramel.Margin = new System.Windows.Forms.Padding(4);
             this.rdoDrizzleCaramel.Name = "rdoDrizzleCaramel";
-            this.rdoDrizzleCaramel.Size = new System.Drawing.Size(59, 16);
+            this.rdoDrizzleCaramel.Size = new System.Drawing.Size(87, 22);
             this.rdoDrizzleCaramel.TabIndex = 1;
             this.rdoDrizzleCaramel.TabStop = true;
             this.rdoDrizzleCaramel.Text = "카라멜";
@@ -162,9 +168,10 @@
             // rdoDrizzleChocolate
             // 
             this.rdoDrizzleChocolate.AutoSize = true;
-            this.rdoDrizzleChocolate.Location = new System.Drawing.Point(0, 17);
+            this.rdoDrizzleChocolate.Location = new System.Drawing.Point(0, 26);
+            this.rdoDrizzleChocolate.Margin = new System.Windows.Forms.Padding(4);
             this.rdoDrizzleChocolate.Name = "rdoDrizzleChocolate";
-            this.rdoDrizzleChocolate.Size = new System.Drawing.Size(59, 16);
+            this.rdoDrizzleChocolate.Size = new System.Drawing.Size(87, 22);
             this.rdoDrizzleChocolate.TabIndex = 0;
             this.rdoDrizzleChocolate.TabStop = true;
             this.rdoDrizzleChocolate.Text = "초콜릿";
@@ -174,9 +181,10 @@
             // chkWhippedCream
             // 
             this.chkWhippedCream.AutoSize = true;
-            this.chkWhippedCream.Location = new System.Drawing.Point(219, 39);
+            this.chkWhippedCream.Location = new System.Drawing.Point(313, 58);
+            this.chkWhippedCream.Margin = new System.Windows.Forms.Padding(4);
             this.chkWhippedCream.Name = "chkWhippedCream";
-            this.chkWhippedCream.Size = new System.Drawing.Size(138, 16);
+            this.chkWhippedCream.Size = new System.Drawing.Size(205, 22);
             this.chkWhippedCream.TabIndex = 2;
             this.chkWhippedCream.Text = "휘핑크림 추가 (+500)";
             this.chkWhippedCream.UseVisualStyleBackColor = true;
@@ -185,9 +193,10 @@
             // chkPearl
             // 
             this.chkPearl.AutoSize = true;
-            this.chkPearl.Location = new System.Drawing.Point(111, 39);
+            this.chkPearl.Location = new System.Drawing.Point(159, 58);
+            this.chkPearl.Margin = new System.Windows.Forms.Padding(4);
             this.chkPearl.Name = "chkPearl";
-            this.chkPearl.Size = new System.Drawing.Size(102, 16);
+            this.chkPearl.Size = new System.Drawing.Size(151, 22);
             this.chkPearl.TabIndex = 1;
             this.chkPearl.Text = "펄 추가 (+500)";
             this.chkPearl.UseVisualStyleBackColor = true;
@@ -196,9 +205,10 @@
             // chkNoAddOns
             // 
             this.chkNoAddOns.AutoSize = true;
-            this.chkNoAddOns.Location = new System.Drawing.Point(7, 41);
+            this.chkNoAddOns.Location = new System.Drawing.Point(10, 62);
+            this.chkNoAddOns.Margin = new System.Windows.Forms.Padding(4);
             this.chkNoAddOns.Name = "chkNoAddOns";
-            this.chkNoAddOns.Size = new System.Drawing.Size(98, 16);
+            this.chkNoAddOns.Size = new System.Drawing.Size(143, 22);
             this.chkNoAddOns.TabIndex = 0;
             this.chkNoAddOns.Text = "선택안함 (+0)";
             this.chkNoAddOns.UseVisualStyleBackColor = true;
@@ -207,9 +217,10 @@
             // ChosenMenuImg
             // 
             this.ChosenMenuImg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ChosenMenuImg.Location = new System.Drawing.Point(3, 27);
+            this.ChosenMenuImg.Location = new System.Drawing.Point(4, 64);
+            this.ChosenMenuImg.Margin = new System.Windows.Forms.Padding(4);
             this.ChosenMenuImg.Name = "ChosenMenuImg";
-            this.ChosenMenuImg.Size = new System.Drawing.Size(185, 155);
+            this.ChosenMenuImg.Size = new System.Drawing.Size(264, 233);
             this.ChosenMenuImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ChosenMenuImg.TabIndex = 6;
             this.ChosenMenuImg.TabStop = false;
@@ -220,9 +231,11 @@
             this.gbSize.Controls.Add(this.rdoSizeUp);
             this.gbSize.Controls.Add(this.rdoNoSize);
             this.gbSize.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbSize.Location = new System.Drawing.Point(3, 564);
+            this.gbSize.Location = new System.Drawing.Point(4, 869);
+            this.gbSize.Margin = new System.Windows.Forms.Padding(4);
             this.gbSize.Name = "gbSize";
-            this.gbSize.Size = new System.Drawing.Size(647, 88);
+            this.gbSize.Padding = new System.Windows.Forms.Padding(4);
+            this.gbSize.Size = new System.Drawing.Size(925, 133);
             this.gbSize.TabIndex = 4;
             this.gbSize.TabStop = false;
             this.gbSize.Text = "사이즈(필수, 단일선택)";
@@ -230,9 +243,10 @@
             // rdoSizeUp
             // 
             this.rdoSizeUp.AutoSize = true;
-            this.rdoSizeUp.Location = new System.Drawing.Point(140, 38);
+            this.rdoSizeUp.Location = new System.Drawing.Point(200, 57);
+            this.rdoSizeUp.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSizeUp.Name = "rdoSizeUp";
-            this.rdoSizeUp.Size = new System.Drawing.Size(183, 16);
+            this.rdoSizeUp.Size = new System.Drawing.Size(274, 22);
             this.rdoSizeUp.TabIndex = 1;
             this.rdoSizeUp.TabStop = true;
             this.rdoSizeUp.Text = "컵 사이즈 업그레이드 (+1000)";
@@ -242,9 +256,10 @@
             // rdoNoSize
             // 
             this.rdoNoSize.AutoSize = true;
-            this.rdoNoSize.Location = new System.Drawing.Point(9, 39);
+            this.rdoNoSize.Location = new System.Drawing.Point(13, 58);
+            this.rdoNoSize.Margin = new System.Windows.Forms.Padding(4);
             this.rdoNoSize.Name = "rdoNoSize";
-            this.rdoNoSize.Size = new System.Drawing.Size(97, 16);
+            this.rdoNoSize.Size = new System.Drawing.Size(142, 22);
             this.rdoNoSize.TabIndex = 0;
             this.rdoNoSize.TabStop = true;
             this.rdoNoSize.Text = "선택안함 (+0)";
@@ -257,9 +272,11 @@
             this.gbMilk.Controls.Add(this.gbMilkOptions);
             this.gbMilk.Controls.Add(this.rdoNoMilk);
             this.gbMilk.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbMilk.Location = new System.Drawing.Point(3, 376);
+            this.gbMilk.Location = new System.Drawing.Point(4, 587);
+            this.gbMilk.Margin = new System.Windows.Forms.Padding(4);
             this.gbMilk.Name = "gbMilk";
-            this.gbMilk.Size = new System.Drawing.Size(647, 88);
+            this.gbMilk.Padding = new System.Windows.Forms.Padding(4);
+            this.gbMilk.Size = new System.Drawing.Size(925, 133);
             this.gbMilk.TabIndex = 2;
             this.gbMilk.TabStop = false;
             this.gbMilk.Text = "우유 변경(필수, 단일선택)";
@@ -269,9 +286,11 @@
             this.gbMilkOptions.Controls.Add(this.rdoMilkSoy);
             this.gbMilkOptions.Controls.Add(this.rdoMilkAlmond);
             this.gbMilkOptions.Controls.Add(this.rdoMilkOat);
-            this.gbMilkOptions.Location = new System.Drawing.Point(140, 31);
+            this.gbMilkOptions.Location = new System.Drawing.Point(200, 46);
+            this.gbMilkOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbMilkOptions.Name = "gbMilkOptions";
-            this.gbMilkOptions.Size = new System.Drawing.Size(316, 37);
+            this.gbMilkOptions.Padding = new System.Windows.Forms.Padding(4);
+            this.gbMilkOptions.Size = new System.Drawing.Size(451, 56);
             this.gbMilkOptions.TabIndex = 1;
             this.gbMilkOptions.TabStop = false;
             this.gbMilkOptions.Text = "우유(+700, 택 1)";
@@ -279,9 +298,10 @@
             // rdoMilkSoy
             // 
             this.rdoMilkSoy.AutoSize = true;
-            this.rdoMilkSoy.Location = new System.Drawing.Point(240, 15);
+            this.rdoMilkSoy.Location = new System.Drawing.Point(343, 22);
+            this.rdoMilkSoy.Margin = new System.Windows.Forms.Padding(4);
             this.rdoMilkSoy.Name = "rdoMilkSoy";
-            this.rdoMilkSoy.Size = new System.Drawing.Size(75, 16);
+            this.rdoMilkSoy.Size = new System.Drawing.Size(111, 22);
             this.rdoMilkSoy.TabIndex = 2;
             this.rdoMilkSoy.TabStop = true;
             this.rdoMilkSoy.Text = "두유 변경";
@@ -291,9 +311,10 @@
             // rdoMilkAlmond
             // 
             this.rdoMilkAlmond.AutoSize = true;
-            this.rdoMilkAlmond.Location = new System.Drawing.Point(112, 15);
+            this.rdoMilkAlmond.Location = new System.Drawing.Point(160, 22);
+            this.rdoMilkAlmond.Margin = new System.Windows.Forms.Padding(4);
             this.rdoMilkAlmond.Name = "rdoMilkAlmond";
-            this.rdoMilkAlmond.Size = new System.Drawing.Size(115, 16);
+            this.rdoMilkAlmond.Size = new System.Drawing.Size(171, 22);
             this.rdoMilkAlmond.TabIndex = 1;
             this.rdoMilkAlmond.TabStop = true;
             this.rdoMilkAlmond.Text = "아몬드 우유 변경";
@@ -303,9 +324,10 @@
             // rdoMilkOat
             // 
             this.rdoMilkOat.AutoSize = true;
-            this.rdoMilkOat.Location = new System.Drawing.Point(7, 15);
+            this.rdoMilkOat.Location = new System.Drawing.Point(10, 22);
+            this.rdoMilkOat.Margin = new System.Windows.Forms.Padding(4);
             this.rdoMilkOat.Name = "rdoMilkOat";
-            this.rdoMilkOat.Size = new System.Drawing.Size(103, 16);
+            this.rdoMilkOat.Size = new System.Drawing.Size(153, 22);
             this.rdoMilkOat.TabIndex = 0;
             this.rdoMilkOat.TabStop = true;
             this.rdoMilkOat.Text = "오트 우유 변경";
@@ -315,9 +337,10 @@
             // rdoNoMilk
             // 
             this.rdoNoMilk.AutoSize = true;
-            this.rdoNoMilk.Location = new System.Drawing.Point(10, 42);
+            this.rdoNoMilk.Location = new System.Drawing.Point(14, 63);
+            this.rdoNoMilk.Margin = new System.Windows.Forms.Padding(4);
             this.rdoNoMilk.Name = "rdoNoMilk";
-            this.rdoNoMilk.Size = new System.Drawing.Size(97, 16);
+            this.rdoNoMilk.Size = new System.Drawing.Size(142, 22);
             this.rdoNoMilk.TabIndex = 0;
             this.rdoNoMilk.TabStop = true;
             this.rdoNoMilk.Text = "선택안함 (+0)";
@@ -331,9 +354,11 @@
             this.gbFreeOptions.Controls.Add(this.gbIceOptions);
             this.gbFreeOptions.Controls.Add(this.rdoNoFreeOption);
             this.gbFreeOptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbFreeOptions.Location = new System.Drawing.Point(3, 188);
+            this.gbFreeOptions.Location = new System.Drawing.Point(4, 305);
+            this.gbFreeOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbFreeOptions.Name = "gbFreeOptions";
-            this.gbFreeOptions.Size = new System.Drawing.Size(647, 88);
+            this.gbFreeOptions.Padding = new System.Windows.Forms.Padding(4);
+            this.gbFreeOptions.Size = new System.Drawing.Size(925, 133);
             this.gbFreeOptions.TabIndex = 0;
             this.gbFreeOptions.TabStop = false;
             this.gbFreeOptions.Text = "-무료 옵션(필수, 단일선택)";
@@ -342,9 +367,11 @@
             // 
             this.gbSweetnessOptions.Controls.Add(this.rdoLessSweet);
             this.gbSweetnessOptions.Controls.Add(this.rdoSweet);
-            this.gbSweetnessOptions.Location = new System.Drawing.Point(361, 27);
+            this.gbSweetnessOptions.Location = new System.Drawing.Point(516, 40);
+            this.gbSweetnessOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbSweetnessOptions.Name = "gbSweetnessOptions";
-            this.gbSweetnessOptions.Size = new System.Drawing.Size(177, 44);
+            this.gbSweetnessOptions.Padding = new System.Windows.Forms.Padding(4);
+            this.gbSweetnessOptions.Size = new System.Drawing.Size(253, 66);
             this.gbSweetnessOptions.TabIndex = 6;
             this.gbSweetnessOptions.TabStop = false;
             this.gbSweetnessOptions.Text = "당도(선택)";
@@ -352,9 +379,10 @@
             // rdoLessSweet
             // 
             this.rdoLessSweet.AutoSize = true;
-            this.rdoLessSweet.Location = new System.Drawing.Point(6, 19);
+            this.rdoLessSweet.Location = new System.Drawing.Point(9, 28);
+            this.rdoLessSweet.Margin = new System.Windows.Forms.Padding(4);
             this.rdoLessSweet.Name = "rdoLessSweet";
-            this.rdoLessSweet.Size = new System.Drawing.Size(85, 16);
+            this.rdoLessSweet.Size = new System.Drawing.Size(124, 22);
             this.rdoLessSweet.TabIndex = 3;
             this.rdoLessSweet.TabStop = true;
             this.rdoLessSweet.Text = "덜달게 (+0)";
@@ -364,9 +392,10 @@
             // rdoSweet
             // 
             this.rdoSweet.AutoSize = true;
-            this.rdoSweet.Location = new System.Drawing.Point(97, 18);
+            this.rdoSweet.Location = new System.Drawing.Point(139, 27);
+            this.rdoSweet.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSweet.Name = "rdoSweet";
-            this.rdoSweet.Size = new System.Drawing.Size(73, 16);
+            this.rdoSweet.Size = new System.Drawing.Size(106, 22);
             this.rdoSweet.TabIndex = 4;
             this.rdoSweet.TabStop = true;
             this.rdoSweet.Text = "달게 (+0)";
@@ -377,9 +406,11 @@
             // 
             this.gbIceOptions.Controls.Add(this.rdoIceMore);
             this.gbIceOptions.Controls.Add(this.rdoIceLess);
-            this.gbIceOptions.Location = new System.Drawing.Point(122, 27);
+            this.gbIceOptions.Location = new System.Drawing.Point(174, 40);
+            this.gbIceOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbIceOptions.Name = "gbIceOptions";
-            this.gbIceOptions.Size = new System.Drawing.Size(211, 37);
+            this.gbIceOptions.Padding = new System.Windows.Forms.Padding(4);
+            this.gbIceOptions.Size = new System.Drawing.Size(301, 56);
             this.gbIceOptions.TabIndex = 5;
             this.gbIceOptions.TabStop = false;
             this.gbIceOptions.Text = "얼음(선택)";
@@ -387,9 +418,10 @@
             // rdoIceMore
             // 
             this.rdoIceMore.AutoSize = true;
-            this.rdoIceMore.Location = new System.Drawing.Point(6, 20);
+            this.rdoIceMore.Location = new System.Drawing.Point(9, 30);
+            this.rdoIceMore.Margin = new System.Windows.Forms.Padding(4);
             this.rdoIceMore.Name = "rdoIceMore";
-            this.rdoIceMore.Size = new System.Drawing.Size(101, 16);
+            this.rdoIceMore.Size = new System.Drawing.Size(148, 22);
             this.rdoIceMore.TabIndex = 1;
             this.rdoIceMore.TabStop = true;
             this.rdoIceMore.Text = "얼음 많이 (+0)";
@@ -399,9 +431,10 @@
             // rdoIceLess
             // 
             this.rdoIceLess.AutoSize = true;
-            this.rdoIceLess.Location = new System.Drawing.Point(113, 20);
+            this.rdoIceLess.Location = new System.Drawing.Point(161, 30);
+            this.rdoIceLess.Margin = new System.Windows.Forms.Padding(4);
             this.rdoIceLess.Name = "rdoIceLess";
-            this.rdoIceLess.Size = new System.Drawing.Size(101, 16);
+            this.rdoIceLess.Size = new System.Drawing.Size(148, 22);
             this.rdoIceLess.TabIndex = 2;
             this.rdoIceLess.TabStop = true;
             this.rdoIceLess.Text = "얼음 적게 (+0)";
@@ -411,9 +444,10 @@
             // rdoNoFreeOption
             // 
             this.rdoNoFreeOption.AutoSize = true;
-            this.rdoNoFreeOption.Location = new System.Drawing.Point(9, 40);
+            this.rdoNoFreeOption.Location = new System.Drawing.Point(13, 60);
+            this.rdoNoFreeOption.Margin = new System.Windows.Forms.Padding(4);
             this.rdoNoFreeOption.Name = "rdoNoFreeOption";
-            this.rdoNoFreeOption.Size = new System.Drawing.Size(97, 16);
+            this.rdoNoFreeOption.Size = new System.Drawing.Size(142, 22);
             this.rdoNoFreeOption.TabIndex = 0;
             this.rdoNoFreeOption.TabStop = true;
             this.rdoNoFreeOption.Text = "선택안함 (+0)";
@@ -426,9 +460,11 @@
             this.gbShot.Controls.Add(this.gbShotOptions);
             this.gbShot.Controls.Add(this.rdoNoShot);
             this.gbShot.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbShot.Location = new System.Drawing.Point(3, 470);
+            this.gbShot.Location = new System.Drawing.Point(4, 728);
+            this.gbShot.Margin = new System.Windows.Forms.Padding(4);
             this.gbShot.Name = "gbShot";
-            this.gbShot.Size = new System.Drawing.Size(647, 88);
+            this.gbShot.Padding = new System.Windows.Forms.Padding(4);
+            this.gbShot.Size = new System.Drawing.Size(925, 133);
             this.gbShot.TabIndex = 3;
             this.gbShot.TabStop = false;
             this.gbShot.Text = "샷 추가(필수, 단일선택)";
@@ -438,9 +474,11 @@
             this.gbShotOptions.Controls.Add(this.rdoDecaf2Shot);
             this.gbShotOptions.Controls.Add(this.rdo2Shot);
             this.gbShotOptions.Controls.Add(this.rdoShot);
-            this.gbShotOptions.Location = new System.Drawing.Point(140, 31);
+            this.gbShotOptions.Location = new System.Drawing.Point(200, 46);
+            this.gbShotOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbShotOptions.Name = "gbShotOptions";
-            this.gbShotOptions.Size = new System.Drawing.Size(415, 37);
+            this.gbShotOptions.Padding = new System.Windows.Forms.Padding(4);
+            this.gbShotOptions.Size = new System.Drawing.Size(593, 56);
             this.gbShotOptions.TabIndex = 1;
             this.gbShotOptions.TabStop = false;
             this.gbShotOptions.Text = "샷 종류(선택)";
@@ -448,9 +486,10 @@
             // rdoDecaf2Shot
             // 
             this.rdoDecaf2Shot.AutoSize = true;
-            this.rdoDecaf2Shot.Location = new System.Drawing.Point(240, 15);
+            this.rdoDecaf2Shot.Location = new System.Drawing.Point(343, 22);
+            this.rdoDecaf2Shot.Margin = new System.Windows.Forms.Padding(4);
             this.rdoDecaf2Shot.Name = "rdoDecaf2Shot";
-            this.rdoDecaf2Shot.Size = new System.Drawing.Size(159, 16);
+            this.rdoDecaf2Shot.Size = new System.Drawing.Size(238, 22);
             this.rdoDecaf2Shot.TabIndex = 2;
             this.rdoDecaf2Shot.TabStop = true;
             this.rdoDecaf2Shot.Text = "디카페인 2샷 추가 (+800)";
@@ -460,9 +499,10 @@
             // rdo2Shot
             // 
             this.rdo2Shot.AutoSize = true;
-            this.rdo2Shot.Location = new System.Drawing.Point(127, 15);
+            this.rdo2Shot.Location = new System.Drawing.Point(181, 22);
+            this.rdo2Shot.Margin = new System.Windows.Forms.Padding(4);
             this.rdo2Shot.Name = "rdo2Shot";
-            this.rdo2Shot.Size = new System.Drawing.Size(107, 16);
+            this.rdo2Shot.Size = new System.Drawing.Size(160, 22);
             this.rdo2Shot.TabIndex = 1;
             this.rdo2Shot.TabStop = true;
             this.rdo2Shot.Text = "2샷 추가 (+500)";
@@ -472,9 +512,10 @@
             // rdoShot
             // 
             this.rdoShot.AutoSize = true;
-            this.rdoShot.Location = new System.Drawing.Point(7, 15);
+            this.rdoShot.Location = new System.Drawing.Point(10, 22);
+            this.rdoShot.Margin = new System.Windows.Forms.Padding(4);
             this.rdoShot.Name = "rdoShot";
-            this.rdoShot.Size = new System.Drawing.Size(107, 16);
+            this.rdoShot.Size = new System.Drawing.Size(160, 22);
             this.rdoShot.TabIndex = 0;
             this.rdoShot.TabStop = true;
             this.rdoShot.Text = "1샷 추가 (+300)";
@@ -484,9 +525,10 @@
             // rdoNoShot
             // 
             this.rdoNoShot.AutoSize = true;
-            this.rdoNoShot.Location = new System.Drawing.Point(7, 43);
+            this.rdoNoShot.Location = new System.Drawing.Point(10, 64);
+            this.rdoNoShot.Margin = new System.Windows.Forms.Padding(4);
             this.rdoNoShot.Name = "rdoNoShot";
-            this.rdoNoShot.Size = new System.Drawing.Size(97, 16);
+            this.rdoNoShot.Size = new System.Drawing.Size(142, 22);
             this.rdoNoShot.TabIndex = 0;
             this.rdoNoShot.TabStop = true;
             this.rdoNoShot.Text = "선택안함 (+0)";
@@ -500,9 +542,11 @@
             this.gbSyrup.Controls.Add(this.rdoSteviaSyrup);
             this.gbSyrup.Controls.Add(this.rdoNoSyrup);
             this.gbSyrup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbSyrup.Location = new System.Drawing.Point(3, 282);
+            this.gbSyrup.Location = new System.Drawing.Point(4, 446);
+            this.gbSyrup.Margin = new System.Windows.Forms.Padding(4);
             this.gbSyrup.Name = "gbSyrup";
-            this.gbSyrup.Size = new System.Drawing.Size(647, 88);
+            this.gbSyrup.Padding = new System.Windows.Forms.Padding(4);
+            this.gbSyrup.Size = new System.Drawing.Size(925, 133);
             this.gbSyrup.TabIndex = 1;
             this.gbSyrup.TabStop = false;
             this.gbSyrup.Text = "시럽 추가(필수, 단일선택)";
@@ -512,9 +556,11 @@
             this.gbSyrupOptions.Controls.Add(this.rdoSyrupCaramel);
             this.gbSyrupOptions.Controls.Add(this.rdoSyrupHazelnut);
             this.gbSyrupOptions.Controls.Add(this.rdoSyrupVanilla);
-            this.gbSyrupOptions.Location = new System.Drawing.Point(273, 20);
+            this.gbSyrupOptions.Location = new System.Drawing.Point(390, 30);
+            this.gbSyrupOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbSyrupOptions.Name = "gbSyrupOptions";
-            this.gbSyrupOptions.Size = new System.Drawing.Size(368, 41);
+            this.gbSyrupOptions.Padding = new System.Windows.Forms.Padding(4);
+            this.gbSyrupOptions.Size = new System.Drawing.Size(526, 62);
             this.gbSyrupOptions.TabIndex = 2;
             this.gbSyrupOptions.TabStop = false;
             this.gbSyrupOptions.Text = "시럽 (+500, 택 1)";
@@ -522,9 +568,10 @@
             // rdoSyrupCaramel
             // 
             this.rdoSyrupCaramel.AutoSize = true;
-            this.rdoSyrupCaramel.Location = new System.Drawing.Point(253, 16);
+            this.rdoSyrupCaramel.Location = new System.Drawing.Point(361, 24);
+            this.rdoSyrupCaramel.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSyrupCaramel.Name = "rdoSyrupCaramel";
-            this.rdoSyrupCaramel.Size = new System.Drawing.Size(115, 16);
+            this.rdoSyrupCaramel.Size = new System.Drawing.Size(171, 22);
             this.rdoSyrupCaramel.TabIndex = 2;
             this.rdoSyrupCaramel.TabStop = true;
             this.rdoSyrupCaramel.Text = "카라멜 시럽 추가";
@@ -534,9 +581,10 @@
             // rdoSyrupHazelnut
             // 
             this.rdoSyrupHazelnut.AutoSize = true;
-            this.rdoSyrupHazelnut.Location = new System.Drawing.Point(128, 16);
+            this.rdoSyrupHazelnut.Location = new System.Drawing.Point(183, 24);
+            this.rdoSyrupHazelnut.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSyrupHazelnut.Name = "rdoSyrupHazelnut";
-            this.rdoSyrupHazelnut.Size = new System.Drawing.Size(127, 16);
+            this.rdoSyrupHazelnut.Size = new System.Drawing.Size(189, 22);
             this.rdoSyrupHazelnut.TabIndex = 1;
             this.rdoSyrupHazelnut.TabStop = true;
             this.rdoSyrupHazelnut.Text = "헤이즐넛 시럽 추가";
@@ -546,9 +594,10 @@
             // rdoSyrupVanilla
             // 
             this.rdoSyrupVanilla.AutoSize = true;
-            this.rdoSyrupVanilla.Location = new System.Drawing.Point(7, 16);
+            this.rdoSyrupVanilla.Location = new System.Drawing.Point(10, 24);
+            this.rdoSyrupVanilla.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSyrupVanilla.Name = "rdoSyrupVanilla";
-            this.rdoSyrupVanilla.Size = new System.Drawing.Size(115, 16);
+            this.rdoSyrupVanilla.Size = new System.Drawing.Size(171, 22);
             this.rdoSyrupVanilla.TabIndex = 0;
             this.rdoSyrupVanilla.TabStop = true;
             this.rdoSyrupVanilla.Text = "바닐라 시럽 추가";
@@ -558,9 +607,10 @@
             // rdoSteviaSyrup
             // 
             this.rdoSteviaSyrup.AutoSize = true;
-            this.rdoSteviaSyrup.Location = new System.Drawing.Point(108, 41);
+            this.rdoSteviaSyrup.Location = new System.Drawing.Point(154, 62);
+            this.rdoSteviaSyrup.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSteviaSyrup.Name = "rdoSteviaSyrup";
-            this.rdoSteviaSyrup.Size = new System.Drawing.Size(167, 16);
+            this.rdoSteviaSyrup.Size = new System.Drawing.Size(246, 22);
             this.rdoSteviaSyrup.TabIndex = 1;
             this.rdoSteviaSyrup.TabStop = true;
             this.rdoSteviaSyrup.Text = "스테비아(저당)추가 (+500)";
@@ -570,9 +620,10 @@
             // rdoNoSyrup
             // 
             this.rdoNoSyrup.AutoSize = true;
-            this.rdoNoSyrup.Location = new System.Drawing.Point(10, 41);
+            this.rdoNoSyrup.Location = new System.Drawing.Point(14, 62);
+            this.rdoNoSyrup.Margin = new System.Windows.Forms.Padding(4);
             this.rdoNoSyrup.Name = "rdoNoSyrup";
-            this.rdoNoSyrup.Size = new System.Drawing.Size(97, 16);
+            this.rdoNoSyrup.Size = new System.Drawing.Size(142, 22);
             this.rdoNoSyrup.TabIndex = 0;
             this.rdoNoSyrup.TabStop = true;
             this.rdoNoSyrup.Text = "선택안함 (+0)";
@@ -585,17 +636,20 @@
             this.CancelAndOrder.Controls.Add(this.cancel);
             this.CancelAndOrder.Controls.Add(this.getMenu);
             this.CancelAndOrder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CancelAndOrder.Location = new System.Drawing.Point(3, 752);
+            this.CancelAndOrder.Location = new System.Drawing.Point(4, 1151);
+            this.CancelAndOrder.Margin = new System.Windows.Forms.Padding(4);
             this.CancelAndOrder.Name = "CancelAndOrder";
-            this.CancelAndOrder.Size = new System.Drawing.Size(647, 51);
+            this.CancelAndOrder.Padding = new System.Windows.Forms.Padding(4);
+            this.CancelAndOrder.Size = new System.Drawing.Size(925, 54);
             this.CancelAndOrder.TabIndex = 7;
             this.CancelAndOrder.TabStop = false;
             // 
             // cancel
             // 
-            this.cancel.Location = new System.Drawing.Point(391, 21);
+            this.cancel.Location = new System.Drawing.Point(559, 32);
+            this.cancel.Margin = new System.Windows.Forms.Padding(4);
             this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(164, 23);
+            this.cancel.Size = new System.Drawing.Size(234, 34);
             this.cancel.TabIndex = 1;
             this.cancel.Text = "돌아가기";
             this.cancel.UseVisualStyleBackColor = true;
@@ -603,9 +657,10 @@
             // 
             // getMenu
             // 
-            this.getMenu.Location = new System.Drawing.Point(31, 21);
+            this.getMenu.Location = new System.Drawing.Point(44, 32);
+            this.getMenu.Margin = new System.Windows.Forms.Padding(4);
             this.getMenu.Name = "getMenu";
-            this.getMenu.Size = new System.Drawing.Size(182, 23);
+            this.getMenu.Size = new System.Drawing.Size(260, 34);
             this.getMenu.TabIndex = 0;
             this.getMenu.Text = "메뉴담기";
             this.getMenu.UseVisualStyleBackColor = true;
@@ -614,11 +669,12 @@
             // menuName
             // 
             this.menuName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.menuName.Font = new System.Drawing.Font("휴먼둥근헤드라인", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.menuName.Location = new System.Drawing.Point(194, 27);
+            this.menuName.Font = new System.Drawing.Font("Headline R", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.menuName.Location = new System.Drawing.Point(276, 64);
+            this.menuName.Margin = new System.Windows.Forms.Padding(4);
             this.menuName.Name = "menuName";
             this.menuName.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.menuName.Size = new System.Drawing.Size(456, 45);
+            this.menuName.Size = new System.Drawing.Size(653, 63);
             this.menuName.TabIndex = 8;
             this.menuName.Text = "";
             // 
@@ -627,24 +683,28 @@
             this.ChooseAllOption.BackColor = System.Drawing.Color.Gold;
             this.tableLayoutPanel1.SetColumnSpan(this.ChooseAllOption, 2);
             this.ChooseAllOption.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ChooseAllOption.Font = new System.Drawing.Font("휴먼엑스포", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ChooseAllOption.Font = new System.Drawing.Font("Expo M", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ChooseAllOption.ForeColor = System.Drawing.Color.Black;
-            this.ChooseAllOption.Location = new System.Drawing.Point(3, 3);
+            this.ChooseAllOption.Location = new System.Drawing.Point(4, 4);
+            this.ChooseAllOption.Margin = new System.Windows.Forms.Padding(4);
             this.ChooseAllOption.Name = "ChooseAllOption";
             this.ChooseAllOption.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.ChooseAllOption.Size = new System.Drawing.Size(647, 18);
+            this.ChooseAllOption.Size = new System.Drawing.Size(925, 52);
             this.ChooseAllOption.TabIndex = 9;
             this.ChooseAllOption.Text = "선택하신 상품의 옵션상품을 모두 선택해주세요";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(653, 806);
+            this.ClientSize = new System.Drawing.Size(933, 1209);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Shown += new System.EventHandler(this.Form1_Shown);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.gbAddOns.ResumeLayout(false);
             this.gbAddOns.PerformLayout();

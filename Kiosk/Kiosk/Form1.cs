@@ -30,16 +30,16 @@ namespace Kiosk
     { "왕메가카페라떼", "커피(아이스)" },
     { "왕메가헛개리카노", "커피(아이스)" },
     { "왕할메가커피", "커피(아이스)" },
-    { "콜드브루디카페인", "커피(아이스)" },
-    { "콜드브루디카페인라떼", "커피(아이스)" },
+    { "콜드브루디카페인(ICE)", "커피(아이스)" },
+    { "콜드브루디카페인라떼(ICE)", "커피(아이스)" },
     { "할메가미숫커피", "커피(아이스)" },
     { "할메가커피", "커피(아이스)" },
-    { "헛개리카노", "커피(아이스)" },
+    { "헛개리카노(ICE)", "커피(아이스)" },
 
     // 3. 커피(핫)
-    { "콜드브루디카페인", "커피(핫)" },
-    { "콜드브루디카페인라떼", "커피(핫)" },
-    { "헛개리카노", "커피(핫)" },
+    { "콜드브루디카페인(HOT)", "커피(핫)" },
+    { "콜드브루디카페인라떼(HOT)", "커피(핫)" },
+    { "헛개리카노(HOT)", "커피(핫)" },
 
     // 4. 디카페인
     { "디카페인꿀아메리카노(ICE)", "디카페인" },
@@ -113,12 +113,20 @@ namespace Kiosk
         #endregion
 
         // 현재 선택된 메뉴의 정보(참조로 넘어옴, 옵션 선택 결과도 이 객체에 저장)
-        private MenuInformation currentMenuInfo;
+        private MenuInformation currentMenuInfo = new MenuInformation("고구마라떼(HOT)");
 
         public Form1()
         {
             InitializeComponent();
+
             UpdateOrderButtonState(); // 폼 로드시 메뉴담기 버튼 상태 초기화
+
+            rdoNoFreeOption.Checked = false;
+            rdoNoSyrup.Checked = false;
+            rdoNoMilk.Checked = false;
+            rdoNoShot.Checked = false;
+            rdoNoSize.Checked = false;
+            chkNoAddOns.Checked = false;
         }
 
 
@@ -223,9 +231,30 @@ namespace Kiosk
         /// - 선택안함 체크 시 그룹 내 다른 옵션 비활성화/초기화
         /// - 메뉴담기 버튼 활성화 상태 갱신
         /// </summary>
+        private void SetRadioButtonsEnabled(Control parent, bool enabled, RadioButton except = null)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                if (c is RadioButton rb && rb != except)
+                    rb.Enabled = enabled;
+                if (c.HasChildren)
+                    SetRadioButtonsEnabled(c, enabled, except);
+            }
+        }
+        private void UncheckAllRadioButtons(Control parent, RadioButton except = null)
+        {
+            foreach (Control c in parent.Controls)
+            {
+                if (c is RadioButton rb && rb != except)
+                    rb.Checked = false;
+                if (c.HasChildren)
+                    UncheckAllRadioButtons(c, except);
+            }
+        }
+
         private void Option_CheckedChanged(object sender, EventArgs e)
         {
-            UpdateOrderButtonState(); // 메뉴담기 버튼 활성화 상태 갱신
+            UpdateOrderButtonState();
 
             if (sender is RadioButton rb)
             {
@@ -233,63 +262,110 @@ namespace Kiosk
                 {
                     // 무료옵션 - 선택안함
                     case "rdoNoFreeOption":
-                        bool enabled = !rdoNoFreeOption.Checked;
-                        rdoIceMore.Enabled = enabled;
-                        rdoIceLess.Enabled = enabled;
-                        rdoLessSweet.Enabled = enabled && ShouldShowLessSweet(currentMenuInfo);
-                        rdoSweet.Enabled = enabled;
-
-                        if (rdoNoFreeOption.Checked)
+                        if (rb.Checked)
                         {
-                            // 다른 옵션 해제 및 객체 값 초기화
-                            rdoIceMore.Checked = false;
-                            rdoIceLess.Checked = false;
-                            rdoLessSweet.Checked = false;
-                            rdoSweet.Checked = false;
+                            SetRadioButtonsEnabled(gbFreeOptions, false, rb);
+                            UncheckAllRadioButtons(gbFreeOptions, rb);
+
                             currentMenuInfo.Option_IceMore = false;
                             currentMenuInfo.Option_IceLess = false;
                             currentMenuInfo.Option_LessSweet = false;
                             currentMenuInfo.Option_Sweet = false;
                         }
-                        break;
-
-                    // 무료옵션 - 얼음/당도
-                    case "rdoIceMore":
-                        currentMenuInfo.Option_IceMore = rb.Checked;
-                        rdoIceLess.Enabled = !rb.Checked;
-                        break;
-
-                    case "rdoIceLess":
-                        currentMenuInfo.Option_IceLess = rb.Checked;
-                        rdoIceMore.Enabled = !rb.Checked;
-                        break;
-
-                    // 당도 옵션 상호배타적 비활성화
-                    case "rdoLessSweet":
-                        currentMenuInfo.Option_LessSweet = rb.Checked;
-                        rdoSweet.Enabled = !rb.Checked;
-                        break;
-
-                    case "rdoSweet":
-                        currentMenuInfo.Option_Sweet = rb.Checked;
-                        rdoLessSweet.Enabled = !rb.Checked;
+                        else
+                        {
+                            SetRadioButtonsEnabled(gbFreeOptions, true, rb);
+                        }
                         break;
 
                     // 시럽추가 - 선택안함
                     case "rdoNoSyrup":
-                        bool syrupEnabled = !rdoNoSyrup.Checked;
-                        rdoSteviaSyrup.Enabled = syrupEnabled;
-                        rdoSyrupVanilla.Enabled = syrupEnabled;
-                        rdoSyrupHazelnut.Enabled = syrupEnabled;
-                        rdoSyrupCaramel.Enabled = syrupEnabled;
-
-                        if (rdoNoSyrup.Checked)
+                        if (rb.Checked)
                         {
+                            // 1. 모든 시럽 옵션 비활성화
+                            SetRadioButtonsEnabled(gbSyrup, false, rb);
+
+                            // 2. 기존 체크된 옵션 해제 (재귀적으로 모든 라디오버튼 탐색)
+                            UncheckAllRadioButtons(gbSyrup, rb);
+
+                            // 3. 현재 메뉴 정보 초기화
                             currentMenuInfo.Option_SteviaSugar = false;
                             currentMenuInfo.Option_Syrup_Vanilla = false;
                             currentMenuInfo.Option_Syrup_Hazelnut = false;
                             currentMenuInfo.Option_Syrup_Caramel = false;
                         }
+                        else
+                        {
+                            SetRadioButtonsEnabled(gbSyrup, true, rb);
+                        }
+                        break;
+
+
+                    // 우유변경 - 선택안함
+                    case "rdoNoMilk":
+                        if (rb.Checked)
+                        {
+                            SetRadioButtonsEnabled(gbMilkOptions, false, rb);
+                            foreach (var control in gbMilkOptions.Controls.OfType<RadioButton>())
+                            {
+                                control.Checked = false;
+                            }
+                            currentMenuInfo.Option_Milk_Oat = false;
+                            currentMenuInfo.Option_Milk_Almond = false;
+                            currentMenuInfo.Option_Milk_Soy = false;
+                        }
+                        else
+                        {
+                            SetRadioButtonsEnabled(gbMilkOptions, true, rb);
+                        }
+                        break;
+
+                    // 샷추가 - 선택안함
+                    case "rdoNoShot":
+                        if (rb.Checked)
+                        {
+                            foreach (var control in gbShotOptions.Controls.OfType<RadioButton>())
+                            {
+                                control.Checked = false;
+                                control.Enabled = false;
+                            }
+                            currentMenuInfo.Option_Shot = false;
+                            currentMenuInfo.Option_2Shot = false;
+                            currentMenuInfo.Option_Decaf2Shot = 0;
+                        }
+                        else
+                        {
+                            SetRadioButtonsEnabled(gbShotOptions, true, rb);
+                        }
+                        break;
+
+                    // 사이즈 - 선택안함
+                    case "rdoNoSize":
+                        if (rb.Checked)
+                        {
+                            rdoSizeUp.Checked = false;
+                            rdoSizeUp.Enabled = false;
+                            currentMenuInfo.Option_CupSizeUp = false;
+                        }
+                        else
+                        {
+                            rdoSizeUp.Enabled = true;
+                        }
+                        break;
+
+                    // 드리즐 - 선택안함 (부가요소 그룹에서 처리)
+                    // 일반 옵션들
+                    case "rdoIceMore":
+                        currentMenuInfo.Option_IceMore = rb.Checked;
+                        break;
+                    case "rdoIceLess":
+                        currentMenuInfo.Option_IceLess = rb.Checked;
+                        break;
+                    case "rdoLessSweet":
+                        currentMenuInfo.Option_LessSweet = rb.Checked;
+                        break;
+                    case "rdoSweet":
+                        currentMenuInfo.Option_Sweet = rb.Checked;
                         break;
                     case "rdoSteviaSyrup":
                         currentMenuInfo.Option_SteviaSugar = rb.Checked;
@@ -303,21 +379,6 @@ namespace Kiosk
                     case "rdoSyrupCaramel":
                         currentMenuInfo.Option_Syrup_Caramel = rb.Checked;
                         break;
-
-                    // 우유변경 - 선택안함
-                    case "rdoNoMilk":
-                        bool milkEnabled = !rdoNoMilk.Checked;
-                        rdoMilkOat.Enabled = milkEnabled;
-                        rdoMilkAlmond.Enabled = milkEnabled;
-                        rdoMilkSoy.Enabled = milkEnabled;
-
-                        if (rdoNoMilk.Checked)
-                        {
-                            currentMenuInfo.Option_Milk_Oat = false;
-                            currentMenuInfo.Option_Milk_Almond = false;
-                            currentMenuInfo.Option_Milk_Soy = false;
-                        }
-                        break;
                     case "rdoMilkOat":
                         currentMenuInfo.Option_Milk_Oat = rb.Checked;
                         break;
@@ -326,21 +387,6 @@ namespace Kiosk
                         break;
                     case "rdoMilkSoy":
                         currentMenuInfo.Option_Milk_Soy = rb.Checked;
-                        break;
-
-                    // 샷추가 - 선택안함
-                    case "rdoNoShot":
-                        bool shotEnabled = !rdoNoShot.Checked;
-                        rdoShot.Enabled = shotEnabled;
-                        rdo2Shot.Enabled = shotEnabled;
-                        rdoDecaf2Shot.Enabled = shotEnabled;
-
-                        if (rdoNoShot.Checked)
-                        {
-                            currentMenuInfo.Option_Shot = false;
-                            currentMenuInfo.Option_2Shot = false;
-                            currentMenuInfo.Option_Decaf2Shot = 0;
-                        }
                         break;
                     case "rdoShot":
                         currentMenuInfo.Option_Shot = rb.Checked;
@@ -351,25 +397,13 @@ namespace Kiosk
                     case "rdoDecaf2Shot":
                         currentMenuInfo.Option_Decaf2Shot = rb.Checked ? 1 : 0;
                         break;
-
-                    // 사이즈 - 선택안함
-                    case "rdoNoSize":
-                        bool sizeEnabled = !rdoNoSize.Checked;
-                        rdoSizeUp.Enabled = sizeEnabled;
-                        if (rdoNoSize.Checked)
-                            currentMenuInfo.Option_CupSizeUp = false;
-                        break;
                     case "rdoSizeUp":
                         currentMenuInfo.Option_CupSizeUp = rb.Checked;
                         break;
-
-                    // 부가요소 - 드리즐(라디오)
                     case "rdoDrizzleChocolate":
-                        if (rdoDrizzleChocolate.Checked) chkNoAddOns.Checked = false;
                         currentMenuInfo.Option_Drizzle_Chocolate = rb.Checked;
                         break;
                     case "rdoDrizzleCaramel":
-                        if (rdoDrizzleCaramel.Checked) chkNoAddOns.Checked = false;
                         currentMenuInfo.Option_Drizzle_Caramel = rb.Checked;
                         break;
                 }
@@ -378,55 +412,41 @@ namespace Kiosk
             {
                 switch (cb.Name)
                 {
-                    // 부가요소 - 선택안함
                     case "chkNoAddOns":
-                        bool addOnEnabled = !chkNoAddOns.Checked;
-                        chkPearl.Enabled = addOnEnabled;
-                        chkWhippedCream.Enabled = addOnEnabled;
-                        gbDrizzleOptions.Enabled = addOnEnabled;
-
-                        if (!addOnEnabled)
+                        if (cb.Checked)
                         {
                             chkPearl.Checked = false;
                             chkWhippedCream.Checked = false;
-                            foreach (Control ctrl in gbDrizzleOptions.Controls)
-                            {
-                                if (ctrl is RadioButton drizzleRb)
-                                    drizzleRb.Checked = false;
-                            }
+                            rdoDrizzleChocolate.Checked = false;
+                            rdoDrizzleCaramel.Checked = false;
+                            chkPearl.Enabled = false;
+                            chkWhippedCream.Enabled = false;
+                            rdoDrizzleChocolate.Enabled = false;
+                            rdoDrizzleCaramel.Enabled = false;
                             currentMenuInfo.Option_Pearl = false;
                             currentMenuInfo.Option_WhippedCream = false;
                             currentMenuInfo.Option_Drizzle_Chocolate = false;
                             currentMenuInfo.Option_Drizzle_Caramel = false;
                         }
+                        else
+                        {
+                            chkPearl.Enabled = true;
+                            chkWhippedCream.Enabled = true;
+                            rdoDrizzleChocolate.Enabled = true;
+                            rdoDrizzleCaramel.Enabled = true;
+                        }
                         break;
-
-                    // 부가요소 - 펄
                     case "chkPearl":
-                        if (chkPearl.Checked) chkNoAddOns.Checked = false;
-                        currentMenuInfo.Option_Pearl = chkPearl.Checked;
+                        currentMenuInfo.Option_Pearl = cb.Checked;
                         break;
-
-                    // 부가요소 - 휘핑크림
                     case "chkWhippedCream":
-                        if (chkWhippedCream.Checked) chkNoAddOns.Checked = false;
-                        currentMenuInfo.Option_WhippedCream = chkWhippedCream.Checked;
+                        currentMenuInfo.Option_WhippedCream = cb.Checked;
                         break;
                 }
             }
-
-            if (!rdoIceMore.Checked && !rdoIceLess.Checked)
-            {
-                rdoIceMore.Enabled = true;
-                rdoIceLess.Enabled = true;
-            }
-            // 당도 옵션 둘 다 해제 시 다시 활성화
-            if (!rdoLessSweet.Checked && !rdoSweet.Checked)
-            {
-                rdoLessSweet.Enabled = true;
-                rdoSweet.Enabled = true;
-            }
         }
+
+
 
         ///////////////////////////메뉴 담기 코드/////////////////////////////////////////
 
@@ -502,6 +522,17 @@ namespace Kiosk
                 SetDrinkCategory(currentMenuInfo); // UI 동기화
             }
             tableLayoutPanel1.Visible = false; // 옵션 패널 숨김
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            UncheckAllRadioButtons(gbFreeOptions);
+        }
+
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            UncheckAllRadioButtons(gbFreeOptions);
+
         }
     }
 }
