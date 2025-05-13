@@ -118,6 +118,7 @@ namespace Kiosk
 
         private void btn_back_Click(object sender, EventArgs e)
         {
+
             Close();
         }
 

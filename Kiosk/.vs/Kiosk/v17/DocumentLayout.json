@@ -3,28 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\rex\\desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_team1\\kiosk\\kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\kiosk\\form_cuppon_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_cuppon_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\kiosk\\form_credit_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_credit_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\kiosk\\form_simple_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_simple_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\kiosk\\payment_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\payment_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\kiosk\\payment_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\payment_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\Kiosk\\Kiosk.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Kiosk\\Kiosk.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,71 +26,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form_cuppon_payment.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\Kiosk\\Form_cuppon_payment.cs",
-              "RelativeDocumentMoniker": "Kiosk\\Form_cuppon_payment.cs",
-              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_cuppon_payment.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_cuppon_payment.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T05:27:26.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form_credit_payment.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\Kiosk\\Form_credit_payment.cs",
-              "RelativeDocumentMoniker": "Kiosk\\Form_credit_payment.cs",
-              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_credit_payment.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_credit_payment.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T05:25:09.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form_simple_payment.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\Kiosk\\Form_simple_payment.cs",
-              "RelativeDocumentMoniker": "Kiosk\\Form_simple_payment.cs",
-              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_simple_payment.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_simple_payment.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T05:24:16.681Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Payment_Form.cs",
-              "DocumentMoniker": "C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\Kiosk\\Payment_Form.cs",
-              "RelativeDocumentMoniker": "Kiosk\\Payment_Form.cs",
-              "ToolTip": "C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\Kiosk\\Payment_Form.cs",
-              "RelativeToolTip": "Kiosk\\Payment_Form.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T04:50:18.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Payment_Form.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\Kiosk\\Payment_Form.cs",
-              "RelativeDocumentMoniker": "Kiosk\\Payment_Form.cs",
-              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Payment_Form.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Payment_Form.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T04:25:40.938Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\Kiosk\\Form1.cs",
-              "RelativeDocumentMoniker": "Kiosk\\Form1.cs",
-              "ToolTip": "C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\Kiosk\\Form1.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Kiosk\\Form1.cs [\uB514\uC790\uC778]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-30T03:47:39.273Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "Title": "Kiosk.csproj",
+              "DocumentMoniker": "C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\Kiosk\\Kiosk.csproj",
+              "RelativeDocumentMoniker": "Kiosk\\Kiosk.csproj",
+              "ToolTip": "C:\\Users\\rex\\Desktop\\\uB300\uD559\uAD50\\3\uD559\uB144\\\uC751\uC6A9\uC18C\uD504\uD2B8\uC6E8\uC5B4\uC2E4\uC2B5\\\uD504\uB85C\uC81D\uD2B8\\project_Team1\\Kiosk\\Kiosk\\Kiosk.csproj",
+              "RelativeToolTip": "Kiosk\\Kiosk.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-13T04:33:06.644Z",
+              "EditorCaption": ""
             }
           ]
         }

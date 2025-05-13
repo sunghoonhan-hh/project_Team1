@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Kiosk
@@ -107,6 +109,8 @@ namespace Kiosk
         public string MenuHead { get; private set; }
         public string MenuName { get; set; }
         public int Count { get; set; }
+        public Image MenuImage { get; set; }
+        public decimal Price { get; set; }
 
         // 1. 얼음 옵션
         public bool Option_IceMore { get; set; }      // 얼음 많이
@@ -184,11 +188,43 @@ namespace Kiosk
                 Option_Drizzle_Caramel = false;
                 Option_Decaf2Shot = 0;
             }
+
             catch (ArgumentNullException ex)
             {
                 MessageBox.Show($"오류 발생: {ex.Message}");
                 // 또는 로그 저장 등
             }
+        }
+
+        public MenuInformation(string name, Image image, decimal price)
+        {
+            MenuName = name;
+
+            // 옵션 초기화
+            Option_IceMore = false;
+            Option_IceLess = false;
+            Option_LessSweet = false;
+            Option_Sweet = false;
+            Option_SteviaSugar = false;
+            Option_CupSizeUp = false;
+            Option_Pearl = false;
+            Option_Shot = false;
+            Option_2Shot = false;
+            Option_Syrup_Vanilla = false;
+            Option_Syrup_Hazelnut = false;
+            Option_Syrup_Caramel = false;
+            Option_Milk_Oat = false;
+            Option_Milk_Almond = false;
+            Option_Milk_Soy = false;
+            Option_WhippedCream = false;
+            Option_Drizzle_Chocolate = false;
+            Option_Drizzle_Caramel = false;
+            Option_Decaf2Shot = 0;
+
+            Count = 1;
+
+            MenuImage = image;
+            Price = price;
         }
     }
 }

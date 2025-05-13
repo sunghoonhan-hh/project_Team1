@@ -334,7 +334,10 @@ namespace Kiosk
 
         private void picture_Calculate_Click(object sender, EventArgs e)
         {
-            // 계산 폼 열기 (Menu Information 인자로 넘기기)
+            List<MenuInformation> tempList = new List<MenuInformation>();
+
+            Product_check_Form home = new Product_check_Form(tempList);
+            home.Show();
         }
     }
 }
