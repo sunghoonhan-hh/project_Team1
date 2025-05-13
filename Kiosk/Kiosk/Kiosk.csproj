@@ -58,6 +58,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Check_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Form.Designer.cs">
+      <DependentUpon>Check_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_credit_payment.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,7 @@
     <Compile Include="Form_simple_payment.Designer.cs">
       <DependentUpon>Form_simple_payment.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuInformation.cs" />
     <Compile Include="Payment_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,8 +94,14 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Check_Form.resx">
+      <DependentUpon>Check_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_credit_payment.resx">
       <DependentUpon>Form_credit_payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_cuppon_payment.resx">
+      <DependentUpon>Form_cuppon_payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_simple_payment.resx">
       <DependentUpon>Form_simple_payment.cs</DependentUpon>
@@ -104,6 +117,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -117,6 +131,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1014950_6276.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16646.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24076789_coupon_isometric.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

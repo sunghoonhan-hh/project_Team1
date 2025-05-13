@@ -3,9 +3,13 @@ C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.exe
 C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.pdb
 C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.AssemblyReference.cache
 C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form1.resources
-C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form2.resources
 C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Properties.Resources.resources
 C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.GenerateResource.cache
 C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.CoreCompileInputs.cache
 C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.exe
 C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.pdb
+C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form_credit_payment.resources
+C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form_simple_payment.resources
+C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form_payment.resources
+C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Product_check_Form.resources
+C:\Users\82106\Desktop\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form_cuppon_payment.resources
