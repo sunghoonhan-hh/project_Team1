@@ -1,10 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\",
+  "WorkspaceRootPath": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\rex\\source\\repos\\project_team1\\kiosk\\kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\82106\\desktop\\project_team1\\kiosk\\kiosk\\check_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\check_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\payment_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\payment_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_cuppon_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_cuppon_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\check_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\check_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\payment_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\payment_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\menuinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\menuinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_credit_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_credit_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,23 +46,104 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{d3750d8a-574b-4fb3-b7e2-aa8af40e8231}"
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Payment_Form.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Payment_Form.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Payment_Form.cs",
+              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Payment_Form.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Kiosk\\Payment_Form.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T01:53:03.93Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [\uB514\uC790\uC778]",
-              "DocumentMoniker": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\Form1.cs",
-              "RelativeDocumentMoniker": "Kiosk\\Form1.cs",
-              "ToolTip": "C:\\Users\\rex\\source\\repos\\project_Team1\\Kiosk\\Kiosk\\Form1.cs [\uB514\uC790\uC778]",
-              "RelativeToolTip": "Kiosk\\Form1.cs [\uB514\uC790\uC778]",
+              "Title": "Check_Form.cs",
+              "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Check_Form.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Check_Form.cs",
+              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Check_Form.cs",
+              "RelativeToolTip": "Kiosk\\Check_Form.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAkwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-29T08:47:11.106Z",
+              "WhenOpened": "2025-05-11T13:54:08.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Program.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Program.cs",
+              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Program.cs",
+              "RelativeToolTip": "Kiosk\\Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T13:31:20.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MenuInformation.cs",
+              "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\MenuInformation.cs",
+              "RelativeDocumentMoniker": "Kiosk\\MenuInformation.cs",
+              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\MenuInformation.cs",
+              "RelativeToolTip": "Kiosk\\MenuInformation.cs",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAgwBsAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-09T12:51:37.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Check_Form.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Check_Form.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Check_Form.cs",
+              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Check_Form.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Kiosk\\Check_Form.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T10:57:24.339Z",
               "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Payment_Form.cs",
+              "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Payment_Form.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Payment_Form.cs",
+              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Payment_Form.cs",
+              "RelativeToolTip": "Kiosk\\Payment_Form.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAYwC0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T03:09:33.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form_cuppon_payment.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_cuppon_payment.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Form_cuppon_payment.cs",
+              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_cuppon_payment.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Kiosk\\Form_cuppon_payment.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T03:02:36.717Z",
+              "EditorCaption": " [\uB514\uC790\uC778]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form_credit_payment.cs [\uB514\uC790\uC778]",
+              "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_credit_payment.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Form_credit_payment.cs",
+              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_credit_payment.cs [\uB514\uC790\uC778]",
+              "RelativeToolTip": "Kiosk\\Form_credit_payment.cs [\uB514\uC790\uC778]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T03:02:33.636Z"
             }
           ]
         }

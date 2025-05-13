@@ -31,7 +31,10 @@
             this.btn_simple_payment = new MyButton.CustomButton();
             this.btn_cuppon_payment = new MyButton.CustomButton();
             this.btn_credit_payment = new MyButton.CustomButton();
-            this.listBox_goods = new System.Windows.Forms.ListBox();
+            this.btn_cancel = new MyButton.CustomButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn_simple_payment
@@ -40,12 +43,11 @@
             this.btn_simple_payment.FlatAppearance.BorderSize = 0;
             this.btn_simple_payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_simple_payment.IsMaximum = false;
-            this.btn_simple_payment.Location = new System.Drawing.Point(68, 101);
+            this.btn_simple_payment.Location = new System.Drawing.Point(401, 156);
             this.btn_simple_payment.Name = "btn_simple_payment";
             this.btn_simple_payment.Radius = 40;
-            this.btn_simple_payment.Size = new System.Drawing.Size(211, 93);
+            this.btn_simple_payment.Size = new System.Drawing.Size(211, 200);
             this.btn_simple_payment.TabIndex = 0;
-            this.btn_simple_payment.Text = "간편결제";
             this.btn_simple_payment.UseVisualStyleBackColor = false;
             this.btn_simple_payment.Click += new System.EventHandler(this.btn_simple_payment_Click);
             // 
@@ -55,12 +57,11 @@
             this.btn_cuppon_payment.FlatAppearance.BorderSize = 0;
             this.btn_cuppon_payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cuppon_payment.IsMaximum = false;
-            this.btn_cuppon_payment.Location = new System.Drawing.Point(68, 341);
+            this.btn_cuppon_payment.Location = new System.Drawing.Point(714, 156);
             this.btn_cuppon_payment.Name = "btn_cuppon_payment";
             this.btn_cuppon_payment.Radius = 40;
-            this.btn_cuppon_payment.Size = new System.Drawing.Size(211, 93);
+            this.btn_cuppon_payment.Size = new System.Drawing.Size(211, 200);
             this.btn_cuppon_payment.TabIndex = 1;
-            this.btn_cuppon_payment.Text = "쿠폰결제";
             this.btn_cuppon_payment.UseVisualStyleBackColor = false;
             this.btn_cuppon_payment.Click += new System.EventHandler(this.btn_cuppon_payment_Click);
             // 
@@ -70,37 +71,74 @@
             this.btn_credit_payment.FlatAppearance.BorderSize = 0;
             this.btn_credit_payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_credit_payment.IsMaximum = false;
-            this.btn_credit_payment.Location = new System.Drawing.Point(68, 219);
+            this.btn_credit_payment.Location = new System.Drawing.Point(97, 156);
             this.btn_credit_payment.Name = "btn_credit_payment";
             this.btn_credit_payment.Radius = 40;
-            this.btn_credit_payment.Size = new System.Drawing.Size(211, 93);
+            this.btn_credit_payment.Size = new System.Drawing.Size(211, 200);
             this.btn_credit_payment.TabIndex = 2;
-            this.btn_credit_payment.Text = "신용카드";
             this.btn_credit_payment.UseVisualStyleBackColor = false;
             this.btn_credit_payment.Click += new System.EventHandler(this.btn_credit_payment_Click);
             // 
-            // listBox_goods
+            // btn_cancel
             // 
-            this.listBox_goods.FormattingEnabled = true;
-            this.listBox_goods.ItemHeight = 24;
-            this.listBox_goods.Location = new System.Drawing.Point(351, 111);
-            this.listBox_goods.Name = "listBox_goods";
-            this.listBox_goods.Size = new System.Drawing.Size(507, 172);
-            this.listBox_goods.TabIndex = 3;
+            this.btn_cancel.BackColor = System.Drawing.SystemColors.Window;
+            this.btn_cancel.FlatAppearance.BorderSize = 0;
+            this.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_cancel.IsMaximum = true;
+            this.btn_cancel.Location = new System.Drawing.Point(289, 433);
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.Radius = 20;
+            this.btn_cancel.Size = new System.Drawing.Size(428, 61);
+            this.btn_cancel.TabIndex = 3;
+            this.btn_cancel.Text = "결제 취소";
+            this.btn_cancel.UseVisualStyleBackColor = false;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(142, 378);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(114, 24);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "카드 결제";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(450, 378);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 24);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "간편 결제";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(766, 378);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(114, 24);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "쿠폰 결제";
             // 
             // Form_payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(906, 660);
-            this.Controls.Add(this.listBox_goods);
+            this.ClientSize = new System.Drawing.Size(1033, 580);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_cancel);
             this.Controls.Add(this.btn_credit_payment);
             this.Controls.Add(this.btn_cuppon_payment);
             this.Controls.Add(this.btn_simple_payment);
             this.Name = "Form_payment";
             this.Text = "결제";
+            this.Load += new System.EventHandler(this.Form_payment_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -109,6 +147,9 @@
         private MyButton.CustomButton btn_simple_payment;
         private MyButton.CustomButton btn_cuppon_payment;
         private MyButton.CustomButton btn_credit_payment;
-        private System.Windows.Forms.ListBox listBox_goods;
+        private MyButton.CustomButton btn_cancel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
