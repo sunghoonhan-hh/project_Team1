@@ -57,6 +57,7 @@
     </Compile>
     <Compile Include="MenuInformation.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="매장포장.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,7 +100,6 @@
     <Compile Include="Payment_Form.Designer.cs">
       <DependentUpon>Payment_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Check_Form.resx">
       <DependentUpon>Check_Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,7 +115,6 @@
     <EmbeddedResource Include="Payment_Form.resx">
       <DependentUpon>Payment_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SelectCoffee.cs">
       <SubType>Form</SubType>
     </Compile>
