@@ -16,5 +16,18 @@ namespace Kiosk
         {
             InitializeComponent();
         }
+
+        private void Form_cuppon_payment_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void NumberButton_Click(object sender, EventArgs e)
+        {
+            Button btn = sender as Button;
+            if (btn != null)
+            {
+                txtCuponInput.Text += btn.Text;
+            }
+        }
     }
 }
