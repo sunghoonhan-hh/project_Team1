@@ -433,7 +433,7 @@ namespace Kiosk
         {
             List<MenuInformation> tempList = new List<MenuInformation>();
 
-            Product_check_Form home = new Product_check_Form(tempList);
+            Product_check_Form home = new Product_check_Form(tempList,totalPrice);
             home.Show();
         }
 

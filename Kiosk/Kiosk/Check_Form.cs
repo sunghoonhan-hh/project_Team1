@@ -15,7 +15,8 @@ namespace Kiosk
     public partial class Product_check_Form : Form
     {
         private List<MenuInformation> menuInformation;
-        public Product_check_Form(List<MenuInformation> select)
+        private decimal totalPrice;
+        public Product_check_Form(List<MenuInformation> select,decimal price)
         {
             InitializeComponent();
             this.menuInformation = select;
@@ -23,6 +24,7 @@ namespace Kiosk
             lvw_selected.OwnerDraw = true;
             lvw_selected.FullRowSelect = true;
             lvw_selected.GridLines = false;
+            totalPrice = price;
 
             // 컬럼 추가
             lvw_selected.Columns.Add("음료", 100);
@@ -48,16 +50,17 @@ namespace Kiosk
             }
 
             using (StringFormat sf = new StringFormat())
+            using (Font headerFont = new Font("맑은 고딕", 10, FontStyle.Bold))
             {
                 sf.Alignment = StringAlignment.Center;
                 sf.LineAlignment = StringAlignment.Center;
-                e.Graphics.DrawString(e.Header.Text, new Font("맑은 고딕", 10, FontStyle.Bold), Brushes.SaddleBrown, e.Bounds, sf);
+                e.Graphics.DrawString(e.Header.Text, headerFont, Brushes.SaddleBrown, e.Bounds, sf);
             }
         }
 
         private void ListView1_DrawItem(object sender, DrawListViewItemEventArgs e)
         {
-            // 배경은 DrawSubItem에서 처리하므로 무시
+            e.DrawBackground();
         }
 
         private void ListView1_DrawSubItem(object sender, DrawListViewSubItemEventArgs e)
@@ -71,20 +74,23 @@ namespace Kiosk
                 e.Graphics.FillRectangle(backgroundBrush, rect);
             }
 
-            // 둥근 테두리 (첫 번째 서브아이템만 적용해도 느낌 살 수 있음)
-            /*if (e.ColumnIndex == 0)
-            {
-                using (GraphicsPath path = RoundedRect(rect, 10))
-                using (Pen pen = new Pen(Color.Peru, 1.5f))
-                {
-                    e.Graphics.DrawPath(pen, path);
-                }
-            }*/
-
             // 텍스트 그리기
-            TextFormatFlags flags = TextFormatFlags.Left | TextFormatFlags.VerticalCenter;
-            TextRenderer.DrawText(e.Graphics, e.SubItem.Text, new Font("나눔스퀘어", 9), rect, Color.SaddleBrown, flags);
+            TextFormatFlags flags = TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis;
+            using (Font subItemFont = new Font("맑은 고딕", 9))
+            {
+                TextRenderer.DrawText(e.Graphics, e.SubItem.Text, subItemFont, rect, Color.SaddleBrown, flags);
+            }
+
+            // 선택 항목 테두리 강조 (선택사항)
+            if (selected)
+            {
+                using (Pen borderPen = new Pen(Color.SaddleBrown))
+                {
+                    e.Graphics.DrawRectangle(borderPen, rect);
+                }
+            }
         }
+
         private GraphicsPath RoundedRect(Rectangle bounds, int radius)
         {
             int diameter = radius * 2;
@@ -126,7 +132,11 @@ namespace Kiosk
         {
             show_Item();
             
-            txt_total.Text = "총 금액 : 6000원     " + "   할인 금액 : 0원     " + "   계산할 금액 : 6000원";
+            txt_total.Text = "총 금액 : "+totalPrice.ToString() + "원        할인 금액 : 0원     " + "   계산할 금액 : "+totalPrice.ToString()+"원";
+            txt_total.Font = new Font("Maplestory Bold", 10, FontStyle.Bold);
+            btn_back.Font = new Font("Maplestory Bold", 10, FontStyle.Bold);
+            btn_payment.Font = new Font("Maplestory Bold", 10, FontStyle.Bold);
+            MessageBox.Show("선택된 항목 수: " + menuInformation.Count);
         }
 
         private void show_Item()
@@ -155,7 +165,7 @@ namespace Kiosk
                 if (m.Option_Milk_Soy == true) { row[1] += "소이 밀크"; }
                 if (m.Option_WhippedCream == true) { row[1] += "휘핑 크림 추가"; }
                 row[2] = m.Count.ToString();
-                row[3] = "6000원";
+                row[3] = totalPrice.ToString();
                 lvw_selected.Items.Add(new ListViewItem(row));
             }
         }

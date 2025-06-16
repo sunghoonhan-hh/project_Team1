@@ -28,41 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_payment = new MyButton.CustomButton();
-            this.btn_back = new MyButton.CustomButton();
             this.lvw_selected = new System.Windows.Forms.ListView();
             this.txt_total = new System.Windows.Forms.TextBox();
+            this.btn_back = new MyButton.CustomButton();
+            this.btn_payment = new MyButton.CustomButton();
             this.SuspendLayout();
-            // 
-            // btn_payment
-            // 
-            this.btn_payment.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_payment.FlatAppearance.BorderSize = 0;
-            this.btn_payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_payment.IsMaximum = true;
-            this.btn_payment.Location = new System.Drawing.Point(135, 598);
-            this.btn_payment.Name = "btn_payment";
-            this.btn_payment.Radius = 20;
-            this.btn_payment.Size = new System.Drawing.Size(346, 81);
-            this.btn_payment.TabIndex = 0;
-            this.btn_payment.Text = "결제하기";
-            this.btn_payment.UseVisualStyleBackColor = false;
-            this.btn_payment.Click += new System.EventHandler(this.btn_payment_Click);
-            // 
-            // btn_back
-            // 
-            this.btn_back.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btn_back.FlatAppearance.BorderSize = 0;
-            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_back.IsMaximum = true;
-            this.btn_back.Location = new System.Drawing.Point(549, 598);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Radius = 20;
-            this.btn_back.Size = new System.Drawing.Size(346, 81);
-            this.btn_back.TabIndex = 1;
-            this.btn_back.Text = "뒤로가기";
-            this.btn_back.UseVisualStyleBackColor = false;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // lvw_selected
             // 
@@ -79,6 +49,36 @@
             this.txt_total.Name = "txt_total";
             this.txt_total.Size = new System.Drawing.Size(760, 35);
             this.txt_total.TabIndex = 3;
+            // 
+            // btn_back
+            // 
+            this.btn_back.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.IsMaximum = true;
+            this.btn_back.Location = new System.Drawing.Point(549, 598);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Radius = 20;
+            this.btn_back.Size = new System.Drawing.Size(346, 81);
+            this.btn_back.TabIndex = 1;
+            this.btn_back.Text = "뒤로가기";
+            this.btn_back.UseVisualStyleBackColor = false;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
+            // btn_payment
+            // 
+            this.btn_payment.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btn_payment.FlatAppearance.BorderSize = 0;
+            this.btn_payment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_payment.IsMaximum = true;
+            this.btn_payment.Location = new System.Drawing.Point(135, 598);
+            this.btn_payment.Name = "btn_payment";
+            this.btn_payment.Radius = 20;
+            this.btn_payment.Size = new System.Drawing.Size(346, 81);
+            this.btn_payment.TabIndex = 0;
+            this.btn_payment.Text = "결제하기";
+            this.btn_payment.UseVisualStyleBackColor = false;
+            this.btn_payment.Click += new System.EventHandler(this.btn_payment_Click);
             // 
             // Product_check_Form
             // 
