@@ -132,9 +132,26 @@ namespace Kiosk
             { "제로복숭아아이스티", 4000 }
         };
 
+        class MenuItem
+        {
+            public string MenuName { get; set; }
+            public decimal Price { get; set; }
+            public int Count { get; set; }
+
+            public MenuItem(string menuName, decimal price)
+            {
+                MenuName = menuName;
+                Price = price;
+                Count = 1;
+            }
+        }
+
+        private List<MenuItem> menuItems = new List<MenuItem>();
+
         public SelectCoffee()
         {
             InitializeComponent();
+            InitializeTotalPrice();
 
             // 폼 크기 고정
             this.Size = new Size(525, 721);
@@ -142,6 +159,20 @@ namespace Kiosk
             this.MaximizeBox = false;
 
             CreateRoundedButtons();
+        }
+
+        private void InitializeTotalPrice()
+        {
+            total.Controls.Clear(); // 기존 내용 지우기
+
+            Label totalLabel = new Label();
+            totalLabel.Text = $"총 합계: 0원";
+            totalLabel.AutoSize = true;
+            totalLabel.Location = new Point(5, 5);
+            totalLabel.Font = new Font("맑은 고딕", 12, FontStyle.Bold);
+            totalLabel.ForeColor = Color.DarkBlue;
+
+            total.Controls.Add(totalLabel);
         }
 
         // 카테고리 버튼 생성
@@ -277,12 +308,78 @@ namespace Kiosk
                 priceLabel.AutoSize = false;
                 priceLabel.MaximumSize = priceLabel.Size;
 
+                picBox.Click += (sender, e) =>
+                {
+                    AddMenu(menuName, menuInfo.Price);
+                };
+
                 // 생성한 이미지와 가격표를 화면에 띄우기
                 shownPictures.Add(picBox);
                 Controls.Add(picBox);
                 shownPriceLabels.Add(priceLabel);
                 Controls.Add(priceLabel);
             }
+        }
+
+        private decimal totalPrice = 0;
+        private int panelItemCount = 0;
+
+        private void RefreshBucket()
+        {
+            bucket.Controls.Clear();
+
+            int y = 5;
+            foreach (var item in menuItems)
+            {
+                Label label = new Label();
+                label.Text = $"{item.MenuName} | {item.Price}원 | {item.Count}개";
+                label.AutoSize = true;
+                label.Location = new Point(5, y);
+                label.Font = new Font("맑은 고딕", 10, FontStyle.Regular);
+                label.ForeColor = Color.Black;
+
+                bucket.Controls.Add(label);
+
+                y += 25;
+            }
+        }
+
+        private void AddMenu(string menuName, decimal price)
+        {
+            // 이미 리스트에 같은 메뉴가 있는지 확인
+            MenuItem existingItem = menuItems.FirstOrDefault(item => item.MenuName == menuName);
+
+            if (existingItem != null)
+            {
+                // 있으면 개수 증가
+                existingItem.Count++;
+            }
+            else
+            {
+                // 없으면 새로 추가
+                menuItems.Add(new MenuItem(menuName, price));
+            }
+
+            // 총합 다시 계산
+            totalPrice = menuItems.Sum(item => item.Price * item.Count);
+
+            // 화면 갱신
+            RefreshBucket();
+            UpdateTotalPriceLabel();
+        }
+
+        private void UpdateTotalPriceLabel()
+        {
+            total.Controls.Clear(); // 기존 내용 지우기
+
+            Label totalLabel = new Label();
+            totalLabel.Text = $"총 합계: {totalPrice}원";
+            totalLabel.AutoSize = true;
+            totalLabel.Location = new Point(5, 5);
+            totalLabel.Font = new Font("맑은 고딕", 12, FontStyle.Bold);
+            totalLabel.ForeColor = Color.DarkBlue;
+
+            total.Controls.Add(totalLabel);
         }
 
         // 둥근 경로를 그리는 함수
@@ -338,6 +435,21 @@ namespace Kiosk
 
             Product_check_Form home = new Product_check_Form(tempList);
             home.Show();
+        }
+
+        private void DeleteBucket(object sender, EventArgs e)
+        {
+            bucket.Controls.Clear();
+            menuItems.Clear();
+
+            Label totalPriceLabel = total.Controls.OfType<Label>().FirstOrDefault(l => l.Name == "totalPriceLabel");
+            if (totalPriceLabel != null)
+            {
+                totalPriceLabel.Text = "총합: 0원";
+            }
+            totalPrice = 0;
+            panelItemCount = 0;
+            InitializeTotalPrice();
         }
     }
 }

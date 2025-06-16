@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.bucket = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label_Timer = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -43,7 +43,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.total = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.bucket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_Calculate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_Home)).BeginInit();
             this.SuspendLayout();
@@ -57,14 +60,17 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.DeleteBucket);
             // 
-            // panel1
+            // bucket
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(8, 639);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(339, 215);
-            this.panel1.TabIndex = 1;
+            this.bucket.AutoScroll = true;
+            this.bucket.BackColor = System.Drawing.Color.White;
+            this.bucket.Controls.Add(this.panel1);
+            this.bucket.Location = new System.Drawing.Point(8, 639);
+            this.bucket.Name = "bucket";
+            this.bucket.Size = new System.Drawing.Size(339, 202);
+            this.bucket.TabIndex = 1;
             // 
             // label1
             // 
@@ -126,6 +132,7 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "전체삭제";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.Click += new System.EventHandler(this.DeleteBucket);
             // 
             // picture_Calculate
             // 
@@ -187,12 +194,29 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(1, 187);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(338, 15);
+            this.panel1.TabIndex = 13;
+            // 
+            // total
+            // 
+            this.total.BackColor = System.Drawing.Color.White;
+            this.total.Location = new System.Drawing.Point(8, 819);
+            this.total.Name = "total";
+            this.total.Size = new System.Drawing.Size(339, 38);
+            this.total.TabIndex = 13;
+            // 
             // SelectCoffee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(582, 853);
+            this.Controls.Add(this.total);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.picture_Home);
@@ -204,12 +228,13 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label_Timer);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.bucket);
             this.Controls.Add(this.pictureBox1);
             this.Name = "SelectCoffee";
             this.Text = "SelectCoffee";
             this.Load += new System.EventHandler(this.SelectCoffee_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.bucket.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picture_Calculate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_Home)).EndInit();
             this.ResumeLayout(false);
@@ -220,7 +245,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel bucket;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_Timer;
         private System.Windows.Forms.Panel panel2;
@@ -233,5 +258,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel total;
     }
 }
