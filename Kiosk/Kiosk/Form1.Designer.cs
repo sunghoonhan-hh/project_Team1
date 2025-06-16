@@ -150,6 +150,7 @@ namespace Kiosk
             this.tableLayoutPanel1.Controls.Add(this.CancelAndOrder, 0, 8);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 9;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
@@ -161,8 +162,8 @@ namespace Kiosk
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.66662F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.66662F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(653, 707);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(933, 1060);
             this.tableLayoutPanel1.TabIndex = 7;
             // 
             // gbSize
@@ -177,11 +178,12 @@ namespace Kiosk
             this.gbSize.Controls.Add(this.panel6, 1, 0);
             this.gbSize.Controls.Add(this.panel10, 2, 0);
             this.gbSize.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbSize.Location = new System.Drawing.Point(3, 507);
+            this.gbSize.Location = new System.Drawing.Point(4, 761);
+            this.gbSize.Margin = new System.Windows.Forms.Padding(4);
             this.gbSize.Name = "gbSize";
             this.gbSize.RowCount = 1;
             this.gbSize.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.gbSize.Size = new System.Drawing.Size(647, 76);
+            this.gbSize.Size = new System.Drawing.Size(925, 115);
             this.gbSize.TabIndex = 19;
             // 
             // textBox11
@@ -189,13 +191,14 @@ namespace Kiosk
             this.textBox11.BackColor = System.Drawing.Color.Gold;
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox11.Font = new System.Drawing.Font("나눔스퀘어 네오 OTF Bold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox11.Font = new System.Drawing.Font("Maplestory", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox11.ForeColor = System.Drawing.Color.Black;
-            this.textBox11.Location = new System.Drawing.Point(3, 3);
+            this.textBox11.Location = new System.Drawing.Point(4, 4);
+            this.textBox11.Margin = new System.Windows.Forms.Padding(4);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(91, 70);
+            this.textBox11.Size = new System.Drawing.Size(130, 107);
             this.textBox11.TabIndex = 3;
             this.textBox11.Text = "<사이즈>\r\n(필수, 단일 선택)";
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -205,9 +208,10 @@ namespace Kiosk
             this.panel6.BackColor = System.Drawing.Color.Gold;
             this.panel6.Controls.Add(this.rdoNoSize);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(100, 3);
+            this.panel6.Location = new System.Drawing.Point(142, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(91, 70);
+            this.panel6.Size = new System.Drawing.Size(130, 107);
             this.panel6.TabIndex = 4;
             // 
             // rdoNoSize
@@ -215,10 +219,11 @@ namespace Kiosk
             this.rdoNoSize.AutoSize = true;
             this.rdoNoSize.BackColor = System.Drawing.Color.OldLace;
             this.rdoNoSize.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rdoNoSize.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoNoSize.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rdoNoSize.Location = new System.Drawing.Point(0, 0);
+            this.rdoNoSize.Margin = new System.Windows.Forms.Padding(4);
             this.rdoNoSize.Name = "rdoNoSize";
-            this.rdoNoSize.Size = new System.Drawing.Size(91, 70);
+            this.rdoNoSize.Size = new System.Drawing.Size(130, 107);
             this.rdoNoSize.TabIndex = 2;
             this.rdoNoSize.Text = "선택안함 (+0)";
             this.rdoNoSize.UseVisualStyleBackColor = false;
@@ -228,9 +233,10 @@ namespace Kiosk
             this.panel10.BackColor = System.Drawing.Color.Gold;
             this.panel10.Controls.Add(this.rdoSizeUp);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(197, 3);
+            this.panel10.Location = new System.Drawing.Point(280, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(447, 70);
+            this.panel10.Size = new System.Drawing.Size(641, 107);
             this.panel10.TabIndex = 5;
             // 
             // rdoSizeUp
@@ -238,10 +244,11 @@ namespace Kiosk
             this.rdoSizeUp.AutoSize = true;
             this.rdoSizeUp.BackColor = System.Drawing.Color.OldLace;
             this.rdoSizeUp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rdoSizeUp.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoSizeUp.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rdoSizeUp.Location = new System.Drawing.Point(0, 0);
+            this.rdoSizeUp.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSizeUp.Name = "rdoSizeUp";
-            this.rdoSizeUp.Size = new System.Drawing.Size(447, 70);
+            this.rdoSizeUp.Size = new System.Drawing.Size(641, 107);
             this.rdoSizeUp.TabIndex = 1;
             this.rdoSizeUp.TabStop = true;
             this.rdoSizeUp.Text = "컵 사이즈 업그레이드 (+1000)";
@@ -260,11 +267,12 @@ namespace Kiosk
             this.gbShot.Controls.Add(this.textBox10, 0, 0);
             this.gbShot.Controls.Add(this.panel5, 1, 0);
             this.gbShot.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbShot.Location = new System.Drawing.Point(3, 425);
+            this.gbShot.Location = new System.Drawing.Point(4, 638);
+            this.gbShot.Margin = new System.Windows.Forms.Padding(4);
             this.gbShot.Name = "gbShot";
             this.gbShot.RowCount = 1;
             this.gbShot.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.gbShot.Size = new System.Drawing.Size(647, 76);
+            this.gbShot.Size = new System.Drawing.Size(925, 115);
             this.gbShot.TabIndex = 17;
             // 
             // gbShotOptions
@@ -275,18 +283,20 @@ namespace Kiosk
             this.gbShotOptions.Controls.Add(this.textBox5);
             this.gbShotOptions.Controls.Add(this.rdoShot);
             this.gbShotOptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbShotOptions.Location = new System.Drawing.Point(197, 3);
+            this.gbShotOptions.Location = new System.Drawing.Point(280, 4);
+            this.gbShotOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbShotOptions.Name = "gbShotOptions";
-            this.gbShotOptions.Size = new System.Drawing.Size(447, 70);
+            this.gbShotOptions.Size = new System.Drawing.Size(641, 107);
             this.gbShotOptions.TabIndex = 2;
             // 
             // rdoDecaf2Shot
             // 
             this.rdoDecaf2Shot.AutoSize = true;
-            this.rdoDecaf2Shot.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoDecaf2Shot.Location = new System.Drawing.Point(277, 26);
+            this.rdoDecaf2Shot.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoDecaf2Shot.Location = new System.Drawing.Point(396, 39);
+            this.rdoDecaf2Shot.Margin = new System.Windows.Forms.Padding(4);
             this.rdoDecaf2Shot.Name = "rdoDecaf2Shot";
-            this.rdoDecaf2Shot.Size = new System.Drawing.Size(164, 17);
+            this.rdoDecaf2Shot.Size = new System.Drawing.Size(225, 24);
             this.rdoDecaf2Shot.TabIndex = 2;
             this.rdoDecaf2Shot.TabStop = true;
             this.rdoDecaf2Shot.Text = "디카페인 2샷 추가 (+800)";
@@ -296,10 +306,11 @@ namespace Kiosk
             // rdo2Shot
             // 
             this.rdo2Shot.AutoSize = true;
-            this.rdo2Shot.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdo2Shot.Location = new System.Drawing.Point(155, 26);
+            this.rdo2Shot.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdo2Shot.Location = new System.Drawing.Point(221, 39);
+            this.rdo2Shot.Margin = new System.Windows.Forms.Padding(4);
             this.rdo2Shot.Name = "rdo2Shot";
-            this.rdo2Shot.Size = new System.Drawing.Size(116, 17);
+            this.rdo2Shot.Size = new System.Drawing.Size(156, 24);
             this.rdo2Shot.TabIndex = 1;
             this.rdo2Shot.TabStop = true;
             this.rdo2Shot.Text = "2샷 추가 (+500)";
@@ -311,10 +322,11 @@ namespace Kiosk
             this.textBox5.BackColor = System.Drawing.Color.Gold;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox5.Font = new System.Drawing.Font("나눔스퀘어 네오 OTF Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox5.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox5.Location = new System.Drawing.Point(0, 0);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(447, 14);
+            this.textBox5.Size = new System.Drawing.Size(641, 21);
             this.textBox5.TabIndex = 0;
             this.textBox5.Text = "샷 종류(선택)";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -322,10 +334,11 @@ namespace Kiosk
             // rdoShot
             // 
             this.rdoShot.AutoSize = true;
-            this.rdoShot.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoShot.Location = new System.Drawing.Point(29, 26);
+            this.rdoShot.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoShot.Location = new System.Drawing.Point(41, 39);
+            this.rdoShot.Margin = new System.Windows.Forms.Padding(4);
             this.rdoShot.Name = "rdoShot";
-            this.rdoShot.Size = new System.Drawing.Size(114, 17);
+            this.rdoShot.Size = new System.Drawing.Size(154, 24);
             this.rdoShot.TabIndex = 0;
             this.rdoShot.TabStop = true;
             this.rdoShot.Text = "1샷 추가 (+300)";
@@ -337,13 +350,14 @@ namespace Kiosk
             this.textBox10.BackColor = System.Drawing.Color.Gold;
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox10.Font = new System.Drawing.Font("나눔스퀘어 네오 OTF Bold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox10.Font = new System.Drawing.Font("Maplestory", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox10.ForeColor = System.Drawing.Color.Black;
-            this.textBox10.Location = new System.Drawing.Point(3, 3);
+            this.textBox10.Location = new System.Drawing.Point(4, 4);
+            this.textBox10.Margin = new System.Windows.Forms.Padding(4);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(91, 70);
+            this.textBox10.Size = new System.Drawing.Size(130, 107);
             this.textBox10.TabIndex = 4;
             this.textBox10.Text = "<샷 추가>\r\n(필수, 단일선택)";
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -353,9 +367,10 @@ namespace Kiosk
             this.panel5.BackColor = System.Drawing.Color.Gold;
             this.panel5.Controls.Add(this.rdoNoShot);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(100, 3);
+            this.panel5.Location = new System.Drawing.Point(142, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(91, 70);
+            this.panel5.Size = new System.Drawing.Size(130, 107);
             this.panel5.TabIndex = 5;
             // 
             // rdoNoShot
@@ -363,10 +378,11 @@ namespace Kiosk
             this.rdoNoShot.AutoSize = true;
             this.rdoNoShot.BackColor = System.Drawing.Color.OldLace;
             this.rdoNoShot.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rdoNoShot.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoNoShot.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rdoNoShot.Location = new System.Drawing.Point(0, 0);
+            this.rdoNoShot.Margin = new System.Windows.Forms.Padding(4);
             this.rdoNoShot.Name = "rdoNoShot";
-            this.rdoNoShot.Size = new System.Drawing.Size(91, 70);
+            this.rdoNoShot.Size = new System.Drawing.Size(130, 107);
             this.rdoNoShot.TabIndex = 3;
             this.rdoNoShot.Text = "선택안함 (+0)";
             this.rdoNoShot.UseVisualStyleBackColor = false;
@@ -385,11 +401,12 @@ namespace Kiosk
             this.gbSyrup.Controls.Add(this.panel2, 1, 0);
             this.gbSyrup.Controls.Add(this.panel4, 2, 0);
             this.gbSyrup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbSyrup.Location = new System.Drawing.Point(3, 261);
+            this.gbSyrup.Location = new System.Drawing.Point(4, 392);
+            this.gbSyrup.Margin = new System.Windows.Forms.Padding(4);
             this.gbSyrup.Name = "gbSyrup";
             this.gbSyrup.RowCount = 1;
             this.gbSyrup.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.gbSyrup.Size = new System.Drawing.Size(647, 76);
+            this.gbSyrup.Size = new System.Drawing.Size(925, 115);
             this.gbSyrup.TabIndex = 14;
             // 
             // gbSyrupOptions
@@ -400,18 +417,20 @@ namespace Kiosk
             this.gbSyrupOptions.Controls.Add(this.rdoSyrupHazelnut);
             this.gbSyrupOptions.Controls.Add(this.rdoSyrupVanilla);
             this.gbSyrupOptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbSyrupOptions.Location = new System.Drawing.Point(273, 3);
+            this.gbSyrupOptions.Location = new System.Drawing.Point(391, 4);
+            this.gbSyrupOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbSyrupOptions.Name = "gbSyrupOptions";
-            this.gbSyrupOptions.Size = new System.Drawing.Size(371, 70);
+            this.gbSyrupOptions.Size = new System.Drawing.Size(530, 107);
             this.gbSyrupOptions.TabIndex = 3;
             // 
             // rdoSyrupCaramel
             // 
             this.rdoSyrupCaramel.AutoSize = true;
-            this.rdoSyrupCaramel.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoSyrupCaramel.Location = new System.Drawing.Point(243, 19);
+            this.rdoSyrupCaramel.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoSyrupCaramel.Location = new System.Drawing.Point(347, 28);
+            this.rdoSyrupCaramel.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSyrupCaramel.Name = "rdoSyrupCaramel";
-            this.rdoSyrupCaramel.Size = new System.Drawing.Size(108, 30);
+            this.rdoSyrupCaramel.Size = new System.Drawing.Size(152, 44);
             this.rdoSyrupCaramel.TabIndex = 2;
             this.rdoSyrupCaramel.TabStop = true;
             this.rdoSyrupCaramel.Text = "카라멜 시럽 추가\r\n(+500)";
@@ -422,10 +441,11 @@ namespace Kiosk
             this.textBox1.BackColor = System.Drawing.Color.Gold;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox1.Font = new System.Drawing.Font("나눔스퀘어 네오 OTF Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox1.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(371, 14);
+            this.textBox1.Size = new System.Drawing.Size(530, 21);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "시럽(+500, 택1)";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -433,10 +453,11 @@ namespace Kiosk
             // rdoSyrupHazelnut
             // 
             this.rdoSyrupHazelnut.AutoSize = true;
-            this.rdoSyrupHazelnut.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoSyrupHazelnut.Location = new System.Drawing.Point(118, 20);
+            this.rdoSyrupHazelnut.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoSyrupHazelnut.Location = new System.Drawing.Point(169, 30);
+            this.rdoSyrupHazelnut.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSyrupHazelnut.Name = "rdoSyrupHazelnut";
-            this.rdoSyrupHazelnut.Size = new System.Drawing.Size(119, 30);
+            this.rdoSyrupHazelnut.Size = new System.Drawing.Size(169, 44);
             this.rdoSyrupHazelnut.TabIndex = 1;
             this.rdoSyrupHazelnut.TabStop = true;
             this.rdoSyrupHazelnut.Text = "헤이즐넛 시럽 추가\r\n(+500)";
@@ -445,10 +466,11 @@ namespace Kiosk
             // rdoSyrupVanilla
             // 
             this.rdoSyrupVanilla.AutoSize = true;
-            this.rdoSyrupVanilla.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoSyrupVanilla.Location = new System.Drawing.Point(3, 20);
+            this.rdoSyrupVanilla.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoSyrupVanilla.Location = new System.Drawing.Point(4, 30);
+            this.rdoSyrupVanilla.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSyrupVanilla.Name = "rdoSyrupVanilla";
-            this.rdoSyrupVanilla.Size = new System.Drawing.Size(108, 30);
+            this.rdoSyrupVanilla.Size = new System.Drawing.Size(153, 44);
             this.rdoSyrupVanilla.TabIndex = 0;
             this.rdoSyrupVanilla.TabStop = true;
             this.rdoSyrupVanilla.Text = "바닐라 시럽 추가\r\n(+500)";
@@ -459,13 +481,14 @@ namespace Kiosk
             this.textBox8.BackColor = System.Drawing.Color.Gold;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox8.Font = new System.Drawing.Font("나눔스퀘어 네오 OTF Bold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox8.Font = new System.Drawing.Font("Maplestory", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox8.ForeColor = System.Drawing.Color.Black;
-            this.textBox8.Location = new System.Drawing.Point(3, 3);
+            this.textBox8.Location = new System.Drawing.Point(4, 4);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(91, 70);
+            this.textBox8.Size = new System.Drawing.Size(130, 107);
             this.textBox8.TabIndex = 5;
             this.textBox8.Text = "<시럽추가>\r\n(필수, 단일선택)";
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -475,9 +498,10 @@ namespace Kiosk
             this.panel2.BackColor = System.Drawing.Color.Gold;
             this.panel2.Controls.Add(this.rdoNoSyrup);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(100, 3);
+            this.panel2.Location = new System.Drawing.Point(142, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(58, 70);
+            this.panel2.Size = new System.Drawing.Size(84, 107);
             this.panel2.TabIndex = 6;
             // 
             // rdoNoSyrup
@@ -485,10 +509,11 @@ namespace Kiosk
             this.rdoNoSyrup.AutoSize = true;
             this.rdoNoSyrup.BackColor = System.Drawing.Color.OldLace;
             this.rdoNoSyrup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rdoNoSyrup.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoNoSyrup.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rdoNoSyrup.Location = new System.Drawing.Point(0, 0);
+            this.rdoNoSyrup.Margin = new System.Windows.Forms.Padding(4);
             this.rdoNoSyrup.Name = "rdoNoSyrup";
-            this.rdoNoSyrup.Size = new System.Drawing.Size(58, 70);
+            this.rdoNoSyrup.Size = new System.Drawing.Size(84, 107);
             this.rdoNoSyrup.TabIndex = 4;
             this.rdoNoSyrup.Text = "선택안함 (+0)";
             this.rdoNoSyrup.UseVisualStyleBackColor = false;
@@ -498,9 +523,10 @@ namespace Kiosk
             this.panel4.BackColor = System.Drawing.Color.Gold;
             this.panel4.Controls.Add(this.rdoSteviaSyrup);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(164, 3);
+            this.panel4.Location = new System.Drawing.Point(234, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(103, 70);
+            this.panel4.Size = new System.Drawing.Size(149, 107);
             this.panel4.TabIndex = 7;
             // 
             // rdoSteviaSyrup
@@ -508,10 +534,11 @@ namespace Kiosk
             this.rdoSteviaSyrup.AutoSize = true;
             this.rdoSteviaSyrup.BackColor = System.Drawing.Color.OldLace;
             this.rdoSteviaSyrup.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rdoSteviaSyrup.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoSteviaSyrup.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rdoSteviaSyrup.Location = new System.Drawing.Point(0, 0);
+            this.rdoSteviaSyrup.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSteviaSyrup.Name = "rdoSteviaSyrup";
-            this.rdoSteviaSyrup.Size = new System.Drawing.Size(103, 70);
+            this.rdoSteviaSyrup.Size = new System.Drawing.Size(149, 107);
             this.rdoSteviaSyrup.TabIndex = 1;
             this.rdoSteviaSyrup.TabStop = true;
             this.rdoSteviaSyrup.Text = "스테비아(저당)추가 (+500)";
@@ -531,11 +558,12 @@ namespace Kiosk
             this.gbFreeOptions.Controls.Add(this.textBox7, 0, 0);
             this.gbFreeOptions.Controls.Add(this.panel1, 1, 0);
             this.gbFreeOptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbFreeOptions.Location = new System.Drawing.Point(3, 179);
+            this.gbFreeOptions.Location = new System.Drawing.Point(4, 269);
+            this.gbFreeOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbFreeOptions.Name = "gbFreeOptions";
             this.gbFreeOptions.RowCount = 1;
             this.gbFreeOptions.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.gbFreeOptions.Size = new System.Drawing.Size(647, 76);
+            this.gbFreeOptions.Size = new System.Drawing.Size(925, 115);
             this.gbFreeOptions.TabIndex = 12;
             // 
             // gbSweetnessOptions
@@ -545,18 +573,20 @@ namespace Kiosk
             this.gbSweetnessOptions.Controls.Add(this.textBox2);
             this.gbSweetnessOptions.Controls.Add(this.rdoSweet);
             this.gbSweetnessOptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbSweetnessOptions.Location = new System.Drawing.Point(423, 3);
+            this.gbSweetnessOptions.Location = new System.Drawing.Point(603, 4);
+            this.gbSweetnessOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbSweetnessOptions.Name = "gbSweetnessOptions";
-            this.gbSweetnessOptions.Size = new System.Drawing.Size(221, 70);
+            this.gbSweetnessOptions.Size = new System.Drawing.Size(318, 107);
             this.gbSweetnessOptions.TabIndex = 0;
             // 
             // rdoLessSweet
             // 
             this.rdoLessSweet.AutoSize = true;
-            this.rdoLessSweet.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoLessSweet.Location = new System.Drawing.Point(109, 28);
+            this.rdoLessSweet.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoLessSweet.Location = new System.Drawing.Point(156, 42);
+            this.rdoLessSweet.Margin = new System.Windows.Forms.Padding(4);
             this.rdoLessSweet.Name = "rdoLessSweet";
-            this.rdoLessSweet.Size = new System.Drawing.Size(88, 17);
+            this.rdoLessSweet.Size = new System.Drawing.Size(121, 24);
             this.rdoLessSweet.TabIndex = 3;
             this.rdoLessSweet.TabStop = true;
             this.rdoLessSweet.Text = "덜달게 (+0)";
@@ -567,10 +597,11 @@ namespace Kiosk
             this.textBox2.BackColor = System.Drawing.Color.Gold;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox2.Font = new System.Drawing.Font("나눔스퀘어 네오 OTF Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox2.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox2.Location = new System.Drawing.Point(0, 0);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(221, 14);
+            this.textBox2.Size = new System.Drawing.Size(318, 21);
             this.textBox2.TabIndex = 0;
             this.textBox2.Text = "당도(선택)";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -578,10 +609,11 @@ namespace Kiosk
             // rdoSweet
             // 
             this.rdoSweet.AutoSize = true;
-            this.rdoSweet.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoSweet.Location = new System.Drawing.Point(23, 28);
+            this.rdoSweet.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoSweet.Location = new System.Drawing.Point(33, 42);
+            this.rdoSweet.Margin = new System.Windows.Forms.Padding(4);
             this.rdoSweet.Name = "rdoSweet";
-            this.rdoSweet.Size = new System.Drawing.Size(77, 17);
+            this.rdoSweet.Size = new System.Drawing.Size(105, 24);
             this.rdoSweet.TabIndex = 4;
             this.rdoSweet.TabStop = true;
             this.rdoSweet.Text = "달게 (+0)";
@@ -594,18 +626,20 @@ namespace Kiosk
             this.gbIceOptions.Controls.Add(this.textBox3);
             this.gbIceOptions.Controls.Add(this.rdoIceLess);
             this.gbIceOptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbIceOptions.Location = new System.Drawing.Point(197, 3);
+            this.gbIceOptions.Location = new System.Drawing.Point(280, 4);
+            this.gbIceOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbIceOptions.Name = "gbIceOptions";
-            this.gbIceOptions.Size = new System.Drawing.Size(220, 70);
+            this.gbIceOptions.Size = new System.Drawing.Size(315, 107);
             this.gbIceOptions.TabIndex = 0;
             // 
             // rdoIceMore
             // 
             this.rdoIceMore.AutoSize = true;
-            this.rdoIceMore.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoIceMore.Location = new System.Drawing.Point(114, 28);
+            this.rdoIceMore.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoIceMore.Location = new System.Drawing.Point(163, 42);
+            this.rdoIceMore.Margin = new System.Windows.Forms.Padding(4);
             this.rdoIceMore.Name = "rdoIceMore";
-            this.rdoIceMore.Size = new System.Drawing.Size(102, 17);
+            this.rdoIceMore.Size = new System.Drawing.Size(141, 24);
             this.rdoIceMore.TabIndex = 1;
             this.rdoIceMore.TabStop = true;
             this.rdoIceMore.Text = "얼음 많이 (+0)";
@@ -616,10 +650,11 @@ namespace Kiosk
             this.textBox3.BackColor = System.Drawing.Color.Gold;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox3.Font = new System.Drawing.Font("나눔스퀘어 네오 OTF Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox3.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox3.Location = new System.Drawing.Point(0, 0);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(220, 14);
+            this.textBox3.Size = new System.Drawing.Size(315, 21);
             this.textBox3.TabIndex = 0;
             this.textBox3.Text = "얼음(선택)";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -627,10 +662,11 @@ namespace Kiosk
             // rdoIceLess
             // 
             this.rdoIceLess.AutoSize = true;
-            this.rdoIceLess.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoIceLess.Location = new System.Drawing.Point(7, 28);
+            this.rdoIceLess.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoIceLess.Location = new System.Drawing.Point(10, 42);
+            this.rdoIceLess.Margin = new System.Windows.Forms.Padding(4);
             this.rdoIceLess.Name = "rdoIceLess";
-            this.rdoIceLess.Size = new System.Drawing.Size(102, 17);
+            this.rdoIceLess.Size = new System.Drawing.Size(141, 24);
             this.rdoIceLess.TabIndex = 2;
             this.rdoIceLess.TabStop = true;
             this.rdoIceLess.Text = "얼음 적게 (+0)";
@@ -643,13 +679,14 @@ namespace Kiosk
             | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox7.BackColor = System.Drawing.Color.Gold;
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("나눔스퀘어 네오 OTF Bold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox7.Font = new System.Drawing.Font("Maplestory", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox7.ForeColor = System.Drawing.Color.Black;
-            this.textBox7.Location = new System.Drawing.Point(3, 3);
+            this.textBox7.Location = new System.Drawing.Point(4, 4);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(91, 70);
+            this.textBox7.Size = new System.Drawing.Size(130, 107);
             this.textBox7.TabIndex = 2;
             this.textBox7.Text = "<무료옵션>\r\n(필수, 단일선택)";
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -659,9 +696,10 @@ namespace Kiosk
             this.panel1.BackColor = System.Drawing.Color.Gold;
             this.panel1.Controls.Add(this.rdoNoFreeOption);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(100, 3);
+            this.panel1.Location = new System.Drawing.Point(142, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(91, 70);
+            this.panel1.Size = new System.Drawing.Size(130, 107);
             this.panel1.TabIndex = 3;
             // 
             // rdoNoFreeOption
@@ -669,10 +707,11 @@ namespace Kiosk
             this.rdoNoFreeOption.AutoSize = true;
             this.rdoNoFreeOption.BackColor = System.Drawing.Color.OldLace;
             this.rdoNoFreeOption.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rdoNoFreeOption.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoNoFreeOption.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rdoNoFreeOption.Location = new System.Drawing.Point(0, 0);
+            this.rdoNoFreeOption.Margin = new System.Windows.Forms.Padding(4);
             this.rdoNoFreeOption.Name = "rdoNoFreeOption";
-            this.rdoNoFreeOption.Size = new System.Drawing.Size(91, 70);
+            this.rdoNoFreeOption.Size = new System.Drawing.Size(130, 107);
             this.rdoNoFreeOption.TabIndex = 1;
             this.rdoNoFreeOption.Text = "선택안함 (+0)";
             this.rdoNoFreeOption.UseVisualStyleBackColor = false;
@@ -689,11 +728,12 @@ namespace Kiosk
             this.gbMilk.Controls.Add(this.textBox9, 0, 0);
             this.gbMilk.Controls.Add(this.panel3, 1, 0);
             this.gbMilk.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbMilk.Location = new System.Drawing.Point(3, 343);
+            this.gbMilk.Location = new System.Drawing.Point(4, 515);
+            this.gbMilk.Margin = new System.Windows.Forms.Padding(4);
             this.gbMilk.Name = "gbMilk";
             this.gbMilk.RowCount = 1;
             this.gbMilk.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.gbMilk.Size = new System.Drawing.Size(647, 76);
+            this.gbMilk.Size = new System.Drawing.Size(925, 115);
             this.gbMilk.TabIndex = 15;
             // 
             // gbMilkOptions
@@ -704,9 +744,10 @@ namespace Kiosk
             this.gbMilkOptions.Controls.Add(this.rdoMilkAlmond);
             this.gbMilkOptions.Controls.Add(this.rdoMilkSoy);
             this.gbMilkOptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbMilkOptions.Location = new System.Drawing.Point(197, 3);
+            this.gbMilkOptions.Location = new System.Drawing.Point(280, 4);
+            this.gbMilkOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbMilkOptions.Name = "gbMilkOptions";
-            this.gbMilkOptions.Size = new System.Drawing.Size(447, 70);
+            this.gbMilkOptions.Size = new System.Drawing.Size(641, 107);
             this.gbMilkOptions.TabIndex = 3;
             // 
             // textBox4
@@ -714,10 +755,11 @@ namespace Kiosk
             this.textBox4.BackColor = System.Drawing.Color.Gold;
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox4.Font = new System.Drawing.Font("나눔스퀘어 네오 OTF Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox4.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox4.Location = new System.Drawing.Point(0, 0);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(447, 14);
+            this.textBox4.Size = new System.Drawing.Size(641, 21);
             this.textBox4.TabIndex = 0;
             this.textBox4.Text = "우유(+700, 택1)";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -725,10 +767,11 @@ namespace Kiosk
             // rdoMilkOat
             // 
             this.rdoMilkOat.AutoSize = true;
-            this.rdoMilkOat.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoMilkOat.Location = new System.Drawing.Point(297, 26);
+            this.rdoMilkOat.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoMilkOat.Location = new System.Drawing.Point(424, 39);
+            this.rdoMilkOat.Margin = new System.Windows.Forms.Padding(4);
             this.rdoMilkOat.Name = "rdoMilkOat";
-            this.rdoMilkOat.Size = new System.Drawing.Size(144, 17);
+            this.rdoMilkOat.Size = new System.Drawing.Size(192, 24);
             this.rdoMilkOat.TabIndex = 0;
             this.rdoMilkOat.TabStop = true;
             this.rdoMilkOat.Text = "오트 우유 변경 (+700)";
@@ -738,10 +781,11 @@ namespace Kiosk
             // rdoMilkAlmond
             // 
             this.rdoMilkAlmond.AutoSize = true;
-            this.rdoMilkAlmond.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoMilkAlmond.Location = new System.Drawing.Point(132, 26);
+            this.rdoMilkAlmond.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoMilkAlmond.Location = new System.Drawing.Point(189, 39);
+            this.rdoMilkAlmond.Margin = new System.Windows.Forms.Padding(4);
             this.rdoMilkAlmond.Name = "rdoMilkAlmond";
-            this.rdoMilkAlmond.Size = new System.Drawing.Size(155, 17);
+            this.rdoMilkAlmond.Size = new System.Drawing.Size(209, 24);
             this.rdoMilkAlmond.TabIndex = 1;
             this.rdoMilkAlmond.TabStop = true;
             this.rdoMilkAlmond.Text = "아몬드 우유 변경 (+700)";
@@ -751,10 +795,11 @@ namespace Kiosk
             // rdoMilkSoy
             // 
             this.rdoMilkSoy.AutoSize = true;
-            this.rdoMilkSoy.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoMilkSoy.Location = new System.Drawing.Point(7, 26);
+            this.rdoMilkSoy.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoMilkSoy.Location = new System.Drawing.Point(10, 39);
+            this.rdoMilkSoy.Margin = new System.Windows.Forms.Padding(4);
             this.rdoMilkSoy.Name = "rdoMilkSoy";
-            this.rdoMilkSoy.Size = new System.Drawing.Size(119, 17);
+            this.rdoMilkSoy.Size = new System.Drawing.Size(159, 24);
             this.rdoMilkSoy.TabIndex = 2;
             this.rdoMilkSoy.TabStop = true;
             this.rdoMilkSoy.Text = "두유 변경 (+700)";
@@ -767,13 +812,14 @@ namespace Kiosk
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox9.Font = new System.Drawing.Font("나눔스퀘어 네오 OTF Bold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox9.Font = new System.Drawing.Font("Maplestory", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox9.ForeColor = System.Drawing.Color.Black;
-            this.textBox9.Location = new System.Drawing.Point(3, 3);
+            this.textBox9.Location = new System.Drawing.Point(4, 4);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(91, 70);
+            this.textBox9.Size = new System.Drawing.Size(130, 107);
             this.textBox9.TabIndex = 5;
             this.textBox9.Text = "<우유추가>\r\n(필수, 단일선택)";
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -783,9 +829,10 @@ namespace Kiosk
             this.panel3.BackColor = System.Drawing.Color.Gold;
             this.panel3.Controls.Add(this.rdoNoMilk);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(100, 3);
+            this.panel3.Location = new System.Drawing.Point(142, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(91, 70);
+            this.panel3.Size = new System.Drawing.Size(130, 107);
             this.panel3.TabIndex = 6;
             // 
             // rdoNoMilk
@@ -793,10 +840,11 @@ namespace Kiosk
             this.rdoNoMilk.AutoSize = true;
             this.rdoNoMilk.BackColor = System.Drawing.Color.OldLace;
             this.rdoNoMilk.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rdoNoMilk.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoNoMilk.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.rdoNoMilk.Location = new System.Drawing.Point(0, 0);
+            this.rdoNoMilk.Margin = new System.Windows.Forms.Padding(4);
             this.rdoNoMilk.Name = "rdoNoMilk";
-            this.rdoNoMilk.Size = new System.Drawing.Size(91, 70);
+            this.rdoNoMilk.Size = new System.Drawing.Size(130, 107);
             this.rdoNoMilk.TabIndex = 4;
             this.rdoNoMilk.Text = "선택안함 (+0)";
             this.rdoNoMilk.UseVisualStyleBackColor = false;
@@ -805,9 +853,10 @@ namespace Kiosk
             // 
             this.ChosenMenuImg.BackColor = System.Drawing.Color.OldLace;
             this.ChosenMenuImg.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ChosenMenuImg.Location = new System.Drawing.Point(3, 38);
+            this.ChosenMenuImg.Location = new System.Drawing.Point(4, 57);
+            this.ChosenMenuImg.Margin = new System.Windows.Forms.Padding(4);
             this.ChosenMenuImg.Name = "ChosenMenuImg";
-            this.ChosenMenuImg.Size = new System.Drawing.Size(185, 135);
+            this.ChosenMenuImg.Size = new System.Drawing.Size(264, 204);
             this.ChosenMenuImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ChosenMenuImg.TabIndex = 6;
             this.ChosenMenuImg.TabStop = false;
@@ -818,13 +867,14 @@ namespace Kiosk
             this.ChooseAllOption.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tableLayoutPanel1.SetColumnSpan(this.ChooseAllOption, 2);
             this.ChooseAllOption.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ChooseAllOption.Font = new System.Drawing.Font("휴먼엑스포", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ChooseAllOption.Font = new System.Drawing.Font("Maplestory", 14.95F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.ChooseAllOption.ForeColor = System.Drawing.Color.Black;
-            this.ChooseAllOption.Location = new System.Drawing.Point(3, 3);
+            this.ChooseAllOption.Location = new System.Drawing.Point(4, 4);
+            this.ChooseAllOption.Margin = new System.Windows.Forms.Padding(4);
             this.ChooseAllOption.Name = "ChooseAllOption";
             this.ChooseAllOption.ReadOnly = true;
             this.ChooseAllOption.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.ChooseAllOption.Size = new System.Drawing.Size(647, 29);
+            this.ChooseAllOption.Size = new System.Drawing.Size(925, 45);
             this.ChooseAllOption.TabIndex = 9;
             this.ChooseAllOption.Text = "선택하신 상품의 옵션을 모두 선택해주세요";
             // 
@@ -837,12 +887,13 @@ namespace Kiosk
             this.NamePriceOptions.Controls.Add(this.panel11, 0, 0);
             this.NamePriceOptions.Controls.Add(this.panel12, 1, 0);
             this.NamePriceOptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.NamePriceOptions.Location = new System.Drawing.Point(194, 38);
+            this.NamePriceOptions.Location = new System.Drawing.Point(276, 57);
+            this.NamePriceOptions.Margin = new System.Windows.Forms.Padding(4);
             this.NamePriceOptions.Name = "NamePriceOptions";
             this.NamePriceOptions.RowCount = 2;
             this.NamePriceOptions.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.NamePriceOptions.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.NamePriceOptions.Size = new System.Drawing.Size(456, 135);
+            this.NamePriceOptions.Size = new System.Drawing.Size(653, 204);
             this.NamePriceOptions.TabIndex = 10;
             // 
             // MenuOptionsView
@@ -851,11 +902,12 @@ namespace Kiosk
             this.MenuOptionsView.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.NamePriceOptions.SetColumnSpan(this.MenuOptionsView, 2);
             this.MenuOptionsView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MenuOptionsView.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.MenuOptionsView.Location = new System.Drawing.Point(3, 70);
+            this.MenuOptionsView.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.MenuOptionsView.Location = new System.Drawing.Point(4, 106);
+            this.MenuOptionsView.Margin = new System.Windows.Forms.Padding(4);
             this.MenuOptionsView.Multiline = true;
             this.MenuOptionsView.Name = "MenuOptionsView";
-            this.MenuOptionsView.Size = new System.Drawing.Size(450, 62);
+            this.MenuOptionsView.Size = new System.Drawing.Size(645, 94);
             this.MenuOptionsView.TabIndex = 2;
             // 
             // panel11
@@ -863,22 +915,23 @@ namespace Kiosk
             this.panel11.BackColor = System.Drawing.Color.OldLace;
             this.panel11.Controls.Add(this.MenuName);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(1, 1);
-            this.panel11.Margin = new System.Windows.Forms.Padding(1);
+            this.panel11.Location = new System.Drawing.Point(1, 2);
+            this.panel11.Margin = new System.Windows.Forms.Padding(1, 2, 1, 2);
             this.panel11.Name = "panel11";
-            this.panel11.Padding = new System.Windows.Forms.Padding(3, 1, 1, 1);
-            this.panel11.Size = new System.Drawing.Size(226, 65);
+            this.panel11.Padding = new System.Windows.Forms.Padding(4, 2, 1, 2);
+            this.panel11.Size = new System.Drawing.Size(324, 98);
             this.panel11.TabIndex = 3;
             // 
             // MenuName
             // 
             this.MenuName.BackColor = System.Drawing.Color.OldLace;
             this.MenuName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MenuName.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.MenuName.Location = new System.Drawing.Point(4, 12);
+            this.MenuName.Font = new System.Drawing.Font("Maplestory", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.MenuName.Location = new System.Drawing.Point(6, 18);
+            this.MenuName.Margin = new System.Windows.Forms.Padding(4);
             this.MenuName.Multiline = true;
             this.MenuName.Name = "MenuName";
-            this.MenuName.Size = new System.Drawing.Size(217, 43);
+            this.MenuName.Size = new System.Drawing.Size(310, 64);
             this.MenuName.TabIndex = 0;
             // 
             // panel12
@@ -886,21 +939,23 @@ namespace Kiosk
             this.panel12.BackColor = System.Drawing.Color.OldLace;
             this.panel12.Controls.Add(this.MenuPrice);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(231, 3);
+            this.panel12.Location = new System.Drawing.Point(330, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
-            this.panel12.Padding = new System.Windows.Forms.Padding(3, 1, 1, 1);
-            this.panel12.Size = new System.Drawing.Size(222, 61);
+            this.panel12.Padding = new System.Windows.Forms.Padding(4, 2, 1, 2);
+            this.panel12.Size = new System.Drawing.Size(319, 94);
             this.panel12.TabIndex = 4;
             // 
             // MenuPrice
             // 
             this.MenuPrice.BackColor = System.Drawing.Color.OldLace;
             this.MenuPrice.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MenuPrice.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.MenuPrice.Location = new System.Drawing.Point(6, 11);
+            this.MenuPrice.Font = new System.Drawing.Font("Maplestory", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.MenuPrice.Location = new System.Drawing.Point(9, 16);
+            this.MenuPrice.Margin = new System.Windows.Forms.Padding(4);
             this.MenuPrice.Multiline = true;
             this.MenuPrice.Name = "MenuPrice";
-            this.MenuPrice.Size = new System.Drawing.Size(210, 43);
+            this.MenuPrice.Size = new System.Drawing.Size(300, 64);
             this.MenuPrice.TabIndex = 0;
             this.MenuPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -920,11 +975,12 @@ namespace Kiosk
             this.gbAddOns.Controls.Add(this.panel8, 2, 0);
             this.gbAddOns.Controls.Add(this.panel9, 3, 0);
             this.gbAddOns.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbAddOns.Location = new System.Drawing.Point(3, 589);
+            this.gbAddOns.Location = new System.Drawing.Point(4, 884);
+            this.gbAddOns.Margin = new System.Windows.Forms.Padding(4);
             this.gbAddOns.Name = "gbAddOns";
             this.gbAddOns.RowCount = 1;
             this.gbAddOns.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.gbAddOns.Size = new System.Drawing.Size(647, 76);
+            this.gbAddOns.Size = new System.Drawing.Size(925, 115);
             this.gbAddOns.TabIndex = 20;
             // 
             // gbDrizzleOptions
@@ -934,18 +990,20 @@ namespace Kiosk
             this.gbDrizzleOptions.Controls.Add(this.textBox6);
             this.gbDrizzleOptions.Controls.Add(this.rdoDrizzleChocolate);
             this.gbDrizzleOptions.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gbDrizzleOptions.Location = new System.Drawing.Point(391, 3);
+            this.gbDrizzleOptions.Location = new System.Drawing.Point(556, 4);
+            this.gbDrizzleOptions.Margin = new System.Windows.Forms.Padding(4);
             this.gbDrizzleOptions.Name = "gbDrizzleOptions";
-            this.gbDrizzleOptions.Size = new System.Drawing.Size(253, 70);
+            this.gbDrizzleOptions.Size = new System.Drawing.Size(365, 107);
             this.gbDrizzleOptions.TabIndex = 3;
             // 
             // rdoDrizzleCaramel
             // 
             this.rdoDrizzleCaramel.AutoSize = true;
-            this.rdoDrizzleCaramel.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoDrizzleCaramel.Location = new System.Drawing.Point(145, 26);
+            this.rdoDrizzleCaramel.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoDrizzleCaramel.Location = new System.Drawing.Point(203, 40);
+            this.rdoDrizzleCaramel.Margin = new System.Windows.Forms.Padding(4);
             this.rdoDrizzleCaramel.Name = "rdoDrizzleCaramel";
-            this.rdoDrizzleCaramel.Size = new System.Drawing.Size(105, 17);
+            this.rdoDrizzleCaramel.Size = new System.Drawing.Size(142, 24);
             this.rdoDrizzleCaramel.TabIndex = 1;
             this.rdoDrizzleCaramel.TabStop = true;
             this.rdoDrizzleCaramel.Text = "카라멜 (+500)";
@@ -957,10 +1015,11 @@ namespace Kiosk
             this.textBox6.BackColor = System.Drawing.Color.Gold;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox6.Font = new System.Drawing.Font("나눔스퀘어 네오 OTF Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox6.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox6.Location = new System.Drawing.Point(0, 0);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(253, 14);
+            this.textBox6.Size = new System.Drawing.Size(365, 21);
             this.textBox6.TabIndex = 0;
             this.textBox6.Text = "드리즐 종류(+500, 택1)";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -968,10 +1027,11 @@ namespace Kiosk
             // rdoDrizzleChocolate
             // 
             this.rdoDrizzleChocolate.AutoSize = true;
-            this.rdoDrizzleChocolate.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.rdoDrizzleChocolate.Location = new System.Drawing.Point(8, 26);
+            this.rdoDrizzleChocolate.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.rdoDrizzleChocolate.Location = new System.Drawing.Point(7, 40);
+            this.rdoDrizzleChocolate.Margin = new System.Windows.Forms.Padding(4);
             this.rdoDrizzleChocolate.Name = "rdoDrizzleChocolate";
-            this.rdoDrizzleChocolate.Size = new System.Drawing.Size(105, 17);
+            this.rdoDrizzleChocolate.Size = new System.Drawing.Size(140, 24);
             this.rdoDrizzleChocolate.TabIndex = 0;
             this.rdoDrizzleChocolate.TabStop = true;
             this.rdoDrizzleChocolate.Text = "초콜릿 (+500)";
@@ -983,13 +1043,14 @@ namespace Kiosk
             this.textBox12.BackColor = System.Drawing.Color.Gold;
             this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox12.Font = new System.Drawing.Font("나눔스퀘어 네오 OTF Bold", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox12.Font = new System.Drawing.Font("Maplestory", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.textBox12.ForeColor = System.Drawing.Color.Black;
-            this.textBox12.Location = new System.Drawing.Point(3, 3);
+            this.textBox12.Location = new System.Drawing.Point(4, 4);
+            this.textBox12.Margin = new System.Windows.Forms.Padding(4);
             this.textBox12.Multiline = true;
             this.textBox12.Name = "textBox12";
             this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(91, 70);
+            this.textBox12.Size = new System.Drawing.Size(130, 107);
             this.textBox12.TabIndex = 4;
             this.textBox12.Text = "<부가요소>\r\n(필수, 복수 선택)";
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -999,9 +1060,10 @@ namespace Kiosk
             this.panel7.BackColor = System.Drawing.Color.Gold;
             this.panel7.Controls.Add(this.chkNoAddOns);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(100, 3);
+            this.panel7.Location = new System.Drawing.Point(142, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(91, 70);
+            this.panel7.Size = new System.Drawing.Size(130, 107);
             this.panel7.TabIndex = 5;
             // 
             // chkNoAddOns
@@ -1009,10 +1071,11 @@ namespace Kiosk
             this.chkNoAddOns.AutoSize = true;
             this.chkNoAddOns.BackColor = System.Drawing.Color.OldLace;
             this.chkNoAddOns.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chkNoAddOns.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.chkNoAddOns.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.chkNoAddOns.Location = new System.Drawing.Point(0, 0);
+            this.chkNoAddOns.Margin = new System.Windows.Forms.Padding(4);
             this.chkNoAddOns.Name = "chkNoAddOns";
-            this.chkNoAddOns.Size = new System.Drawing.Size(91, 70);
+            this.chkNoAddOns.Size = new System.Drawing.Size(130, 107);
             this.chkNoAddOns.TabIndex = 0;
             this.chkNoAddOns.Text = "선택안함 (+0)";
             this.chkNoAddOns.UseVisualStyleBackColor = false;
@@ -1023,9 +1086,10 @@ namespace Kiosk
             this.panel8.BackColor = System.Drawing.Color.Gold;
             this.panel8.Controls.Add(this.chkPearl);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(197, 3);
+            this.panel8.Location = new System.Drawing.Point(280, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(91, 70);
+            this.panel8.Size = new System.Drawing.Size(130, 107);
             this.panel8.TabIndex = 6;
             // 
             // chkPearl
@@ -1033,10 +1097,11 @@ namespace Kiosk
             this.chkPearl.AutoSize = true;
             this.chkPearl.BackColor = System.Drawing.Color.OldLace;
             this.chkPearl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chkPearl.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.chkPearl.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.chkPearl.Location = new System.Drawing.Point(0, 0);
+            this.chkPearl.Margin = new System.Windows.Forms.Padding(4);
             this.chkPearl.Name = "chkPearl";
-            this.chkPearl.Size = new System.Drawing.Size(91, 70);
+            this.chkPearl.Size = new System.Drawing.Size(130, 107);
             this.chkPearl.TabIndex = 1;
             this.chkPearl.Text = "펄 추가 (+500)";
             this.chkPearl.UseVisualStyleBackColor = false;
@@ -1047,9 +1112,10 @@ namespace Kiosk
             this.panel9.BackColor = System.Drawing.Color.Gold;
             this.panel9.Controls.Add(this.chkWhippedCream);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(294, 3);
+            this.panel9.Location = new System.Drawing.Point(418, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(91, 70);
+            this.panel9.Size = new System.Drawing.Size(130, 107);
             this.panel9.TabIndex = 7;
             // 
             // chkWhippedCream
@@ -1057,10 +1123,11 @@ namespace Kiosk
             this.chkWhippedCream.AutoSize = true;
             this.chkWhippedCream.BackColor = System.Drawing.Color.OldLace;
             this.chkWhippedCream.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.chkWhippedCream.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.chkWhippedCream.Font = new System.Drawing.Font("Maplestory", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.chkWhippedCream.Location = new System.Drawing.Point(0, 0);
+            this.chkWhippedCream.Margin = new System.Windows.Forms.Padding(4);
             this.chkWhippedCream.Name = "chkWhippedCream";
-            this.chkWhippedCream.Size = new System.Drawing.Size(91, 70);
+            this.chkWhippedCream.Size = new System.Drawing.Size(130, 107);
             this.chkWhippedCream.TabIndex = 2;
             this.chkWhippedCream.Text = "휘핑크림 추가 (+500)";
             this.chkWhippedCream.UseVisualStyleBackColor = false;
@@ -1076,11 +1143,12 @@ namespace Kiosk
             this.CancelAndOrder.Controls.Add(this.cancel, 1, 0);
             this.CancelAndOrder.Controls.Add(this.getMenu, 0, 0);
             this.CancelAndOrder.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CancelAndOrder.Location = new System.Drawing.Point(3, 671);
+            this.CancelAndOrder.Location = new System.Drawing.Point(4, 1007);
+            this.CancelAndOrder.Margin = new System.Windows.Forms.Padding(4);
             this.CancelAndOrder.Name = "CancelAndOrder";
             this.CancelAndOrder.RowCount = 1;
             this.CancelAndOrder.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.CancelAndOrder.Size = new System.Drawing.Size(647, 33);
+            this.CancelAndOrder.Size = new System.Drawing.Size(925, 49);
             this.CancelAndOrder.TabIndex = 21;
             // 
             // cancel
@@ -1089,11 +1157,12 @@ namespace Kiosk
             this.cancel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cancel.FlatAppearance.BorderSize = 0;
             this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancel.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.cancel.Font = new System.Drawing.Font("Maplestory", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.cancel.ForeColor = System.Drawing.Color.Gold;
-            this.cancel.Location = new System.Drawing.Point(326, 3);
+            this.cancel.Location = new System.Drawing.Point(466, 4);
+            this.cancel.Margin = new System.Windows.Forms.Padding(4);
             this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(318, 27);
+            this.cancel.Size = new System.Drawing.Size(455, 41);
             this.cancel.TabIndex = 1;
             this.cancel.Text = "돌아가기";
             this.cancel.UseVisualStyleBackColor = false;
@@ -1105,11 +1174,12 @@ namespace Kiosk
             this.getMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.getMenu.FlatAppearance.BorderSize = 0;
             this.getMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.getMenu.Font = new System.Drawing.Font("나눔스퀘어 네오 Bold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.getMenu.Font = new System.Drawing.Font("Maplestory", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.getMenu.ForeColor = System.Drawing.Color.Gold;
-            this.getMenu.Location = new System.Drawing.Point(3, 3);
+            this.getMenu.Location = new System.Drawing.Point(4, 4);
+            this.getMenu.Margin = new System.Windows.Forms.Padding(4);
             this.getMenu.Name = "getMenu";
-            this.getMenu.Size = new System.Drawing.Size(317, 27);
+            this.getMenu.Size = new System.Drawing.Size(454, 41);
             this.getMenu.TabIndex = 0;
             this.getMenu.Text = "메뉴담기";
             this.getMenu.UseVisualStyleBackColor = false;
@@ -1117,11 +1187,12 @@ namespace Kiosk
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(653, 707);
+            this.ClientSize = new System.Drawing.Size(933, 1060);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

@@ -118,7 +118,7 @@ namespace Kiosk
         #endregion
 
         // 현재 선택된 메뉴의 정보(참조로 넘어옴, 옵션 선택 결과도 이 객체에 저장)
-        private MenuInformation currentMenuInfo = new MenuInformation("디카페인라이트바닐라아몬드라떼(ICE)");
+        private MenuInformation currentMenuInfo = new MenuInformation("콜드브루디카페인(HOT)");
 
         private int _tempPrice = 0;
         private int _basePrice;
