@@ -107,6 +107,8 @@ namespace Kiosk
         public string MenuName { get; set; }
         public int Count { get; set; }
 
+        public int Price { get; set; }
+
         // 1. 얼음 옵션
         public bool Option_IceMore { get; set; }      // 얼음 많이
         public bool Option_IceLess { get; set; }      // 얼음 적게
@@ -154,6 +156,7 @@ namespace Kiosk
         {
             MenuName = name;
             Count = 1;
+            Price = 4000;
 
             if (MenuCategoryMap.TryGetValue(name, out string category))
                 MenuHead = category;
