@@ -418,6 +418,7 @@ namespace Kiosk
 
         private void picture_Calculate_Click(object sender, EventArgs e)
         {
+            if (menuLists.Count == 0) return;
             Product_check_Form home = new Product_check_Form(menuLists, totalPrice);
             home.Show();
             this.Hide();
