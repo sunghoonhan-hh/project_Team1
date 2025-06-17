@@ -14,6 +14,7 @@ namespace Kiosk
 {
     public partial class Form_payment : Form
     {
+        private List<MenuInformation> menuInformation;
         int totalPrice; // 예시로 총 결제 금액을 10,000원으로 설정
         public Form_payment(int total)
         {
@@ -25,7 +26,16 @@ namespace Kiosk
             totalPrice = total;
         }
 
-       
+        public Form_payment(int total, List<MenuInformation> _menu)
+        {
+            InitializeComponent();
+            btn_credit_payment.Image = new Bitmap(Properties.Resources.card, btn_credit_payment.Width, btn_credit_payment.Height);
+            btn_credit_payment.ImageAlign = ContentAlignment.MiddleCenter;
+            btn_cuppon_payment.Image = new Bitmap(Properties.Resources.coupon, btn_cuppon_payment.Width, btn_cuppon_payment.Height);
+            btn_cuppon_payment.ImageAlign = ContentAlignment.MiddleCenter;
+            totalPrice = total;
+            menuInformation = _menu;
+        }
 
 
 
@@ -48,7 +58,9 @@ namespace Kiosk
 
         private void btn_cancel_Click(object sender, EventArgs e)
         {
-            Close();
+            SelectCoffee newForm = new SelectCoffee(menuInformation);
+            newForm.Show();
+            this.Close();
         }
 
     }

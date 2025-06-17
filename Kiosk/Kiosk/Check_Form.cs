@@ -117,15 +117,16 @@ namespace Kiosk
         }
         private void btn_payment_Click(object sender, EventArgs e)
         {
-            Form_payment payment = new Form_payment((int)totalPrice);
+            Form_payment payment = new Form_payment((int)totalPrice, menuInformation);
             payment.ShowDialog();
             Close();
         }
 
         private void btn_back_Click(object sender, EventArgs e)
         {
-
-            Close();
+            SelectCoffee newForm = new SelectCoffee(menuInformation);
+            newForm.Show();
+            this.Close();
         }
 
         private void Product_check_Form_Load(object sender, EventArgs e)
@@ -136,7 +137,7 @@ namespace Kiosk
             txt_total.Font = new Font("Maplestory Bold", 10, FontStyle.Bold);
             btn_back.Font = new Font("Maplestory Bold", 10, FontStyle.Bold);
             btn_payment.Font = new Font("Maplestory Bold", 10, FontStyle.Bold);
-            MessageBox.Show("선택된 항목 수: " + menuInformation.Count);
+            //MessageBox.Show("선택된 항목 수: " + menuInformation.Count);
         }
 
         private void show_Item()

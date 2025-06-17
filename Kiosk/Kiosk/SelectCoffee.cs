@@ -22,6 +22,7 @@ namespace Kiosk
         private Button lastClickedButton = null;
         private List<PictureBox> shownPictures = new List<PictureBox>();
         private List<Label> shownPriceLabels = new List<Label>();
+        private List<MenuInformation> menuLists = new List<MenuInformation>();
 
         // 각 category의 실제 폴더명
         private Dictionary<string, string> categoryImageFolder = new Dictionary<string, string>()
@@ -132,7 +133,7 @@ namespace Kiosk
             { "제로복숭아아이스티", 4000 }
         };
 
-        private List<MenuInformation> menuLists = new List<MenuInformation>();
+        
 
         public SelectCoffee()
         {
@@ -145,6 +146,25 @@ namespace Kiosk
             this.MaximizeBox = false;
 
             CreateRoundedButtons();
+        }
+
+        public SelectCoffee(List<MenuInformation> _menuList)
+        {
+            InitializeComponent();
+            InitializeTotalPrice();
+
+            // 폼 크기 고정
+            this.Size = new Size(600, 900);
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            menuLists = _menuList;
+            CreateRoundedButtons();
+            // 총합 다시 계산
+            totalPrice = menuLists.Sum(item => item.Price * item.Count);
+
+            menuCount.Text = $"{menuLists.Count}개";
+            RefreshBucket();
+            UpdateTotalPriceLabel();
         }
 
         private void InitializeTotalPrice()
@@ -297,7 +317,7 @@ namespace Kiosk
                 picBox.Click += (sender, e) =>
                 {
                     tempMenu = menuInfo;
-                    OptionView optionview = new OptionView(menuInfo);
+                    OptionView optionview = new OptionView(tempMenu);
                     optionview.FormClosed += Product_check_Form_FormClosed;
                     optionview.Show();
                 };
@@ -314,7 +334,7 @@ namespace Kiosk
         {
             if(!tempMenu.IsReturn)
             {
-                AddMenu(tempMenu.MenuName, tempMenu.MenuImage, tempMenu.Price);
+                AddMenu(tempMenu);
             }
         }
 
@@ -341,10 +361,10 @@ namespace Kiosk
             }
         }
 
-        private void AddMenu(string menuName, Image image, int price)
+        private void AddMenu(MenuInformation menuName)
         {
             // 항상 새로 추가
-            menuLists.Add(new MenuInformation(menuName, image, price));
+            menuLists.Add(menuName);
 
             // 총합 다시 계산
             totalPrice = menuLists.Sum(item => item.Price * item.Count);
