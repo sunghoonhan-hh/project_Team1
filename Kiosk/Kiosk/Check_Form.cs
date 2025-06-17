@@ -24,7 +24,6 @@ namespace Kiosk
             lvw_selected.OwnerDraw = true;
             lvw_selected.FullRowSelect = true;
             lvw_selected.GridLines = false;
-            totalPrice = price;
 
             // 컬럼 추가
             lvw_selected.Columns.Add("음료", 100);
@@ -50,7 +49,7 @@ namespace Kiosk
             }
 
             using (StringFormat sf = new StringFormat())
-            using (Font headerFont = new Font("맑은 고딕", 10, FontStyle.Bold))
+            using (Font headerFont = new Font("Maplestory Bold", 10, FontStyle.Bold))
             {
                 sf.Alignment = StringAlignment.Center;
                 sf.LineAlignment = StringAlignment.Center;
@@ -118,8 +117,9 @@ namespace Kiosk
         }
         private void btn_payment_Click(object sender, EventArgs e)
         {
-            Form_payment payment = new Form_payment();
+            Form_payment payment = new Form_payment((int)totalPrice);
             payment.ShowDialog();
+            Close();
         }
 
         private void btn_back_Click(object sender, EventArgs e)
@@ -131,8 +131,8 @@ namespace Kiosk
         private void Product_check_Form_Load(object sender, EventArgs e)
         {
             show_Item();
-            
-            txt_total.Text = "총 금액 : "+totalPrice.ToString() + "원        할인 금액 : 0원     " + "   계산할 금액 : "+totalPrice.ToString()+"원";
+
+            txt_total.Text = "총 금액 : " + totalPrice.ToString() + "원";
             txt_total.Font = new Font("Maplestory Bold", 10, FontStyle.Bold);
             btn_back.Font = new Font("Maplestory Bold", 10, FontStyle.Bold);
             btn_payment.Font = new Font("Maplestory Bold", 10, FontStyle.Bold);
@@ -165,8 +165,9 @@ namespace Kiosk
                 if (m.Option_Milk_Soy == true) { row[1] += "소이 밀크"; }
                 if (m.Option_WhippedCream == true) { row[1] += "휘핑 크림 추가"; }
                 row[2] = m.Count.ToString();
-                row[3] = totalPrice.ToString();
+                row[3] = m.Price.ToString();
                 lvw_selected.Items.Add(new ListViewItem(row));
+                totalPrice += m.Price;
             }
         }
     }
