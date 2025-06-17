@@ -132,21 +132,6 @@ namespace Kiosk
             { "제로복숭아아이스티", 4000 }
         };
 
-        class MenuItem
-        {
-            public string MenuName { get; set; }
-            public decimal Price { get; set; }
-            public int Count { get; set; }
-
-            public MenuItem(string menuName, decimal price)
-            {
-                MenuName = menuName;
-                Price = price;
-                Count = 1;
-            }
-        }
-
-        private List<MenuItem> menuItems = new List<MenuItem>();
         private List<MenuInformation> menuLists = new List<MenuInformation>();
 
         public SelectCoffee()
@@ -255,10 +240,8 @@ namespace Kiosk
             string categoryPath = Path.Combine(baseImagePath, folderName);
 
             if (!Directory.Exists(categoryPath))
-            {
-                MessageBox.Show($"이미지 폴더가 존재하지 않습니다: {categoryPath}");
                 return;
-            }
+            
 
             // 이미지 가져오기
             string[] imageExtensions = new[] { "*.jpg" };
@@ -330,7 +313,9 @@ namespace Kiosk
         private void Product_check_Form_FormClosed(object sender, FormClosedEventArgs e)
         {
             if(!tempMenu.IsReturn)
+            {
                 AddMenu(tempMenu.MenuName, tempMenu.MenuImage, tempMenu.Price);
+            }
         }
 
         private decimal totalPrice = 0;
@@ -363,6 +348,8 @@ namespace Kiosk
 
             // 총합 다시 계산
             totalPrice = menuLists.Sum(item => item.Price * item.Count);
+
+            menuCount.Text = $"{menuLists.Count}개";
 
             // 화면 갱신
             RefreshBucket();
@@ -403,11 +390,11 @@ namespace Kiosk
 
             if (leftTime <= 0)
             {
+                leftTime = 987654321;
                 timer1.Stop();
                 매장포장 home = new 매장포장();
                 home.Show();
                 this.Hide();
-                // 나중에는 this.Close()로 바꾸기
             }
             else
             {
@@ -427,7 +414,6 @@ namespace Kiosk
             매장포장 home = new 매장포장(true);
             home.Show();
             this.Hide();
-            // 나중에는 this.Close()로 바꾸기
         }
 
         private void picture_Calculate_Click(object sender, EventArgs e)
@@ -440,8 +426,8 @@ namespace Kiosk
         private void DeleteBucket(object sender, EventArgs e)
         {
             bucket.Controls.Clear();
-            menuItems.Clear();
-
+            menuLists.Clear();
+            menuCount.Text = $"0개";
             Label totalPriceLabel = total.Controls.OfType<Label>().FirstOrDefault(l => l.Name == "totalPriceLabel");
             if (totalPriceLabel != null)
             {

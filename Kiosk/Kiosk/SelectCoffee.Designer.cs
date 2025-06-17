@@ -31,11 +31,12 @@
             this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bucket = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label_Timer = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.menuCount = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.picture_Calculate = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -43,7 +44,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
             this.total = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bucket.SuspendLayout();
@@ -71,6 +71,14 @@
             this.bucket.Name = "bucket";
             this.bucket.Size = new System.Drawing.Size(339, 202);
             this.bucket.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(1, 187);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(338, 15);
+            this.panel1.TabIndex = 13;
             // 
             // label1
             // 
@@ -111,15 +119,15 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "선택한 상품";
             // 
-            // label4
+            // menuCount
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("메이플스토리", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label4.Location = new System.Drawing.Point(507, 738);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 26);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "0개";
+            this.menuCount.AutoSize = true;
+            this.menuCount.Font = new System.Drawing.Font("메이플스토리", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.menuCount.Location = new System.Drawing.Point(507, 738);
+            this.menuCount.Name = "menuCount";
+            this.menuCount.Size = new System.Drawing.Size(49, 26);
+            this.menuCount.TabIndex = 6;
+            this.menuCount.Text = "0개";
             // 
             // label5
             // 
@@ -194,14 +202,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(1, 187);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(338, 15);
-            this.panel1.TabIndex = 13;
-            // 
             // total
             // 
             this.total.BackColor = System.Drawing.Color.White;
@@ -223,7 +223,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.picture_Calculate);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.menuCount);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label_Timer);
@@ -250,7 +250,7 @@
         private System.Windows.Forms.Label label_Timer;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label menuCount;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox picture_Calculate;
         private System.Windows.Forms.Label label6;
