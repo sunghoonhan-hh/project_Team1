@@ -118,7 +118,7 @@ namespace Kiosk
         #endregion
 
         // 현재 선택된 메뉴의 정보(참조로 넘어옴, 옵션 선택 결과도 이 객체에 저장)
-        private MenuInformation currentMenuInfo = new MenuInformation("콜드브루디카페인(HOT)");
+        private MenuInformation currentMenuInfo;
 
         private int _tempPrice = 0;
         private int _basePrice;
@@ -145,7 +145,8 @@ namespace Kiosk
         {
             InitializeComponent();
 
-            MenuInformation currentMenuInfo = menuInformation;
+            this.currentMenuInfo = menuInformation;
+
             ChosenMenuImg.Image = currentMenuInfo.MenuImage;
 
             MakeAllControlsRound(this, 15);
@@ -604,6 +605,7 @@ namespace Kiosk
             currentMenuInfo.Price = _basePrice + _tempPrice;
             _tempPrice = 0; // 임시 변수 초기화
             tableLayoutPanel1.Visible = false; // 옵션 패널 숨김
+            currentMenuInfo.IsReturn = false;  // 메뉴담기 시에는 false로 명시
             this.Close();
             // 여기에 실제 주문 처리 로직 추가 가능
         }
@@ -618,13 +620,14 @@ namespace Kiosk
         {
             if (currentMenuInfo != null)
             {
-                // 현재 메뉴명으로 새 객체 생성(옵션 초기화)
-                currentMenuInfo = new MenuInformation(currentMenuInfo.MenuName);
-                SetDrinkCategory(currentMenuInfo); // UI 동기화
+                currentMenuInfo.IsReturn = true; // 기존 참조 객체의 IsReturn만 true로!
+                                                 // 옵션 컨트롤 초기화 필요하면 직접 컨트롤들만 리셋
+                                                 // SetDrinkCategory(currentMenuInfo); // 이 줄은 제거하거나, 컨트롤만 리셋
             }
             tableLayoutPanel1.Visible = false; // 옵션 패널 숨김
             this.Close();
         }
+
 
         private void OptionView_Load(object sender, EventArgs e)
         {

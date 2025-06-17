@@ -329,7 +329,8 @@ namespace Kiosk
 
         private void Product_check_Form_FormClosed(object sender, FormClosedEventArgs e)
         {
-            AddMenu(tempMenu.MenuName, tempMenu.MenuImage, tempMenu.Price);
+            if(!tempMenu.IsReturn)
+                AddMenu(tempMenu.MenuName, tempMenu.MenuImage, tempMenu.Price);
         }
 
         private decimal totalPrice = 0;

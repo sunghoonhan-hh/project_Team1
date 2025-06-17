@@ -110,6 +110,7 @@ namespace Kiosk
         public string MenuName { get; set; }
         public int Count { get; set; }
 
+        public bool IsReturn { get; set; }
         public Image MenuImage { get; set; }
 
         public int Price { get; set; }
@@ -162,6 +163,7 @@ namespace Kiosk
             MenuName = name;
             Count = 1;
             Price = 4000;
+            IsReturn = false;
 
             if (MenuCategoryMap.TryGetValue(name, out string category))
                 MenuHead = category;
