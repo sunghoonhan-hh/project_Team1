@@ -444,15 +444,40 @@ namespace Kiosk
 
         private void Option_CheckedChanged(object sender, EventArgs e)
         {
+            // 1. 무료옵션(얼음/당도)
+            currentMenuInfo.Option_IceMore = rdoIceMore.Checked;
+            currentMenuInfo.Option_IceLess = rdoIceLess.Checked;
+            currentMenuInfo.Option_LessSweet = rdoLessSweet.Checked;
+            currentMenuInfo.Option_Sweet = rdoSweet.Checked;
 
-            if (sender == rdoNoSize || sender == rdoSizeUp)
-            {
-                currentMenuInfo.Option_CupSizeUp = rdoSizeUp.Checked;
-            }
+            // 2. 시럽
+            currentMenuInfo.Option_SteviaSugar = rdoSteviaSyrup.Checked;
+            currentMenuInfo.Option_Syrup_Vanilla = rdoSyrupVanilla.Checked;
+            currentMenuInfo.Option_Syrup_Hazelnut = rdoSyrupHazelnut.Checked;
+            currentMenuInfo.Option_Syrup_Caramel = rdoSyrupCaramel.Checked;
 
+            // 3. 우유
+            currentMenuInfo.Option_Milk_Oat = rdoMilkOat.Checked;
+            currentMenuInfo.Option_Milk_Almond = rdoMilkAlmond.Checked;
+            currentMenuInfo.Option_Milk_Soy = rdoMilkSoy.Checked;
+
+            // 4. 샷
+            currentMenuInfo.Option_Shot = rdoShot.Checked;
+            currentMenuInfo.Option_2Shot = rdo2Shot.Checked;
+            currentMenuInfo.Option_Decaf2Shot = rdoDecaf2Shot.Checked ? 1 : 0;
+
+            // 5. 사이즈
+            currentMenuInfo.Option_CupSizeUp = rdoSizeUp.Checked;
+
+            // 6. 부가요소
+            currentMenuInfo.Option_Pearl = chkPearl.Checked;
+            currentMenuInfo.Option_WhippedCream = chkWhippedCream.Checked;
+            currentMenuInfo.Option_Drizzle_Chocolate = rdoDrizzleChocolate.Checked;
+            currentMenuInfo.Option_Drizzle_Caramel = rdoDrizzleCaramel.Checked;
+
+            // "선택안함" 체크박스 처리(기존 로직 유지)
             if (sender is CheckBox checkBox && checkBox.Text.Contains("선택안함"))
             {
-                // 부모 TableLayoutPanel 찾기 (재귀적)
                 var parentPanel = FindParentTableLayoutPanel(checkBox);
                 if (parentPanel == null) return;
 
@@ -465,6 +490,8 @@ namespace Kiosk
                     EnableControl(parentPanel, checkBox);
                 }
             }
+
+            // 가격 처리(기존 로직)
             if (sender is CheckBox cb)
             {
                 string optionText = cb.Text;
@@ -479,6 +506,7 @@ namespace Kiosk
             UpdateSelectedOptionsText();
             UpdateOrderButtonState();
         }
+
 
         private void ProcessOptionPrice(bool isChecked, string optionText)
         {

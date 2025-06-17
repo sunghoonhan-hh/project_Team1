@@ -5,8 +5,6 @@ D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\K
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.OptionView.resources
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Product_check_Form.resources
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form_credit_payment.resources
-D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form_cuppon_payment.resources
-D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form_simple_payment.resources
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form_payment.resources
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.매장포장.resources
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Properties.Resources.resources
