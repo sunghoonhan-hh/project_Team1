@@ -16,5 +16,10 @@ namespace Kiosk
         {
             InitializeComponent();
         }
+
+        private void txtCuponInput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

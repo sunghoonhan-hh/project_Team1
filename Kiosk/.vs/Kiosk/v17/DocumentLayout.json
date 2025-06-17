@@ -3,12 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\82106\\desktop\\project_team1\\kiosk\\kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\82106\\desktop\\project_team1\\kiosk\\kiosk\\form_simple_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_simple_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_simple_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_simple_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_credit_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_credit_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\\uBA54\uB274\uC120\uD0DD.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\\uBA54\uB274\uC120\uD0DD.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_cuppon_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_cuppon_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\check_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\check_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_credit_payment.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_credit_payment.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_cuppon_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_cuppon_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\82106\\desktop\\project_team1\\kiosk\\kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\payment_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\payment_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_credit_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_credit_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\check_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\check_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\\uC88C\uC11D\uBC30\uCE58\uB3C4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,54 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\menuinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\menuinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\payment_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\payment_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\check_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\check_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\selectcoffee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_cuppon_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_cuppon_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_simple_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_simple_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\check_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\check_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_credit_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_credit_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_credit_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_credit_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\form_cuppon_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\form_cuppon_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\\uBA54\uB274\uC120\uD0DD.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\\uBA54\uB274\uC120\uD0DD.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|c:\\users\\82106\\desktop\\project_team1\\kiosk\\kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|solutionrelative:kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{71C0A8CF-9711-4136-A9DA-342FF208B42C}|Kiosk\\Kiosk.csproj|C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\kiosk\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -86,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,13 +98,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
+              "Title": "Form_simple_payment.cs",
+              "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_simple_payment.cs",
+              "RelativeDocumentMoniker": "Kiosk\\Form_simple_payment.cs",
+              "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_simple_payment.cs",
+              "RelativeToolTip": "Kiosk\\Form_simple_payment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T03:58:13.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "\uB9E4\uC7A5\uD3EC\uC7A5.cs",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs",
               "RelativeDocumentMoniker": "Kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs",
               "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs",
               "RelativeToolTip": "Kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAwCAAAAAMAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T14:12:45.914Z",
               "EditorCaption": ""
@@ -113,14 +130,14 @@
               "RelativeDocumentMoniker": "Kiosk\\Form_credit_payment.cs",
               "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_credit_payment.cs",
               "RelativeToolTip": "Kiosk\\Form_credit_payment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAANAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACYAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-15T07:25:45.311Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Form_credit_payment.Designer.cs",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_credit_payment.Designer.cs",
               "RelativeDocumentMoniker": "Kiosk\\Form_credit_payment.Designer.cs",
@@ -145,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "SelectCoffee.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\SelectCoffee.cs",
               "RelativeDocumentMoniker": "Kiosk\\SelectCoffee.cs",
@@ -157,20 +174,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "SelectCoffee.cs",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\SelectCoffee.cs",
               "RelativeDocumentMoniker": "Kiosk\\SelectCoffee.cs",
               "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\SelectCoffee.cs",
               "RelativeToolTip": "Kiosk\\SelectCoffee.cs",
-              "ViewState": "AQIAAJ0BAAAAAAAAAAAowG0BAAAUAAAA",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAYwG0BAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-16T12:10:23.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 8,
               "Title": "Form_cuppon_payment.cs",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_cuppon_payment.cs",
               "RelativeDocumentMoniker": "Kiosk\\Form_cuppon_payment.cs",
@@ -183,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "MenuInformation.cs",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\MenuInformation.cs",
               "RelativeDocumentMoniker": "Kiosk\\MenuInformation.cs",
@@ -191,12 +208,11 @@
               "RelativeToolTip": "Kiosk\\MenuInformation.cs",
               "ViewState": "AQIAAKcAAAAAAAAAAAAmwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T12:45:16.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T12:45:16.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Payment_Form.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Payment_Form.cs",
               "RelativeDocumentMoniker": "Kiosk\\Payment_Form.cs",
@@ -208,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "Form_simple_payment.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_simple_payment.cs",
               "RelativeDocumentMoniker": "Kiosk\\Form_simple_payment.cs",
@@ -220,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Form_cuppon_payment.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_cuppon_payment.cs",
               "RelativeDocumentMoniker": "Kiosk\\Form_cuppon_payment.cs",
@@ -232,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Check_Form.cs",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Check_Form.cs",
               "RelativeDocumentMoniker": "Kiosk\\Check_Form.cs",
@@ -245,7 +261,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "Form_credit_payment.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Form_credit_payment.cs",
               "RelativeDocumentMoniker": "Kiosk\\Form_credit_payment.cs",
@@ -257,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
               "Title": "\uC88C\uC11D\uBC30\uCE58\uB3C4.cs",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\\uC88C\uC11D\uBC30\uCE58\uB3C4.cs",
               "RelativeDocumentMoniker": "Kiosk\\\uC88C\uC11D\uBC30\uCE58\uB3C4.cs",
@@ -265,12 +281,11 @@
               "RelativeToolTip": "Kiosk\\\uC88C\uC11D\uBC30\uCE58\uB3C4.cs",
               "ViewState": "AQIAAFsAAAAAAAAAAAAmwCoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T07:13:13.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T07:13:13.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "\uC88C\uC11D\uBC30\uCE58\uB3C4.Designer.cs",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\\uC88C\uC11D\uBC30\uCE58\uB3C4.Designer.cs",
               "RelativeDocumentMoniker": "Kiosk\\\uC88C\uC11D\uBC30\uCE58\uB3C4.Designer.cs",
@@ -278,24 +293,22 @@
               "RelativeToolTip": "Kiosk\\\uC88C\uC11D\uBC30\uCE58\uB3C4.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T07:12:34.955Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-15T07:12:34.955Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "\uC88C\uC11D\uBC30\uCE58\uB3C4.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\\uC88C\uC11D\uBC30\uCE58\uB3C4.cs",
               "RelativeDocumentMoniker": "Kiosk\\\uC88C\uC11D\uBC30\uCE58\uB3C4.cs",
               "ToolTip": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\\uC88C\uC11D\uBC30\uCE58\uB3C4.cs [\uB514\uC790\uC778]",
               "RelativeToolTip": "Kiosk\\\uC88C\uC11D\uBC30\uCE58\uB3C4.cs [\uB514\uC790\uC778]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T07:30:43.465Z",
-              "EditorCaption": " [\uB514\uC790\uC778]"
+              "WhenOpened": "2025-05-13T07:30:43.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 3,
               "Title": "\uBA54\uB274\uC120\uD0DD.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\\uBA54\uB274\uC120\uD0DD.cs",
               "RelativeDocumentMoniker": "Kiosk\\\uBA54\uB274\uC120\uD0DD.cs",
@@ -307,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\Program.cs",
               "RelativeDocumentMoniker": "Kiosk\\Program.cs",
@@ -315,12 +328,11 @@
               "RelativeToolTip": "Kiosk\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T07:30:03.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-13T07:30:03.429Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "\uB9E4\uC7A5\uD3EC\uC7A5.cs [\uB514\uC790\uC778]",
               "DocumentMoniker": "C:\\Users\\82106\\Desktop\\project_Team1\\Kiosk\\Kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs",
               "RelativeDocumentMoniker": "Kiosk\\\uB9E4\uC7A5\uD3EC\uC7A5.cs",
