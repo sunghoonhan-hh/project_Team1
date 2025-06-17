@@ -28,26 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnStore = new MyButton.Custom_Button();
-            this.btnTakeout = new MyButton.Custom_Button();
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.btnTakeout = new MyButton.Custom_Button();
+            this.btnStore = new MyButton.Custom_Button();
             this.SuspendLayout();
             // 
-            // btnStore
+            // label1
             // 
-            this.btnStore.BackColor = System.Drawing.Color.White;
-            this.btnStore.FlatAppearance.BorderSize = 0;
-            this.btnStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStore.Font = new System.Drawing.Font("메이플스토리", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.btnStore.IsMaximum = false;
-            this.btnStore.Location = new System.Drawing.Point(40, 218);
-            this.btnStore.Name = "btnStore";
-            this.btnStore.Radius = 20;
-            this.btnStore.Size = new System.Drawing.Size(220, 414);
-            this.btnStore.TabIndex = 0;
-            this.btnStore.Text = "매장";
-            this.btnStore.UseVisualStyleBackColor = false;
-            this.btnStore.Click += new System.EventHandler(this.btnStore_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("메이플스토리", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Location = new System.Drawing.Point(118, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(344, 67);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "KW Coffee";
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // btnTakeout
             // 
@@ -65,17 +67,23 @@
             this.btnTakeout.UseVisualStyleBackColor = false;
             this.btnTakeout.Click += new System.EventHandler(this.btnTakeout_Click);
             // 
-            // label1
+            // btnStore
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("메이플스토리", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label1.Location = new System.Drawing.Point(118, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(344, 67);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "KW Coffee";
+            this.btnStore.BackColor = System.Drawing.Color.White;
+            this.btnStore.FlatAppearance.BorderSize = 0;
+            this.btnStore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStore.Font = new System.Drawing.Font("메이플스토리", 31.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnStore.IsMaximum = false;
+            this.btnStore.Location = new System.Drawing.Point(40, 218);
+            this.btnStore.Name = "btnStore";
+            this.btnStore.Radius = 20;
+            this.btnStore.Size = new System.Drawing.Size(220, 414);
+            this.btnStore.TabIndex = 0;
+            this.btnStore.Text = "매장";
+            this.btnStore.UseVisualStyleBackColor = false;
+            this.btnStore.Click += new System.EventHandler(this.btnStore_Click);
             // 
-            // Form1
+            // 매장포장
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -84,7 +92,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnTakeout);
             this.Controls.Add(this.btnStore);
-            this.Name = "Form1";
+            this.Name = "매장포장";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -96,6 +104,7 @@
         private MyButton.Custom_Button btnStore;
         private MyButton.Custom_Button btnTakeout;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

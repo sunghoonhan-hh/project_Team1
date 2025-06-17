@@ -424,7 +424,7 @@ namespace Kiosk
 
         private void picture_Home_Click(object sender, EventArgs e)
         {
-            매장포장 home = new 매장포장();
+            매장포장 home = new 매장포장(true);
             home.Show();
             this.Hide();
             // 나중에는 this.Close()로 바꾸기
@@ -434,7 +434,7 @@ namespace Kiosk
         {
             Product_check_Form home = new Product_check_Form(menuLists, totalPrice);
             home.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void DeleteBucket(object sender, EventArgs e)

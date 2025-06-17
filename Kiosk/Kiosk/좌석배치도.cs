@@ -18,11 +18,25 @@ namespace Kiosk
 
         private List<Seat> seatList;
 
-        public 좌석배치도(List<Seat> seats)
+        static Seat lastSeat = null;
+
+        public 좌석배치도(List<Seat> seats, int t)
         {
             InitializeComponent();
             seatList = seats;
 
+            if (lastSeat != null)
+            {
+                string seatId = lastSeat.SeatId;
+                Seat seat = seatList.FirstOrDefault(s => s.SeatId == seatId);
+
+                seat.IsLocked = false;
+                seat.IsOccupied = true;
+
+                TimeSpan usageDuration = TimeSpan.FromSeconds(15 - t);
+                seat.OccupiedUntil = DateTime.Now.Add(usageDuration);
+
+            }
             ConnectSeatButtons(this);
             UpdateSeatButtons();
         }
@@ -74,7 +88,7 @@ namespace Kiosk
                     {
                         if (seat.IsOccupied)
                         {
-                            btn.Enabled = false;
+                            btn.Enabled = true;
                             btn.BackColor = Color.DarkGray;
                         }
                         else if (seat.IsLocked)
@@ -110,20 +124,14 @@ namespace Kiosk
                     seat.IsLocked = true;
                     this.Hide();
                     SelectCoffee menuForm = new SelectCoffee();  //(seat, seatList);
+
+                    lastSeat = seat;
+
                     menuForm.FormClosed += (s, args) =>
                     {
                         seat.IsLocked = false;
 
-                        //if (menuForm.GoHome)
-                        //{
-                        //    this.Close();  // 매장포장으로 돌아감
-                        //}
-                        //else
-                        //{
-                        //    UpdateSeatButtons();
-                        //    this.Show();
-                        //}
-                        this.Close();
+                        this.Hide();
                     };
                     menuForm.Show();
                 }
@@ -132,7 +140,9 @@ namespace Kiosk
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            this.Close();
+            매장포장 newForm = new 매장포장(true);
+            newForm.Show();
+            this.Hide();
         }
     }
 }

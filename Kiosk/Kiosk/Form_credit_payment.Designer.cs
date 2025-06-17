@@ -47,9 +47,10 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LightYellow;
-            this.button1.Location = new System.Drawing.Point(130, 263);
+            this.button1.Location = new System.Drawing.Point(80, 164);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(160, 160);
+            this.button1.Size = new System.Drawing.Size(98, 100);
             this.button1.TabIndex = 0;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
@@ -57,9 +58,10 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.LightYellow;
-            this.button2.Location = new System.Drawing.Point(296, 263);
+            this.button2.Location = new System.Drawing.Point(182, 164);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(160, 160);
+            this.button2.Size = new System.Drawing.Size(98, 100);
             this.button2.TabIndex = 1;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = false;
@@ -67,9 +69,10 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.LightYellow;
-            this.button3.Location = new System.Drawing.Point(462, 263);
+            this.button3.Location = new System.Drawing.Point(284, 164);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 160);
+            this.button3.Size = new System.Drawing.Size(98, 100);
             this.button3.TabIndex = 2;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = false;
@@ -77,9 +80,10 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.LightYellow;
-            this.button4.Location = new System.Drawing.Point(130, 429);
+            this.button4.Location = new System.Drawing.Point(80, 268);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(160, 160);
+            this.button4.Size = new System.Drawing.Size(98, 100);
             this.button4.TabIndex = 3;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
@@ -87,9 +91,10 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.LightYellow;
-            this.button5.Location = new System.Drawing.Point(296, 429);
+            this.button5.Location = new System.Drawing.Point(182, 268);
+            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(160, 160);
+            this.button5.Size = new System.Drawing.Size(98, 100);
             this.button5.TabIndex = 4;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = false;
@@ -97,9 +102,10 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.LightYellow;
-            this.button6.Location = new System.Drawing.Point(462, 429);
+            this.button6.Location = new System.Drawing.Point(284, 268);
+            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(160, 160);
+            this.button6.Size = new System.Drawing.Size(98, 100);
             this.button6.TabIndex = 5;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
@@ -107,9 +113,10 @@
             // button7
             // 
             this.button7.BackColor = System.Drawing.Color.LightYellow;
-            this.button7.Location = new System.Drawing.Point(130, 595);
+            this.button7.Location = new System.Drawing.Point(80, 372);
+            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(160, 160);
+            this.button7.Size = new System.Drawing.Size(98, 100);
             this.button7.TabIndex = 6;
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = false;
@@ -117,9 +124,10 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.LightYellow;
-            this.button8.Location = new System.Drawing.Point(296, 595);
+            this.button8.Location = new System.Drawing.Point(182, 372);
+            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(160, 160);
+            this.button8.Size = new System.Drawing.Size(98, 100);
             this.button8.TabIndex = 7;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = false;
@@ -127,9 +135,10 @@
             // button9
             // 
             this.button9.BackColor = System.Drawing.Color.LightYellow;
-            this.button9.Location = new System.Drawing.Point(462, 595);
+            this.button9.Location = new System.Drawing.Point(284, 372);
+            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(160, 160);
+            this.button9.Size = new System.Drawing.Size(98, 100);
             this.button9.TabIndex = 8;
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = false;
@@ -137,17 +146,19 @@
             // txtCardInput
             // 
             this.txtCardInput.BackColor = System.Drawing.SystemColors.Info;
-            this.txtCardInput.Location = new System.Drawing.Point(185, 111);
+            this.txtCardInput.Location = new System.Drawing.Point(114, 69);
+            this.txtCardInput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCardInput.Name = "txtCardInput";
-            this.txtCardInput.Size = new System.Drawing.Size(437, 35);
+            this.txtCardInput.Size = new System.Drawing.Size(270, 25);
             this.txtCardInput.TabIndex = 9;
             // 
             // txtTotalPrice
             // 
             this.txtTotalPrice.BackColor = System.Drawing.SystemColors.Info;
-            this.txtTotalPrice.Location = new System.Drawing.Point(185, 191);
+            this.txtTotalPrice.Location = new System.Drawing.Point(114, 119);
+            this.txtTotalPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTotalPrice.Name = "txtTotalPrice";
-            this.txtTotalPrice.Size = new System.Drawing.Size(437, 35);
+            this.txtTotalPrice.Size = new System.Drawing.Size(270, 25);
             this.txtTotalPrice.TabIndex = 10;
             // 
             // custom_Button1
@@ -156,38 +167,42 @@
             this.custom_Button1.FlatAppearance.BorderSize = 0;
             this.custom_Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.custom_Button1.IsMaximum = true;
-            this.custom_Button1.Location = new System.Drawing.Point(130, 779);
+            this.custom_Button1.Location = new System.Drawing.Point(80, 487);
+            this.custom_Button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.custom_Button1.Name = "custom_Button1";
             this.custom_Button1.Radius = 20;
-            this.custom_Button1.Size = new System.Drawing.Size(492, 73);
+            this.custom_Button1.Size = new System.Drawing.Size(303, 46);
             this.custom_Button1.TabIndex = 11;
             this.custom_Button1.Text = "결제하기";
             this.custom_Button1.UseVisualStyleBackColor = false;
+            this.custom_Button1.Click += new System.EventHandler(this.custom_Button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 114);
+            this.label1.Location = new System.Drawing.Point(40, 71);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 24);
+            this.label1.Size = new System.Drawing.Size(72, 15);
             this.label1.TabIndex = 12;
             this.label1.Text = "카드 번호";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(65, 194);
+            this.label2.Location = new System.Drawing.Point(40, 121);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 24);
+            this.label2.Size = new System.Drawing.Size(57, 15);
             this.label2.TabIndex = 13;
             this.label2.Text = "총 금액";
             // 
             // Form_credit_payment
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(774, 921);
+            this.ClientSize = new System.Drawing.Size(476, 576);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.custom_Button1);
@@ -202,6 +217,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_credit_payment";
             this.Text = "카드결제";
             this.Load += new System.EventHandler(this.Form_credit_payment_Load);

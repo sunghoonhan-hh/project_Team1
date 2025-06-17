@@ -40,5 +40,13 @@ namespace Kiosk
                 txtCardInput.Text += btn.Text;
             }
         }
+
+        private void custom_Button1_Click(object sender, EventArgs e)
+        {
+            
+            매장포장 newForm = new 매장포장();
+            newForm.Show();
+            this.Close();
+        }
     }
 }
