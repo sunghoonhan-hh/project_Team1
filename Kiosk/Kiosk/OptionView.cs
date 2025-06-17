@@ -406,17 +406,23 @@ namespace Kiosk
             rdoLessSweet.Visible = ShouldShowLessSweet(menuInfo);
 
             bool hideIceAndSize = ShouldHideIceAndSize(menuInfo);
-            gbIceOptions.Visible = !hideIceAndSize;  // 얼음 옵션 그룹
-            gbSize.Visible = !hideIceAndSize;        // 사이즈 업그레이드 그룹
+            gbIceOptions.Visible = !hideIceAndSize;
+            gbSize.Visible = !hideIceAndSize;
 
-            if(hideIceAndSize)
+            if (hideIceAndSize)
             {
-                if(!rdoNoSize.Checked)
-                {
-                    rdoNoSize.Checked = true;
-                }
+                // 이벤트 핸들러 일시 해제
+                rdoNoSize.CheckedChanged -= Option_CheckedChanged;
+
+                rdoNoSize.Checked = true;
+                currentMenuInfo.Option_CupSizeUp = false; // 데이터 모델 직접 업데이트
+
+                // 이벤트 핸들러 재구독
+                rdoNoSize.CheckedChanged += Option_CheckedChanged;
             }
         }
+
+
 
         /// <summary>
         /// 모든 옵션 컨트롤의 CheckedChanged 이벤트가 이 메서드에 연결됨
@@ -437,6 +443,12 @@ namespace Kiosk
 
         private void Option_CheckedChanged(object sender, EventArgs e)
         {
+
+            if (sender == rdoNoSize || sender == rdoSizeUp)
+            {
+                currentMenuInfo.Option_CupSizeUp = rdoSizeUp.Checked;
+            }
+
             if (sender is CheckBox checkBox && checkBox.Text.Contains("선택안함"))
             {
                 // 부모 TableLayoutPanel 찾기 (재귀적)
@@ -560,7 +572,8 @@ namespace Kiosk
                               (rdoShot.Checked || rdo2Shot.Checked || rdoDecaf2Shot.Checked);
 
             // 사이즈 체크
-            bool isSizeValid = rdoNoSize.Checked || rdoSizeUp.Checked;
+            bool isSizeValid = (gbSize.Visible && (rdoNoSize.Checked || rdoSizeUp.Checked))
+                       || !gbSize.Visible; // 그룹 숨김 시 자동 유효
 
             // 부가요소 체크 (선택안함 체크 시 다른 옵션 모두 해제됨)
             bool isAddOnValid = chkNoAddOns.Checked ||
