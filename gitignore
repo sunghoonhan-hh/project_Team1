@@ -1,0 +1,44 @@
+
+# ======================
+# Visual Studio
+# ======================
+
+## User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Bb]in/
+[Oo]bj/
+
+## VS folder
+.vs/
+*.VC.db
+*.VC.opendb
+
+## Auto-generated debug files
+*.pdb
+*.cache
+*.log
+*.vsidx
+*.dbmdl
+*.tmp
+*.bak
+
+# ======================
+# OS files
+# ======================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ======================
+# Rider or Resharper (if used)
+# ======================
+.idea/
+*.DotSettings.user
+_ReSharper*/

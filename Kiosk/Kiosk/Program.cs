@@ -14,9 +14,15 @@ namespace Kiosk
         [STAThread]
         static void Main()
         {
+            List<MenuInformation> list = new List<MenuInformation>();
+            MenuInformation m = new MenuInformation("왕메가헛개리카노");
+            m.Option_Shot = true;
+            list.Add(m);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OptionView());
+
+
+            Application.Run(new 매장포장());
         }
     }
 }

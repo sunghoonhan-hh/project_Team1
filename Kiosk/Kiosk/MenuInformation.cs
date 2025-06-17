@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace Kiosk
 {
@@ -107,6 +110,8 @@ namespace Kiosk
         public string MenuName { get; set; }
         public int Count { get; set; }
 
+        public Image MenuImage { get; set; }
+
         public int Price { get; set; }
 
         // 1. 얼음 옵션
@@ -157,6 +162,39 @@ namespace Kiosk
             MenuName = name;
             Count = 1;
             Price = 4000;
+
+            if (MenuCategoryMap.TryGetValue(name, out string category))
+                MenuHead = category;
+            else
+                MenuHead = "기타"; // 없는 메뉴는 "기타"로 분류
+
+            // 옵션 초기화
+            Option_IceMore = false;
+            Option_IceLess = false;
+            Option_LessSweet = false;
+            Option_Sweet = false;
+            Option_SteviaSugar = false;
+            Option_CupSizeUp = false;
+            Option_Pearl = false;
+            Option_Shot = false;
+            Option_2Shot = false;
+            Option_Syrup_Vanilla = false;
+            Option_Syrup_Hazelnut = false;
+            Option_Syrup_Caramel = false;
+            Option_Milk_Oat = false;
+            Option_Milk_Almond = false;
+            Option_Milk_Soy = false;
+            Option_WhippedCream = false;
+            Option_Drizzle_Chocolate = false;
+            Option_Drizzle_Caramel = false;
+            Option_Decaf2Shot = 0;
+        }
+        public MenuInformation(string name,Image image,int price)
+        {
+            MenuName = name;
+            Count = 1;
+            Price = price;
+            MenuImage = image;
 
             if (MenuCategoryMap.TryGetValue(name, out string category))
                 MenuHead = category;

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="OptionView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +58,92 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="OptionView.resx">
       <DependentUpon>OptionView.cs</DependentUpon>
+ </EmbeddedResource>
+
+    <Compile Include="CustomListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustonButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CustomButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MenuInformation.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="매장포장.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="매장포장.Designer.cs">
+      <DependentUpon>매장포장.cs</DependentUpon>
+    </Compile>
+    <Compile Include="메뉴선택.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="메뉴선택.Designer.cs">
+      <DependentUpon>메뉴선택.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Check_Form.Designer.cs">
+      <DependentUpon>Check_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_credit_payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_credit_payment.Designer.cs">
+      <DependentUpon>Form_credit_payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_cuppon_payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_cuppon_payment.Designer.cs">
+      <DependentUpon>Form_cuppon_payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_simple_payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_simple_payment.Designer.cs">
+      <DependentUpon>Form_simple_payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_Form.Designer.cs">
+      <DependentUpon>Payment_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Check_Form.resx">
+      <DependentUpon>Check_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_credit_payment.resx">
+      <DependentUpon>Form_credit_payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_cuppon_payment.resx">
+      <DependentUpon>Form_cuppon_payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_simple_payment.resx">
+      <DependentUpon>Form_simple_payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_Form.resx">
+      <DependentUpon>Payment_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="SelectCoffee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectCoffee.Designer.cs">
+      <DependentUpon>SelectCoffee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="좌석배치도.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="좌석배치도.Designer.cs">
+      <DependentUpon>좌석배치도.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="매장포장.resx">
+      <DependentUpon>매장포장.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -66,7 +153,17 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="SelectCoffee.resx">
+      <DependentUpon>SelectCoffee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="메뉴선택.resx">
+      <DependentUpon>메뉴선택.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="좌석배치도.resx">
+      <DependentUpon>좌석배치도.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,6 +176,47 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1014950_6276.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16646.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24076789_coupon_isometric.jpg" />
+    <None Include="Resources\cards.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg.png" />
+    <None Include="Resources\2145.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\좌석배치도.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\좌석.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\좌석1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\좌석찐.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
