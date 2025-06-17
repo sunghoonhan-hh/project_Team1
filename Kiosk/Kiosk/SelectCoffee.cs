@@ -140,7 +140,7 @@ namespace Kiosk
             InitializeTotalPrice();
 
             // 폼 크기 고정
-            this.Size = new Size(525, 721);
+            this.Size = new Size(600, 900);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
 

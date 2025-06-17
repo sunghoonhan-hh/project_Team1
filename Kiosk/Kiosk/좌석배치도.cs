@@ -135,6 +135,26 @@ namespace Kiosk
                     };
                     menuForm.Show();
                 }
+                else if(seat != null && seat.IsOccupied && !seat.IsLocked)
+                {
+                    DialogResult result = MessageBox.Show("이미 사용 중인 좌석입니다.\n추가 주문을 하시겠습니까?", "추가 주문", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (result == DialogResult.Yes)
+                    {
+                        seat.IsLocked = true;
+                        this.Hide();
+                        SelectCoffee menuForm = new SelectCoffee();  // (seat, seatList);
+
+                        lastSeat = seat;
+
+                        menuForm.FormClosed += (s, args) =>
+                        {
+                            seat.IsLocked = false;
+                            this.Hide();  // 또는 this.Show(); 등
+                        };
+
+                        menuForm.Show();
+                    }
+                }
             }
         }
 
