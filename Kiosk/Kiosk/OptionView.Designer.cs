@@ -2,7 +2,7 @@
 
 namespace Kiosk
 {
-    partial class Form1
+    partial class OptionView
     {
         /// <summary>
         /// 필수 디자이너 변수입니다.
@@ -1193,10 +1193,10 @@ namespace Kiosk
             this.ClientSize = new System.Drawing.Size(933, 1060);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.Shown += new System.EventHandler(this.Form1_Shown_1);
+            this.Name = "OptionView1";
+            this.Text = "OptionView1";
+            this.Load += new System.EventHandler(this.OptionView_Load);
+            this.Shown += new System.EventHandler(this.OptionView_Shown_1);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.gbSize.ResumeLayout(false);
             this.gbSize.PerformLayout();

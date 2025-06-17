@@ -15,7 +15,7 @@ namespace Kiosk
 {
 
 
-    public partial class Form1 : Form
+    public partial class OptionView : Form
     {
 
         #region 메뉴-분류 매핑 딕셔너리
@@ -123,7 +123,7 @@ namespace Kiosk
         private int _tempPrice = 0;
         private int _basePrice;
 
-        public Form1()
+        public OptionView()
         {
             InitializeComponent();
 
@@ -582,7 +582,7 @@ namespace Kiosk
             tableLayoutPanel1.Visible = false; // 옵션 패널 숨김
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void OptionView_Load(object sender, EventArgs e)
         {
             // 초기 "선택안함" 상태 강제 적용
             if (rdoNoFreeOption.Checked) Option_CheckedChanged(rdoNoFreeOption, EventArgs.Empty);
@@ -594,7 +594,7 @@ namespace Kiosk
         }
 
 
-        private void Form1_Shown_1(object sender, EventArgs e)
+        private void OptionView_Shown_1(object sender, EventArgs e)
         {
             rdoNoFreeOption.Checked = false;
             rdoNoSyrup.Checked = false;

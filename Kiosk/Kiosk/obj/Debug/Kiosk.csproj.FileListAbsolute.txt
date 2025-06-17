@@ -12,9 +12,9 @@ D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\K
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.exe
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\bin\Debug\Kiosk.pdb
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.AssemblyReference.cache
-D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Form1.resources
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.Properties.Resources.resources
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.GenerateResource.cache
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.csproj.CoreCompileInputs.cache
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.exe
 D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.pdb
+D:\Users\정태인\Desktop\광운\25_1학기 자료들\응소실\project_Team1\Kiosk\Kiosk\obj\Debug\Kiosk.OptionView.resources
