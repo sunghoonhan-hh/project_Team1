@@ -58,5 +58,10 @@ namespace Kiosk
 
             this.Close();
         }
+
+        private void btnOrder_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

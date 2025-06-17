@@ -141,7 +141,7 @@ namespace Kiosk
             InitializeTotalPrice();
 
             // 폼 크기 고정
-            this.Size = new Size(600, 900);
+            this.Size = new Size(525, 725);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
 
@@ -154,7 +154,7 @@ namespace Kiosk
             InitializeTotalPrice();
 
             // 폼 크기 고정
-            this.Size = new Size(600, 900);
+            this.Size = new Size(525, 725);
             this.FormBorderStyle = FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             menuLists = _menuList;
@@ -427,11 +427,13 @@ namespace Kiosk
             label_Timer.Text = $"{leftTime}초";
             timer1.Interval = 1000;
             timer1.Start();
+            
         }
 
         private void picture_Home_Click(object sender, EventArgs e)
         {
             매장포장 home = new 매장포장(true);
+            leftTime = 987654321;
             home.Show();
             this.Hide();
         }
@@ -440,6 +442,7 @@ namespace Kiosk
         {
             if (menuLists.Count == 0) return;
             Product_check_Form home = new Product_check_Form(menuLists, totalPrice);
+            leftTime = 987654321;
             home.Show();
             this.Hide();
         }
@@ -457,6 +460,11 @@ namespace Kiosk
             totalPrice = 0;
             panelItemCount = 0;
             InitializeTotalPrice();
+        }
+
+        private void SelectCoffee_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            timer1.Stop();
         }
     }
 }

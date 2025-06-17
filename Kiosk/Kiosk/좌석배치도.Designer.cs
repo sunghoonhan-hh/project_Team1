@@ -49,11 +49,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Font = new System.Drawing.Font("메이플스토리", 28.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(69, 91);
+            this.label1.Location = new System.Drawing.Point(78, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(416, 54);
+            this.label1.Size = new System.Drawing.Size(437, 52);
             this.label1.TabIndex = 0;
             this.label1.Text = "빈자리를 선택해주세요";
             // 

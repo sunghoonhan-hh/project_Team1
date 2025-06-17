@@ -27,9 +27,9 @@ namespace Kiosk
 
             // 컬럼 추가
             lvw_selected.Columns.Add("음료", 100);
-            lvw_selected.Columns.Add("옵션", 120);
-            lvw_selected.Columns.Add("수량", 60);
-            lvw_selected.Columns.Add("금액", 80);
+            lvw_selected.Columns.Add("옵션", 140);
+            lvw_selected.Columns.Add("수량", 80);
+            lvw_selected.Columns.Add("금액", 90);
 
             // 이벤트 연결
             lvw_selected.DrawColumnHeader += ListView1_DrawColumnHeader;

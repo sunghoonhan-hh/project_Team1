@@ -16,29 +16,99 @@ namespace Kiosk
             public DateTime? OccupiedUntil { get; set; }
         }
 
-        private List<Seat> seatList;
+        static private List<Seat> seatList = null;
 
         static Seat lastSeat = null;
 
-        public 좌석배치도(List<Seat> seats, int t)
+        public 좌석배치도(int t)
         {
             InitializeComponent();
-            seatList = seats;
+
+            if (seatList == null)
+            {
+                string[] seatIds = { "A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3" };
+                seatList = new List<Seat>();
+
+                foreach (var id in seatIds)
+                {
+                    seatList.Add(new Seat
+                    {
+                        SeatId = id,
+                        IsOccupied = false,
+                        IsLocked = false,
+                        OccupiedUntil = null
+                    });
+                }
+            }
+
 
             if (lastSeat != null)
             {
                 string seatId = lastSeat.SeatId;
                 Seat seat = seatList.FirstOrDefault(s => s.SeatId == seatId);
 
+
                 seat.IsLocked = false;
                 seat.IsOccupied = true;
 
-                TimeSpan usageDuration = TimeSpan.FromSeconds(15 - t);
+                TimeSpan usageDuration = TimeSpan.FromSeconds(30 - t);
                 seat.OccupiedUntil = DateTime.Now.Add(usageDuration);
 
+                lastSeat.IsLocked = false;
+                lastSeat.IsOccupied = true;
+
+                seatList.Remove(seat);
+                seatList.Add(lastSeat);
             }
             ConnectSeatButtons(this);
             UpdateSeatButtons();
+
+        }
+
+        public 좌석배치도(List<Seat> seats, int t)
+        {
+            InitializeComponent();
+            seatList = seats;
+
+            if(seatList == null)
+            {
+                string[] seatIds = { "A1", "A2", "A3", "B1", "B2", "B3", "C1", "C2", "C3" };
+                seatList = new List<Seat>();
+
+                foreach (var id in seatIds)
+                {
+                    seatList.Add(new Seat
+                    {
+                        SeatId = id,
+                        IsOccupied = false,
+                        IsLocked = false,
+                        OccupiedUntil = null
+                    });
+                }
+            }
+            
+
+            if (lastSeat != null)
+            {
+                string seatId = lastSeat.SeatId;
+                Seat seat = seatList.FirstOrDefault(s => s.SeatId == seatId);
+                
+                
+                seat.IsLocked = false;
+                seat.IsOccupied = true;
+
+                TimeSpan usageDuration = TimeSpan.FromSeconds(30 - t);
+                seat.OccupiedUntil = DateTime.Now.Add(usageDuration);
+
+                lastSeat.IsLocked = false;
+                lastSeat.IsOccupied = true;
+
+                seatList.Remove(seat);
+                seatList.Add(lastSeat);
+            }
+            ConnectSeatButtons(this);
+            UpdateSeatButtons();
+
         }
 
         private void ConnectSeatButtons(Control parent)
@@ -126,6 +196,7 @@ namespace Kiosk
                     SelectCoffee menuForm = new SelectCoffee();  //(seat, seatList);
 
                     lastSeat = seat;
+
 
                     menuForm.FormClosed += (s, args) =>
                     {

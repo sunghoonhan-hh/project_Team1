@@ -55,6 +55,7 @@
             this.btnOrder.TabIndex = 13;
             this.btnOrder.Text = "주문하기";
             this.btnOrder.UseVisualStyleBackColor = false;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click_1);
             // 
             // 메뉴선택
             // 
