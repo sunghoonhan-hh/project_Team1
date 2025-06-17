@@ -147,6 +147,7 @@ namespace Kiosk
         }
 
         private List<MenuItem> menuItems = new List<MenuItem>();
+        private List<MenuInformation> menuLists = new List<MenuInformation>();
 
         public SelectCoffee()
         {
@@ -169,7 +170,7 @@ namespace Kiosk
             totalLabel.Text = $"총 합계: 0원";
             totalLabel.AutoSize = true;
             totalLabel.Location = new Point(5, 5);
-            totalLabel.Font = new Font("맑은 고딕", 12, FontStyle.Bold);
+            totalLabel.Font = new Font("Maplestory Bold", 12, FontStyle.Bold);
             totalLabel.ForeColor = Color.DarkBlue;
 
             total.Controls.Add(totalLabel);
@@ -231,6 +232,8 @@ namespace Kiosk
             ShowCategoryImages(category);
         }
 
+        MenuInformation tempMenu;
+
         // 버튼 클릭했을 때의 음료수 목록이 나오게 하는 함수
         private void ShowCategoryImages(string category)
         {
@@ -276,7 +279,7 @@ namespace Kiosk
                 int price = menuPrices.ContainsKey(menuName) ? menuPrices[menuName] : 0;
                 menuName = Path.GetFileNameWithoutExtension(imageFiles[i]);
 
-                MenuInformation menuInfo = new MenuInformation($"Menu {i + 1}", Image.FromFile(imageFiles[i]), price);
+                MenuInformation menuInfo = new MenuInformation(menuName, Image.FromFile(imageFiles[i]), price);
 
                 // PictureBox 생성
                 PictureBox picBox = new PictureBox();
@@ -310,7 +313,10 @@ namespace Kiosk
 
                 picBox.Click += (sender, e) =>
                 {
-                    AddMenu(menuName, menuInfo.Price);
+                    tempMenu = menuInfo;
+                    OptionView optionview = new OptionView(menuInfo);
+                    optionview.FormClosed += Product_check_Form_FormClosed;
+                    optionview.Show();
                 };
 
                 // 생성한 이미지와 가격표를 화면에 띄우기
@@ -321,6 +327,11 @@ namespace Kiosk
             }
         }
 
+        private void Product_check_Form_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            AddMenu(tempMenu.MenuName, tempMenu.MenuImage, tempMenu.Price);
+        }
+
         private decimal totalPrice = 0;
         private int panelItemCount = 0;
 
@@ -329,13 +340,13 @@ namespace Kiosk
             bucket.Controls.Clear();
 
             int y = 5;
-            foreach (var item in menuItems)
+            foreach (var item in menuLists)
             {
                 Label label = new Label();
-                label.Text = $"{item.MenuName} | {item.Price}원 | {item.Count}개";
+                label.Text = $"{item.MenuName} | {item.Price}원";
                 label.AutoSize = true;
                 label.Location = new Point(5, y);
-                label.Font = new Font("맑은 고딕", 10, FontStyle.Regular);
+                label.Font = new Font("Maplestory Bold", 10, FontStyle.Regular);
                 label.ForeColor = Color.Black;
 
                 bucket.Controls.Add(label);
@@ -344,24 +355,13 @@ namespace Kiosk
             }
         }
 
-        private void AddMenu(string menuName, decimal price)
+        private void AddMenu(string menuName, Image image, int price)
         {
-            // 이미 리스트에 같은 메뉴가 있는지 확인
-            MenuItem existingItem = menuItems.FirstOrDefault(item => item.MenuName == menuName);
-
-            if (existingItem != null)
-            {
-                // 있으면 개수 증가
-                existingItem.Count++;
-            }
-            else
-            {
-                // 없으면 새로 추가
-                menuItems.Add(new MenuItem(menuName, price));
-            }
+            // 항상 새로 추가
+            menuLists.Add(new MenuInformation(menuName, image, price));
 
             // 총합 다시 계산
-            totalPrice = menuItems.Sum(item => item.Price * item.Count);
+            totalPrice = menuLists.Sum(item => item.Price * item.Count);
 
             // 화면 갱신
             RefreshBucket();
@@ -376,7 +376,7 @@ namespace Kiosk
             totalLabel.Text = $"총 합계: {totalPrice}원";
             totalLabel.AutoSize = true;
             totalLabel.Location = new Point(5, 5);
-            totalLabel.Font = new Font("맑은 고딕", 12, FontStyle.Bold);
+            totalLabel.Font = new Font("Maplestory Bold", 12, FontStyle.Bold);
             totalLabel.ForeColor = Color.DarkBlue;
 
             total.Controls.Add(totalLabel);
@@ -431,10 +431,9 @@ namespace Kiosk
 
         private void picture_Calculate_Click(object sender, EventArgs e)
         {
-            List<MenuInformation> tempList = new List<MenuInformation>();
-
-            Product_check_Form home = new Product_check_Form(tempList,totalPrice);
+            Product_check_Form home = new Product_check_Form(menuLists, totalPrice);
             home.Show();
+            this.Close();
         }
 
         private void DeleteBucket(object sender, EventArgs e)

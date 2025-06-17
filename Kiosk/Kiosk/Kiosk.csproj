@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
     <Compile Include="OptionView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,8 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="OptionView.resx">
       <DependentUpon>OptionView.cs</DependentUpon>
- </EmbeddedResource>
-
+    </EmbeddedResource>
     <Compile Include="CustomListBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -69,8 +67,6 @@
     <Compile Include="CustomButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="MenuInformation.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="매장포장.cs">
       <SubType>Form</SubType>
@@ -143,7 +139,6 @@
     </Compile>
     <EmbeddedResource Include="매장포장.resx">
       <DependentUpon>매장포장.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

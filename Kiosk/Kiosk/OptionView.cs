@@ -141,6 +141,27 @@ namespace Kiosk
             SubscribeToCheckedChangedEvents(this);
         }
 
+        public OptionView(MenuInformation menuInformation)
+        {
+            InitializeComponent();
+
+            MenuInformation currentMenuInfo = menuInformation;
+            ChosenMenuImg.Image = currentMenuInfo.MenuImage;
+
+            MakeAllControlsRound(this, 15);
+            // 모든 "선택안함" 체크박스 이벤트 연결
+            rdoNoFreeOption.CheckedChanged += Option_CheckedChanged;
+            rdoNoSyrup.CheckedChanged += Option_CheckedChanged;
+            rdoNoMilk.CheckedChanged += Option_CheckedChanged;
+            rdoNoShot.CheckedChanged += Option_CheckedChanged;
+            rdoNoSize.CheckedChanged += Option_CheckedChanged;
+            chkNoAddOns.CheckedChanged += Option_CheckedChanged;
+
+            SetCurrentMenu(currentMenuInfo);
+            UpdateTempPriceDisplay();
+            SubscribeToCheckedChangedEvents(this);
+        }
+
         private void SubscribeToCheckedChangedEvents(Control parent)
         {
             foreach (Control control in parent.Controls)
@@ -387,6 +408,14 @@ namespace Kiosk
             bool hideIceAndSize = ShouldHideIceAndSize(menuInfo);
             gbIceOptions.Visible = !hideIceAndSize;  // 얼음 옵션 그룹
             gbSize.Visible = !hideIceAndSize;        // 사이즈 업그레이드 그룹
+
+            if(hideIceAndSize)
+            {
+                if(!rdoNoSize.Checked)
+                {
+                    rdoNoSize.Checked = true;
+                }
+            }
         }
 
         /// <summary>
@@ -562,6 +591,7 @@ namespace Kiosk
             currentMenuInfo.Price = _basePrice + _tempPrice;
             _tempPrice = 0; // 임시 변수 초기화
             tableLayoutPanel1.Visible = false; // 옵션 패널 숨김
+            this.Close();
             // 여기에 실제 주문 처리 로직 추가 가능
         }
 
@@ -580,6 +610,7 @@ namespace Kiosk
                 SetDrinkCategory(currentMenuInfo); // UI 동기화
             }
             tableLayoutPanel1.Visible = false; // 옵션 패널 숨김
+            this.Close();
         }
 
         private void OptionView_Load(object sender, EventArgs e)
