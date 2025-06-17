@@ -92,18 +92,6 @@
     <Compile Include="Form_credit_payment.Designer.cs">
       <DependentUpon>Form_credit_payment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_cuppon_payment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_cuppon_payment.Designer.cs">
-      <DependentUpon>Form_cuppon_payment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form_simple_payment.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form_simple_payment.Designer.cs">
-      <DependentUpon>Form_simple_payment.cs</DependentUpon>
-    </Compile>
     <Compile Include="Payment_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,12 +103,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_credit_payment.resx">
       <DependentUpon>Form_credit_payment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_cuppon_payment.resx">
-      <DependentUpon>Form_cuppon_payment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form_simple_payment.resx">
-      <DependentUpon>Form_simple_payment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Payment_Form.resx">
       <DependentUpon>Payment_Form.cs</DependentUpon>
