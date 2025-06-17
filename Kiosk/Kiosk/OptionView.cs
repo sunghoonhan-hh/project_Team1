@@ -507,6 +507,7 @@ namespace Kiosk
             UpdateOrderButtonState();
         }
 
+
         private void ProcessOptionPrice(bool isChecked, string optionText)
         {
             // 수정된 정규식: "+500" 또는 "(+500)" 형식 정확히 추출
